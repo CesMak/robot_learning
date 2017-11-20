@@ -79,32 +79,6 @@ Write the solution for the $\vec{x_\textrm{end-eff}}=[x,y,z]^T$  according to th
 		\end{split}
 	\end{equation}
 
-	One common method is to use the Denavit-Hartenberg table:\\
-	\begin{tabular}{l l l l l}
-		i&$\Theta_i$&$d_i$&$a_i$&$\alpha_i$\\
-		1&0&L&0&0\\
-		2&q1+pi/2&L&0&pi/2\\
-		3&0&q2&0&-pi/2\\
-		4&q3&0&0&-pi/2\\
-		5&0&q4&0&0\\
-	\end{tabular}\\
-	Now calculate: $0T1=Rot(z,\Theta_i)Trans(0,0,d_i)Trans(0,0,a_i)Rot(x,\alpha_i), \qquad 0TE=0T1*1T2*...*4T5$
-	
-	\begin{equation}
-	0T5=
-	\left[\begin{matrix}\cos{  (q1+pi/2 + q_{3}   )} & 0 & - \sin{  (q1+pi/2 + q_{3}   )} & q_{2} \sin{  (q1+pi/2   )} - q_{4} \sin{  (q1+pi/2 + q_{3}   )}\\sin{  (q1+pi/2 + q_{3}   )} & 0 & \cos{  (q1+pi/2 + q_{3}   )} & - q_{2} \cos{  (q1+pi/2   )} + q_{4} \cos{  (q1+pi/2 + q_{3}   )}\\0 & -1 & 0 & l_{1}\\0 & 0 & 0 & 1\end{matrix} \right]
-	\end{equation}
-	Simplify: $\quad sin(x+\pi/2)=cos(x)\quad cos(x+\pi/2)=-sin(x) \quad sin(x+y)=s_x c_y+s_y c_x \quad cos(x+y)=c_x c_y - s_x s_y$\\
-	\begin{equation}
-	0T5=
-	\left[\begin{matrix}-\sin{  (q1+ q_{3}   )} & 0 & - \cos{  (q1+ q_{3}   )} & q_{2} \cos{  (q1  )} - q_{4} \cos{  (q1+ q_{3}   )}\\cos{  (q1+ q_{3}   )} & 0 & -\sin{  (q1 + q_{3}   )} & + q_{2} \sin{  (q1 )} - q_{4} \sin{  (q1 + q_{3}   )}\\0 & -1 & 0 & l_{1}\\0 & 0 & 0 & 1\end{matrix} \right]
-	\end{equation}
-	
-	Direkt aus der Anschauung:\\
-	$x_e=q_2 cos(q_1)+q_4 cos(q_1+q_3)$\\
-	$y_e=q_2 sin(q_1)+q_4 sin(q_1+q_3)$\\
-	$z_e=l_1$
-	
 	\end{answer}
 
 \end{question}
