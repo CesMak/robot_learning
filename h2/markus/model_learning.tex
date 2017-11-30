@@ -98,20 +98,24 @@ Assuming that the gravity $g$ is unknown, what are the feature matrix $\vec{\phi
 		u_{3} &= m_{2}(\ddot{q}_{3}-q_{3}\dot{q}_{2}^{2}).
 		\end{align*}
 		
-	$\underset{3\times 1} y= \underset{3\times 2} \phi^T \underset{2\times 1} \theta= \begin{bmatrix}
+	$\underset{3\times 1} y= \phi^T \theta=  \underset{3\times 2} {\begin{bmatrix}
 	\ddot{q_1}&0\\0&2\dot{q_3}\dot{q_2}\dot{q_3}+q_3^2\ddot{q_2}\\0&\ddot{q_3}-q_3 \dot{q_2}^2
-	\end{bmatrix}
-	\begin{bmatrix}
+	\end{bmatrix}}
+	\underset{2\times 1}{\begin{bmatrix}
 	m_1+m_2\\m_2
-	\end{bmatrix}$
+	\end{bmatrix}}$
 	
 	For n measurements: \\
-	$\underset{3 \times n}Y=(y_1,...y_n)$
+	$\underset{n \times 3}Y=\begin{bmatrix}
+	y_1^T\\...\\y_n^T
+	\end{bmatrix}$
 	
-	$\underset{3 \times 2n}\Phi=(\phi_1,...\phi_n)$
+	$\underset{2n \times 3}\Phi=\begin{bmatrix}
+	\phi_1^T\\...\\ \phi_n^T
+	\end{bmatrix}$
 	
 	Linear Regression:\\
-	$\theta = (\Phi^T \Phi)^{-1} \Phi^T Y$
+	$\underset{3 \times 3}\theta = ( \underset{3\times 2n}{\Phi^T} \; \underset{2n \times 3}{ \Phi})^{-1} \underset{3 \times 2n}\Phi^T \underset{n \times 3}{Y}$
 
 	\end{answer}
 
