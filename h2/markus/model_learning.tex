@@ -208,24 +208,12 @@ Name and describe three different learned models types and their possible applic
 		\hline
 				Forward Model &Predict the future state: $s_{k+1}=f_D(s_k,u_k)+\epsilon$s:state, u:action Can be used for direct action geneartion.  &Usefull for long-term predictions. Can be used as Simulator.
 			\\	\hline
-		f&g&h\\
-		\hline
-		l&m&q\\
+			Inverse Model &Predict the action needed to reach a desired state or other outcome. $u=\pi(s_t)=f(s_t,s_{t+1}^{des})$. An Inverse can be learned directly (e.g. inverse dynamics control). Only if system is an invertable function, inverse model learning is useful.&In inverse dynamics control: The action u to reach a desired state with $q_t^{des}, \dot{q_t^{des}},\ddot{q_t^{des}}$ should be predicted. Applications are Model Based Control and Fast Forward control. 	 \\	 \hline 
+
+		Mixed Model&Predict required task elements with a forward model and use an inverse model for control.&Systems with Hysteresis, Inverse Kinematics. \\  \hline
 		
+		Multi-Step Prediction Model&Predict a task variable long term (far in the future). Especially useful for system's which have a lot of latency in the control loop.                                      &Throw a ball into a cup at a given position (like the example in the lab). Or Systems with a lot latency like the Mars Rover when controlling it from earth.  \\ \hline
 \end{tabular}
-
-
-
-	\begin{tabular}{|l|p{7cm}|l|}
-		\hline
-	                                                             &                                                                                                                                                                                                                                                                                                &                                                                                                                                                                                            \\ \hline
-                                                         &                                                                                                                                     & \begin{tabular}[c]{@{}l@{}}\end{tabular}                                                                                                              \\ \hline
-		Inverse Model                                                          & \begin{tabular}[c]{@{}l@{}}Predict the action needed to reach a desired state \\ or other outcome.\\ $u=\pi(s_t)=f(s_t,s_{t+1}^{des})$\\ An Inverse can be learned directly (e.g. inverse\\ dynamics control).\\ Only if system is an invertable function, inverse\\ model learning is useful.\end{tabular} & \begin{tabular}[c]{@{}l@{}}In inverse dynamics control:\\ The action u to reach a\\ desired state with\\ $q_t^{des}, \dot{q_t^{des}},\ddot{q_t^{des}}$\\ should be predicted. Applications are\\ Model Based Control and Fast Forward\\ control.\end{tabular}                      \\ \hline
-		Mixed Model                                                            & \begin{tabular}[c]{@{}l@{}}Predict required task elements with a forward model and \\ use an inverse model for control.\end{tabular}                                                                                                                                                                        & \begin{tabular}[c]{@{}l@{}}Systems with Hysteresis. \\ Inverse Kinematics.\end{tabular}                                                                                                                         \\ \hline
-		\begin{tabular}[c]{@{}l@{}}Multi-Step\\  Prediction Model\end{tabular} & Predict a task variable long term (far in the future). Especially useful for system's which have a lot of latency in the control loop.                                                                                                                                                                                                                                    & \begin{tabular}[c]{@{}l@{}}Throw a ball into a cup at a\\ given position (like the example \\ in the lab). Or Systems with a lot \\ latency like the Mars Rover \\ when controlling it from earth.\end{tabular} \\ \hline
-	\end{tabular}
-\texttt{}
-	
 	
 	\end{answer}
 

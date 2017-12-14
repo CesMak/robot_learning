@@ -42,7 +42,11 @@ Transform Equation~\eqref{eq:dmp} to have a similar structure to a PD-controller
 %
 and write down how the following quantities $K_p, K_d, y^{des}_z$ and $\dot{y}_z^{des}$ look like in terms of the DMP parameters. Do not expand the forcing function $f_w(z)$ at your solutions.
 
-\begin{answer}\end{answer}
+\begin{answer}
+	$\ddot{y}=\tau^2 \alpha \beta (g-y) + (-\tau \alpha) (0-\dot{y}) $	
+	
+	$K_P = \tau^2 \alpha \beta, \quad K_D= - \tau \alpha, \quad y_z^{des} = g , \dot{y_z}^{des}=0$
+	\end{answer}
 
 \end{question}
 
@@ -51,11 +55,19 @@ and write down how the following quantities $K_p, K_d, y^{des}_z$ and $\dot{y}_z
 \begin{question}{Stability}{2}
 Show why the DMPs are stable when $t\to\infty$ and what would the equilibrium point be.
 
-\begin{answer}\end{answer}
+\begin{answer}
+	If you solve the diff. equation: $\dot{z}=-\tau\alpha_z z, \quad z(t)= -\tau \alpha_z e^{\lambda t}=-\tau \alpha_z e^{-\tau \alpha_z} \overset{t \rightarrow \infty}{=}0 \rightarrow f_w(z) \overset{t \rightarrow \infty}{=}0 $.
+	
+	If you insert $f_w(z)=0$ in eq(1) you can calculate the equilibrium point by transforming eq. (1) with Laplace and then using the "Endwertsatz" or the steady state error.
+	
+	$G(s)=\frac{Y(s)}{g(s)}= \frac{\tau^2 \alpha \beta}{s^2 + s \tau \alpha + \tau^2 \alpha \beta },\quad s \rightarrow 0,\quad Y(s)=g(s)$
+	
+	There is no steady state error if your input is a 1 then also the output will be a one. This means your equilibrium point is: $y_{eqp}=g (goal)$.
+	\end{answer}
 
 \end{question}
 
-%----------------------------------------------
+%------------------------------------------
 
 \begin{question}{Double Pendulum - Training}{12}
 Implement the DMPs and test them on the double pendulum environment.
