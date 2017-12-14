@@ -56,11 +56,11 @@ What kind of machine learning problem is learning an inverse dynamics model? Wha
 	
 	Task:\\
 	Kind of machine learning problem:\\
-	Linear Regression? 
+	Learning an inverse dynamics model is a kind of supervised learning (in model learning) which can be solved by linear regression. It should be noted that only if the system is an invertible function an inverse dynamics model can be learned.
+
 	
 	Kind of information:\\
-	In order to learn an inverse dynamics model you need a lot of measurements. In this particular case:
-	$\Phi$ and $Y$
+	To learn an inverse dynamics model you need many measurements of the output values and input values. For the inverse model above the output values are: ($u_i$) and the input values are: ($q_i, \dot{q}_i,...$).
 
 
 	\end{answer}
@@ -74,7 +74,10 @@ What kind of machine learning problem is learning an inverse dynamics model? Wha
 Which standard assumption has been violated by taking the data from trajectories?
 
 \begin{answer}
-	Discrete time?
+	TODO:
+	Es wird nur eine spezielle traj. gelernt nicht generalisierbar?
+
+
 	\end{answer}
 
 \end{question}
@@ -89,33 +92,31 @@ Assuming that the gravity $g$ is unknown, what are the feature matrix $\vec{\phi
 \begin{answer}
 	
 	What are the parameters?
-	
-	Is g=0 ? should I find the parameters m1,m2? by a lot of measurements?
-	
+		
 		\begin{align*}
 		u_{1} &= (m_{1}+m_{2})(\ddot{q}_{1}+g),\\
 		u_{2} &= m_{2}(2\dot{q}_{3}\dot{q}_{2}q_{3}+q_{3}^{2}\ddot{q}_{2}),\\
 		u_{3} &= m_{2}(\ddot{q}_{3}-q_{3}\dot{q}_{2}^{2}).
 		\end{align*}
 		
-	$\underset{3\times 1} y= \phi^T \theta=  \underset{3\times 2} {\begin{bmatrix}
-	\ddot{q_1}&0\\0&2\dot{q_3}\dot{q_2}\dot{q_3}+q_3^2\ddot{q_2}\\0&\ddot{q_3}-q_3 \dot{q_2}^2
+	$\underset{3\times 1}{y_1}= \phi^T \theta=  \underset{3\times 3} {\begin{bmatrix}
+	\ddot{q_1}&0&1\\0&2\dot{q_3}\dot{q_2}q_3+q_3^2\ddot{q_2}&0\\0&\ddot{q_3}-q_3 \dot{q_2}^2&0
 	\end{bmatrix}}
-	\underset{2\times 1}{\begin{bmatrix}
-	m_1+m_2\\m_2
+	\underset{3\times 1}{\begin{bmatrix}
+	m_1+m_2\\m_2\\ m_2g+m_1g
 	\end{bmatrix}}$
 	
 	For n measurements: \\
-	$\underset{n \times 3}Y=\begin{bmatrix}
-	y_1^T\\...\\y_n^T
+	$\underset{3n \times 1}Y=\begin{bmatrix}
+	y_1\\...\\y_n
 	\end{bmatrix}$
 	
-	$\underset{2n \times 3}\Phi=\begin{bmatrix}
+	$\underset{3n \times 3}\Phi=\begin{bmatrix}
 	\phi_1^T\\...\\ \phi_n^T
 	\end{bmatrix}$
 	
 	Linear Regression:\\
-	$\underset{3 \times 3}\theta = ( \underset{3\times 2n}{\Phi^T} \; \underset{2n \times 3}{ \Phi})^{-1} \underset{3 \times 2n}\Phi^T \underset{n \times 3}{Y}$
+	$\underset{3 \times 1}\theta = ( \underset{3\times 3n}{\Phi^T} \; \underset{3n \times 3}{ \Phi})^{-1} \underset{3 \times 3n}\Phi^T \underset{3n \times 1}{Y}$
 
 	\end{answer}
 
@@ -134,6 +135,16 @@ Then, compute the least-squares estimate of the parameters $\vec{\theta}$ from t
 	Task:\\
 	$min_{\theta} \sum_{i=1}^n (u_{meas,i}-u_{pred,i})^2 =min_{\theta} \sum_{i=1}^n (u_{meas,i}-\phi^T_i \theta)^2 $
 	
+		$\underset{3 \times 1}\theta = ( \underset{3\times 3n}{\Phi^T} \; \underset{3n \times 3}{ \Phi})^{-1} \underset{3 \times 3n}\Phi^T \underset{3n \times 1}{Y}$
+		
+theta: [  1.57600862   1.65617664  15.09760938]
+
+g: 9.57964898326
+
+m1: -0.0801680184959
+
+m2: 1.65617663934
+	
 	
 	\end{answer}
 
@@ -145,7 +156,9 @@ Then, compute the least-squares estimate of the parameters $\vec{\theta}$ from t
 \begin{question}{Recovering Model Information}{4}
 	Can you recover the mass properties $m_{1}$ and $m_{2}$ from your learned parameters? Has the robot learned a plausible inverse dynamics model? Explain your answers.
 	
-\begin{answer}\end{answer}
+\begin{answer}
+	Yes the masses and the g could be derived see d). No the robot has apparently not learned a plausible inverse dynamics model, cause all masses should be at least higher than zero and g should be around 9.81 . 
+	\end{answer}
 \end{question}
 
 %----------------------------------------------
@@ -154,7 +167,30 @@ Then, compute the least-squares estimate of the parameters $\vec{\theta}$ from t
 \begin{question}{Model Evaluation}{7}
 Plot the forces and torques predicted by your model over time, as well as those recorded in the data and comment the results. Is the model accuracy acceptable? If not, how would improve your model? Use one figure per joint.
 
-\begin{answer}\end{answer}
+\begin{answer}
+
+
+\begin{minipage}{0.5\textwidth}
+	\begin{center}
+		\includegraphics[width=1\textwidth]{img/1f-g_wrong.png} 
+	\end{center}
+\end{minipage} \hfill
+\begin{minipage}{0.5\textwidth}
+	\begin{center}
+		\includegraphics[width=1\textwidth]{img/1f-g_correct.png} 
+	\end{center}
+\end{minipage} \hfill
+
+	The Model accuracy is especially for the torque $q_2$ not acceptable (see left figure above).
+	
+	Improve model by using 9.81 for g: Effect almost not visible.
+	
+	TODO:
+	Nochmal neu machen mit neu gelerntem Model fuer g\_neu.
+	
+	use different trajectories and cross validation?! 
+	
+\end{answer}
 
 \end{question}
 
@@ -163,10 +199,37 @@ Plot the forces and torques predicted by your model over time, as well as those 
 
 \begin{question}[bonus]{Models for Control}{4}
 Name and describe three different learned models types and their possible applications.
-
-\begin{answer}\end{answer}
-
 \end{question}
+\begin{answer}
+
+\begin{tabular}{|p{4cm}|p{7cm}|p{5cm}|}
+		\hline
+		Model Type&Description  &Possible Application \\
+		\hline
+				Forward Model &Predict the future state: $s_{k+1}=f_D(s_k,u_k)+\epsilon$s:state, u:action Can be used for direct action geneartion.  &Usefull for long-term predictions. Can be used as Simulator.
+			\\	\hline
+		f&g&h\\
+		\hline
+		l&m&q\\
+		
+\end{tabular}
+
+
+
+	\begin{tabular}{|l|p{7cm}|l|}
+		\hline
+	                                                             &                                                                                                                                                                                                                                                                                                &                                                                                                                                                                                            \\ \hline
+                                                         &                                                                                                                                     & \begin{tabular}[c]{@{}l@{}}\end{tabular}                                                                                                              \\ \hline
+		Inverse Model                                                          & \begin{tabular}[c]{@{}l@{}}Predict the action needed to reach a desired state \\ or other outcome.\\ $u=\pi(s_t)=f(s_t,s_{t+1}^{des})$\\ An Inverse can be learned directly (e.g. inverse\\ dynamics control).\\ Only if system is an invertable function, inverse\\ model learning is useful.\end{tabular} & \begin{tabular}[c]{@{}l@{}}In inverse dynamics control:\\ The action u to reach a\\ desired state with\\ $q_t^{des}, \dot{q_t^{des}},\ddot{q_t^{des}}$\\ should be predicted. Applications are\\ Model Based Control and Fast Forward\\ control.\end{tabular}                      \\ \hline
+		Mixed Model                                                            & \begin{tabular}[c]{@{}l@{}}Predict required task elements with a forward model and \\ use an inverse model for control.\end{tabular}                                                                                                                                                                        & \begin{tabular}[c]{@{}l@{}}Systems with Hysteresis. \\ Inverse Kinematics.\end{tabular}                                                                                                                         \\ \hline
+		\begin{tabular}[c]{@{}l@{}}Multi-Step\\  Prediction Model\end{tabular} & Predict a task variable long term (far in the future). Especially useful for system's which have a lot of latency in the control loop.                                                                                                                                                                                                                                    & \begin{tabular}[c]{@{}l@{}}Throw a ball into a cup at a\\ given position (like the example \\ in the lab). Or Systems with a lot \\ latency like the Mars Rover \\ when controlling it from earth.\end{tabular} \\ \hline
+	\end{tabular}
+\texttt{}
+	
+	
+	\end{answer}
+
+
 
 %----------------------------------------------
 
