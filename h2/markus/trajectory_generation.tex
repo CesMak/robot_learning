@@ -85,11 +85,35 @@ At first you have to solve Equation~\eqref{eq:dmp} on the forcing function. This
 	f_W(z) = \frac{\ddot{y}}{\tau^2}+\alpha (\frac{\dot{y}}{\tau} - \beta (g-y))
 \end{equation}
 
+The next step is the training of the DMP. The end position of the demonstration is $[0.3, -0.8]$, so this is the goal Position g. Then you can use the equations of lecture 5 too train the DMP:
+
+\lstinputlisting[caption=dmpTrain.py]{code/dmpTrain.py}
+
+After this you have to implement the DMP controller:
+
+\lstinputlisting[caption=dmpCtl.py]{code/dmpCtl.py}
+
+\begin{center}
+	\begin{minipage}{0.45\linewidth} 
+		\centering
+		\includegraphics[width=\linewidth]{img/2c-q1.png}
+		\captionof{figure}[trajecotry q2]{The desired and reproduced trajectory of $q_1$ are nearly equal.}
+		\label{fig:q1_des}
+	\end{minipage}
+	\hfill
+	\begin{minipage}{0.45\linewidth} 
+		\centering
+		\includegraphics[width=\linewidth]{img/2c-q2.png}
+		\captionof{figure}[Trajectory q2]{The desired and reproduced trajectory of $q_2$ are also nearly equal.}
+		\label{fig:q2_des}
+	\end{minipage}
+\end{center}
+
+You can use this functions to reproduce the demonstration trajectory. In figure \ref{fig:q1_des} and figure \ref{fig:q2_des} you can see, that the desired trajectory and the reproduced trajectory from the DMP are nearly the same. This is a really good result and shows that we use enough basis functions.
+
 \end{answer}
 
 \end{question}
-
-
 
 %----------------------------------------------
 
@@ -97,7 +121,27 @@ At first you have to solve Equation~\eqref{eq:dmp} on the forcing function. This
 Using the trained DMPs from the previous question, simulate the system with different goal positions: first with $q_{t=\mathrm{end}} = \{0, 0.2\}$ and then with $q_{t=\mathrm{end}} = \{0.8, 0.5\}$. Generate one figure per DoF. In each figure, plot the demonstrated trajectory and the reproduced trajectories with different goal positions.
 How do you interpret the result? 
 
-\begin{answer}\end{answer}
+\begin{answer}
+In this task we use the trained DMP from question c) with a different goal position. You get the trajectories in figure \ref{fig:q1_new_goal} and figure \ref{fig:q2_new_goal}. The trajectories of q1 are most of the time nearly the same, the new trajectory is only shifted a bit up or down. The only really difference is the start behavior. All trajectories start at the same point, but then the reach the offset to the trained DMP really fast. This is not an optimal behavior, because it would be more useful, if the new trajectory follows the trained one at the beginning and than slowly moves away from it.
+
+The $q_2$-trajectory looks really different compared to the trained DMP. It rises very fast at the beginning and after this it shows the same course like the trained DMP, but has a big offset. It is hard to interpret the graph without some more graphical simulation, but this high gradient at the beginning cannot be really good for the robot.
+
+\begin{center}
+	\begin{minipage}{0.45\linewidth} 
+		\centering
+		\includegraphics[width=\linewidth]{img/2d-q1.png}
+		\captionof{figure}[trajecotry q2]{$q_1$ with goal position $q_{t=\mathrm{end}} = \{0, 0.2\}$.}
+		\label{fig:q1_new_goal}
+	\end{minipage}
+	\hfill
+	\begin{minipage}{0.45\linewidth} 
+		\centering
+		\includegraphics[width=\linewidth]{img/2d-q2.png}
+		\captionof{figure}[Trajectory q2]{$q_2$ with goal position $q_{t=\mathrm{end}} = \{0.8, 0.5\}$.}
+		\label{fig:q2_new_goal}
+	\end{minipage}
+\end{center}
+\end{answer}
 
 
 \end{question}
@@ -107,7 +151,26 @@ How do you interpret the result?
 \begin{question}{Double Pendulum - Temporal Modulation}{3}
 Using the trained DMPs from the previous question, simulate the system with different temporal scaling factors $\tau=\{0.5, 1.5\}$. Generate one figure per DoF and explain the result.
 
-\begin{answer}\end{answer}
+\begin{answer}
+	
+Now the DMP is rescaled in the time. One trajectory is faster as the trained DMP, one is slower. You can see the result in figure~\ref{fig:q1_new_t} and figure~\ref{fig:q2_new_t}. The trajectories follow the same course, but have different time scalings. It looks like an linear rescaling of the trained DMP.
+
+\begin{center}
+	\begin{minipage}{0.45\linewidth} 
+		\centering
+		\includegraphics[width=\linewidth]{img/2f-q1.png}
+		\captionof{figure}[trajecotry q2]{$q_1$ with different end times.}
+		\label{fig:q1_new_t}
+	\end{minipage}
+	\hfill
+	\begin{minipage}{0.45\linewidth} 
+		\centering
+		\includegraphics[width=\linewidth]{img/2f-q2.png}
+		\captionof{figure}[Trajectory q2]{$q_2$ with different end times}
+		\label{fig:q2_new_t}
+	\end{minipage}
+\end{center}
+\end{answer}
 
 
 \end{question}
@@ -120,7 +183,16 @@ The bandwidth of the Gaussian basis (std) is set to $b=0.2$.
 Implement these basis functions in \texttt{getProMPBasis.py}. 
 Do not forget to normalize the basis such at every time-point they sum-up to one! Attach a plot showing the basis functions in time and a snippet of your code. 
 
-\begin{answer}\end{answer}
+\begin{answer}
+
+\begin{center}
+	\includegraphics[width=0.6\linewidth]{img/2f.png}
+	\captionof{figure}{30 uniformly distributed gaussian basis functions.}
+	\label{fig:gaussian_basis}
+\end{center}
+
+\lstinputlisting{code/getProMPBasis.py}
+\end{answer}
 \end{question}
 
 %----------------------------------------------
