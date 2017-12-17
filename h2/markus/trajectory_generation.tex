@@ -56,13 +56,17 @@ and write down how the following quantities $K_p, K_d, y^{des}_z$ and $\dot{y}_z
 Show why the DMPs are stable when $t\to\infty$ and what would the equilibrium point be.
 
 \begin{answer}
-	If you solve the diff. equation: $\dot{z}=-\tau\alpha_z z, \quad z(t)= -\tau \alpha_z e^{\lambda t}=-\tau \alpha_z e^{-\tau \alpha_z} \overset{t \rightarrow \infty}{=}0 \rightarrow f_w(z) \overset{t \rightarrow \infty}{=}0 $.
+	If you solve the diff. equation: $\dot{z}=-\tau\alpha_z z, \quad z(t)= z_0 e^{\lambda t}=z_0 e^{-\tau \alpha_z} \overset{t \rightarrow \infty}{=}0 \rightarrow f_w(z) \overset{t \rightarrow \infty}{=}0 $.
 	
 	If you insert $f_w(z)=0$ in eq(1) you can calculate the equilibrium point by transforming eq. (1) with Laplace and then using the "Endwertsatz" or the steady state error.
 	
-	$G(s)=\frac{Y(s)}{g(s)}= \frac{\tau^2 \alpha \beta}{s^2 + s \tau \alpha + \tau^2 \alpha \beta },\quad s \rightarrow 0,\quad Y(s)=g(s)$
+	$G(s)=\frac{Y(s)}{g(s)}= \frac{\tau^2 \alpha \beta}{s^2 + s \tau \alpha + \tau^2 \alpha \beta },\quad G(0) = 1,\quad Y(s)=g(s)$
 	
-	There is no steady state error if your input is a 1 then also the output will be a one. This means your equilibrium point is: $y_{eqp}=g (goal)$.
+	So your transfer function for $t \rightarrow \infty$ ist $G(s)=1$ and you have bo steady state error. This means your equilibrium point is your goal position: 
+	
+	$y_{eqp}=g (goal)$ 
+
+	You can also set $\dot{y}$ and $\ddot{y}$ to zero and solve this equation on y. Then you get the same equilibrium point.
 	\end{answer}
 
 \end{question}
@@ -74,7 +78,14 @@ Implement the DMPs and test them on the double pendulum environment.
 In order to train the DMPs you have to solve Equation~\eqref{eq:dmp} on the forcing function. Before starting the execution, set the goal $g$ position to be the same as in the demonstration. Then, set the parameters to $\alpha=25, \beta=6.25, \alpha_z=3/T, \tau=1$. Use $N=50$ basis functions, equally distributed in $z$.  Use the learned DMPs to control the robot and plot in the same figure both the demonstrated trajectory and the reproduction from the DMPs.
 You need to implement the DMP-based controller (\texttt{dmpCtl.py}) and the training function for the controller parameters (\texttt{dmpTrain.py}). To plot your results you can use \texttt{dmpComparison.py}. Refer to \texttt{example.py} to see how to call it. Attach a snippet of your code.
 
-\begin{answer}\end{answer}
+\begin{answer}
+At first you have to solve Equation~\eqref{eq:dmp} on the forcing function. This results in the following:
+
+\begin{equation}
+	f_W(z) = \frac{\ddot{y}}{\tau^2}+\alpha (\frac{\dot{y}}{\tau} - \beta (g-y))
+\end{equation}
+
+\end{answer}
 
 \end{question}
 
