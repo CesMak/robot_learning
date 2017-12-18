@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.9.15)  16 DEC 2017 12:52
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.9.15)  18 DEC 2017 19:28
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -808,6 +808,50 @@ Package: fancyref 1999/02/03 v0.9c Fancy cross-referencing
 Package: varioref 2015/09/22 v1.5b package for extended references (FMi)
 \c@vrcnt=\count130
 ))
+(/usr/share/texlive/texmf-dist/tex/latex/listings/listings.sty
+\lst@mode=\count131
+\lst@gtempboxa=\box61
+\lst@token=\toks27
+\lst@length=\count132
+\lst@currlwidth=\dimen160
+\lst@column=\count133
+\lst@pos=\count134
+\lst@lostspace=\dimen161
+\lst@width=\dimen162
+\lst@newlines=\count135
+\lst@lineno=\count136
+\lst@maxwidth=\dimen163
+
+(/usr/share/texlive/texmf-dist/tex/latex/listings/lstmisc.sty
+File: lstmisc.sty 2015/06/04 1.6 (Carsten Heinz)
+\c@lstnumber=\count137
+\lst@skipnumbers=\count138
+\lst@framebox=\box62
+)
+(/usr/share/texlive/texmf-dist/tex/latex/listings/listings.cfg
+File: listings.cfg 2015/06/04 1.6 listings configuration
+))
+Package: listings 2015/06/04 1.6 (Carsten Heinz)
+
+(/usr/share/texlive/texmf-dist/tex/latex/caption/caption.sty
+Package: caption 2016/02/21 v3.3-144 Customizing captions (AR)
+
+(/usr/share/texlive/texmf-dist/tex/latex/caption/caption3.sty
+Package: caption3 2016/02/04 v1.7-139 caption3 kernel (AR)
+Package caption3 Info: TeX engine: e-TeX on input line 67.
+\captionmargin=\dimen164
+\captionmargin@=\dimen165
+\captionwidth=\dimen166
+\caption@tempdima=\dimen167
+\caption@indent=\dimen168
+\caption@parindent=\dimen169
+\caption@hangindent=\dimen170
+)
+Package caption Info: KOMA-Script document class.
+\c@ContinuedFloat=\count139
+Package caption Info: listings package is loaded.
+Package caption Info: subfigure package is loaded.
+)
 (/usr/share/texlive/texmf-dist/tex/generic/babel/babel.sty
 Package: babel 2016/02/24 3.9q The Babel package
 
@@ -819,8 +863,8 @@ Language: ngermanb 2013/12/13 v2.7 German support for babel (new orthography)
 
 (/usr/share/texlive/texmf-dist/tex/generic/babel/babel.def
 File: babel.def 2016/02/24 3.9q Babel common definitions
-\babel@savecnt=\count131
-\U@D=\dimen160
+\babel@savecnt=\count140
+\U@D=\dimen171
 )
 \l@naustrian = a dialect from \language\l@ngerman 
 \l@nswissgerman = a dialect from \language\l@ngerman 
@@ -841,31 +885,6 @@ Package: iasHomework 2017/06/29 3.4
 \CommentStream=\write3
 
 Excluding comment 'comment')
-(/usr/share/texlive/texmf-dist/tex/latex/listings/listings.sty
-\lst@mode=\count132
-\lst@gtempboxa=\box61
-\lst@token=\toks27
-\lst@length=\count133
-\lst@currlwidth=\dimen161
-\lst@column=\count134
-\lst@pos=\count135
-\lst@lostspace=\dimen162
-\lst@width=\dimen163
-\lst@newlines=\count136
-\lst@lineno=\count137
-\lst@maxwidth=\dimen164
-
-(/usr/share/texlive/texmf-dist/tex/latex/listings/lstmisc.sty
-File: lstmisc.sty 2015/06/04 1.6 (Carsten Heinz)
-\c@lstnumber=\count138
-\lst@skipnumbers=\count139
-\lst@framebox=\box62
-)
-(/usr/share/texlive/texmf-dist/tex/latex/listings/listings.cfg
-File: listings.cfg 2015/06/04 1.6 listings configuration
-))
-Package: listings 2015/06/04 1.6 (Carsten Heinz)
-
 (/usr/share/texlive/texmf-dist/tex/latex/environ/environ.sty
 Package: environ 2014/05/04 v0.3 A new way to define environments
 
@@ -936,14 +955,14 @@ Package: auxhook 2011/03/04 v1.3 Hooks for auxiliary files (HO)
 (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/kvoptions.sty
 Package: kvoptions 2011/06/30 v3.11 Key value format for package options (HO)
 )
-\@linkdim=\dimen165
-\Hy@linkcounter=\count140
-\Hy@pagecounter=\count141
+\@linkdim=\dimen172
+\Hy@linkcounter=\count141
+\Hy@pagecounter=\count142
 
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/pd1enc.def
 File: pd1enc.def 2012/11/06 v6.83m Hyperref: PDFDocEncoding definition (HO)
 )
-\Hy@SavedSpaceFactor=\count142
+\Hy@SavedSpaceFactor=\count143
 
 (/usr/share/texlive/texmf-dist/tex/latex/latexconfig/hyperref.cfg
 File: hyperref.cfg 2002/06/06 v1.2 hyperref configuration of TeXLive
@@ -956,17 +975,17 @@ Package hyperref Info: Plain pages OFF on input line 4458.
 Package hyperref Info: Backreferencing OFF on input line 4463.
 Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
 Package hyperref Info: Bookmarks ON on input line 4688.
-\c@Hy@tempcnt=\count143
+\c@Hy@tempcnt=\count144
 
 (/usr/share/texlive/texmf-dist/tex/latex/url/url.sty
 \Urlmuskip=\muskip11
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
 LaTeX Info: Redefining \url on input line 5041.
-\XeTeXLinkMargin=\dimen166
-\Fld@menulength=\count144
-\Field@Width=\dimen167
-\Fld@charsize=\dimen168
+\XeTeXLinkMargin=\dimen173
+\Fld@menulength=\count145
+\Field@Width=\dimen174
+\Fld@charsize=\dimen175
 Package hyperref Info: Hyper figures OFF on input line 6295.
 Package hyperref Info: Link nesting OFF on input line 6300.
 Package hyperref Info: Hyper index ON on input line 6303.
@@ -976,17 +995,17 @@ Package hyperref Info: Link coloring with OCG OFF on input line 6320.
 Package hyperref Info: PDF/A mode OFF on input line 6325.
 LaTeX Info: Redefining \ref on input line 6365.
 LaTeX Info: Redefining \pageref on input line 6369.
-\Hy@abspage=\count145
-\c@Item=\count146
-\c@Hfootnote=\count147
+\Hy@abspage=\count146
+\c@Item=\count147
+\c@Hfootnote=\count148
 )
 
 Package hyperref Message: Driver (autodetected): hpdftex.
 
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/hpdftex.def
 File: hpdftex.def 2012/11/06 v6.83m Hyperref driver for pdfTeX
-\Fld@listcount=\count148
-\c@bookmark@seq@number=\count149
+\Fld@listcount=\count149
+\c@bookmark@seq@number=\count150
 
 (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/rerunfilecheck.sty
 Package: rerunfilecheck 2011/04/15 v1.7 Rerun checks for auxiliary files (HO)
@@ -999,8 +1018,8 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 (/usr/share/texlive/texmf-dist/tex/latex/pgf/utilities/pgfrcs.sty
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfutil-common.tex
 \pgfutil@everybye=\toks28
-\pgfutil@tempdima=\dimen169
-\pgfutil@tempdimb=\dimen170
+\pgfutil@tempdima=\dimen176
+\pgfutil@tempdimb=\dimen177
 
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfutil-common-lists.t
 ex)) (/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfutil-latex.def
@@ -1023,22 +1042,22 @@ ex
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathcalc.code.tex
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathutil.code.tex
-\pgf@x=\dimen171
-\pgf@xa=\dimen172
-\pgf@xb=\dimen173
-\pgf@xc=\dimen174
-\pgf@y=\dimen175
-\pgf@ya=\dimen176
-\pgf@yb=\dimen177
-\pgf@yc=\dimen178
-\c@pgf@counta=\count150
-\c@pgf@countb=\count151
-\c@pgf@countc=\count152
-\c@pgf@countd=\count153
+\pgf@x=\dimen178
+\pgf@xa=\dimen179
+\pgf@xb=\dimen180
+\pgf@xc=\dimen181
+\pgf@y=\dimen182
+\pgf@ya=\dimen183
+\pgf@yb=\dimen184
+\pgf@yc=\dimen185
+\c@pgf@counta=\count151
+\c@pgf@countb=\count152
+\c@pgf@countc=\count153
+\c@pgf@countd=\count154
 )
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathparser.code.tex
-\pgfmath@dimen=\dimen179
-\pgfmath@count=\count154
+\pgfmath@dimen=\dimen186
+\pgfmath@count=\count155
 \pgfmath@box=\box64
 \pgfmath@toks=\toks32
 \pgfmath@stack@operand=\toks33
@@ -1062,14 +1081,14 @@ tex)
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.integerari
 thmetics.code.tex)))
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfloat.code.tex
-\c@pgfmathroundto@lastzeros=\count155
+\c@pgfmathroundto@lastzeros=\count156
 )))
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgffor.code.tex
 Package: pgffor 2013/12/13 v3.0.1a (rcs-revision 1.25)
 
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex)
-\pgffor@iter=\dimen180
-\pgffor@skip=\dimen181
+\pgffor@iter=\dimen187
+\pgffor@skip=\dimen188
 \pgffor@stack=\toks35
 \pgffor@toks=\toks36
 ))
@@ -1085,65 +1104,68 @@ Class scrartcl Warning: Usage of package `parskip' together
 Package: parskip 2001/04/09 non-zero parskip adjustments
 )
 Package hyperref Info: Option `colorlinks' set `true' on input line 27.
-\c@countitems=\count156
-\c@bonuscountitems=\count157
-\c@nextitemizecount=\count158
-\c@bonusnextitemizecount=\count159
-\c@totalPoints=\count160
-\c@totalPoints@totc=\count161
-\c@bonusPoints=\count162
-\c@bonusPoints@totc=\count163
+\c@countitems=\count157
+\c@bonuscountitems=\count158
+\c@nextitemizecount=\count159
+\c@bonusnextitemizecount=\count160
+\c@totalPoints=\count161
+\c@totalPoints@totc=\count162
+\c@bonusPoints=\count163
+\c@bonusPoints@totc=\count164
+)
+(/usr/share/texlive/texmf-dist/tex/latex/listings/lstlang1.sty
+File: lstlang1.sty 2015/06/04 1.6 listings language file
 ) (./homework.aux)
 \openout1 = `homework.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 59.
-LaTeX Font Info:    ... okay on input line 59.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 59.
-LaTeX Font Info:    ... okay on input line 59.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 59.
-LaTeX Font Info:    ... okay on input line 59.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 59.
-LaTeX Font Info:    ... okay on input line 59.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 59.
-LaTeX Font Info:    ... okay on input line 59.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 59.
-LaTeX Font Info:    ... okay on input line 59.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 59.
-LaTeX Font Info:    ... okay on input line 59.
-LaTeX Font Info:    Checking defaults for MDA/cmr/m/n on input line 59.
-LaTeX Font Info:    Try loading font information for MDA+cmr on input line 59.
-(/usr/share/texlive/texmf-dist/tex/latex/mathdesign/mdacmr.fd
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 94.
+LaTeX Font Info:    ... okay on input line 94.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 94.
+LaTeX Font Info:    ... okay on input line 94.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 94.
+LaTeX Font Info:    ... okay on input line 94.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 94.
+LaTeX Font Info:    ... okay on input line 94.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 94.
+LaTeX Font Info:    ... okay on input line 94.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 94.
+LaTeX Font Info:    ... okay on input line 94.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 94.
+LaTeX Font Info:    ... okay on input line 94.
+LaTeX Font Info:    Checking defaults for MDA/cmr/m/n on input line 94.
+LaTeX Font Info:    Try loading font information for MDA+cmr on input line 94.
+ (/usr/share/texlive/texmf-dist/tex/latex/mathdesign/mdacmr.fd
 File: mdacmr.fd 
 )
-LaTeX Font Info:    ... okay on input line 59.
-LaTeX Font Info:    Checking defaults for MDB/cmr/m/n on input line 59.
-LaTeX Font Info:    Try loading font information for MDB+cmr on input line 59.
+LaTeX Font Info:    ... okay on input line 94.
+LaTeX Font Info:    Checking defaults for MDB/cmr/m/n on input line 94.
+LaTeX Font Info:    Try loading font information for MDB+cmr on input line 94.
 
 (/usr/share/texlive/texmf-dist/tex/latex/mathdesign/mdbcmr.fd
 File: mdbcmr.fd 
 )
-LaTeX Font Info:    ... okay on input line 59.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 59.
-LaTeX Font Info:    ... okay on input line 59.
-LaTeX Font Info:    Try loading font information for T1+5ch on input line 59.
-LaTeX Font Info:    No file T15ch.fd. on input line 59.
+LaTeX Font Info:    ... okay on input line 94.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 94.
+LaTeX Font Info:    ... okay on input line 94.
+LaTeX Font Info:    Try loading font information for T1+5ch on input line 94.
+LaTeX Font Info:    No file T15ch.fd. on input line 94.
 
 
 LaTeX Font Warning: Font shape `T1/5ch/m/n' undefined
-(Font)              using `T1/cmr/m/n' instead on input line 59.
+(Font)              using `T1/cmr/m/n' instead on input line 94.
 
 (/usr/share/texlive/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count164
-\scratchdimen=\dimen182
+\scratchcounter=\count165
+\scratchdimen=\dimen189
 \scratchbox=\box65
-\nofMPsegments=\count165
-\nofMParguments=\count166
+\nofMPsegments=\count166
+\nofMParguments=\count167
 \everyMPshowfont=\toks37
-\MPscratchCnt=\count167
-\MPscratchDim=\dimen183
-\MPnumerator=\count168
-\makeMPintoPDFobject=\count169
+\MPscratchCnt=\count168
+\MPscratchDim=\dimen190
+\MPnumerator=\count169
+\makeMPintoPDFobject=\count170
 \everyMPtoPDFconversion=\toks38
 ) (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
 Package: epstopdf-base 2010/02/09 v2.5 Base part for package epstopdf
@@ -1196,26 +1218,29 @@ e
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
 \TUD@part@topskip=\skip121
-\c@lstlisting=\count170
-Package hyperref Info: Link coloring ON on input line 59.
+\c@lstlisting=\count171
+Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: hyperref package is loaded.
+Package caption Info: End \AtBeginDocument code.
+Package hyperref Info: Link coloring ON on input line 94.
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
 
 (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
 Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
-\c@section@level=\count171
+\c@section@level=\count172
 LaTeX Info: Redefining \Ref on input line 513.
 )
-LaTeX Info: Redefining \ref on input line 59.
-LaTeX Info: Redefining \pageref on input line 59.
-LaTeX Info: Redefining \nameref on input line 59.
+LaTeX Info: Redefining \ref on input line 94.
+LaTeX Info: Redefining \pageref on input line 94.
+LaTeX Info: Redefining \nameref on input line 94.
 
 (./homework.out) (./homework.out)
 \@outlinefile=\write4
 \openout4 = `homework.out'.
 
-LaTeX Info: Redefining \Ref on input line 59.
+LaTeX Info: Redefining \Ref on input line 94.
  ABD: EveryShipout initializing macros
 \@TUD@tmp@baselineskip=\skip122
 \TUD@logoheight=\skip123
@@ -1225,17 +1250,17 @@ LaTeX Info: Redefining \Ref on input line 59.
 <tud_logo.pdf, id=12, 157.58875pt x 63.23625pt>
 File: tud_logo.pdf Graphic file (type pdf)
  <use tud_logo.pdf>
-Package pdftex.def Info: tud_logo.pdf used on input line 63.
+Package pdftex.def Info: tud_logo.pdf used on input line 98.
 (pdftex.def)             Requested size: 134.92238pt x 62.59605pt.
 File: tud_logo.pdf Graphic file (type pdf)
 
 <use tud_logo.pdf>
-Package pdftex.def Info: tud_logo.pdf used on input line 63.
+Package pdftex.def Info: tud_logo.pdf used on input line 98.
 (pdftex.def)             Requested size: 134.92238pt x 62.59605pt.
 \TUD@logobox=\box67
 File: tud_logo.pdf Graphic file (type pdf)
  <use tud_logo.pdf>
-Package pdftex.def Info: tud_logo.pdf used on input line 63.
+Package pdftex.def Info: tud_logo.pdf used on input line 98.
 (pdftex.def)             Requested size: 134.92238pt x 62.59605pt.
 \TUD@logoboxsep=\skip126
 \TUD@logoboxsep@tmp=\skip127
@@ -1245,109 +1270,109 @@ Package pdftex.def Info: tud_logo.pdf used on input line 63.
 \TUD@tmp@height=\skip128
 \TUD@tmp@depth=\skip129
 \@TUD@titleboxwidth=\skip130
-\@TUD@logolines=\count172
-\@TUD@logo@tmp=\dimen184
+\@TUD@logolines=\count173
+\@TUD@logo@tmp=\dimen191
 \TUD@titleskip=\skip131
-LaTeX Font Info:    Try loading font information for T1+5fp on input line 63.
-LaTeX Font Info:    No file T15fp.fd. on input line 63.
+LaTeX Font Info:    Try loading font information for T1+5fp on input line 98.
+LaTeX Font Info:    No file T15fp.fd. on input line 98.
 
 
 LaTeX Font Warning: Font shape `T1/5fp/mb/n' undefined
-(Font)              using `T1/cmr/m/n' instead on input line 63.
+(Font)              using `T1/cmr/m/n' instead on input line 98.
 
-LaTeX Font Info:    Try loading font information for OT1+mdbch on input line 63
+LaTeX Font Info:    Try loading font information for OT1+mdbch on input line 98
 .
 (/usr/share/texlive/texmf-dist/tex/latex/mathdesign/mdbch/ot1mdbch.fd
 File: ot1mdbch.fd 2013/08/29 Fontinst v1.933 font definitions for OT1/mdbch.
 )
 LaTeX Font Info:    Font shape `OT1/mdbch/m/n' will be
-(Font)              scaled to size 9.50406pt on input line 63.
+(Font)              scaled to size 9.50406pt on input line 98.
 LaTeX Font Info:    Font shape `OT1/mdbch/m/n' will be
-(Font)              scaled to size 6.62404pt on input line 63.
+(Font)              scaled to size 6.62404pt on input line 98.
 LaTeX Font Info:    Font shape `OT1/mdbch/m/n' will be
-(Font)              scaled to size 5.66403pt on input line 63.
-LaTeX Font Info:    Try loading font information for OML+mdbch on input line 63
+(Font)              scaled to size 5.66403pt on input line 98.
+LaTeX Font Info:    Try loading font information for OML+mdbch on input line 98
 .
 
 (/usr/share/texlive/texmf-dist/tex/latex/mathdesign/mdbch/omlmdbch.fd
 File: omlmdbch.fd 2013/08/29 Fontinst v1.933 font definitions for OML/mdbch.
 )
 LaTeX Font Info:    Font shape `OML/mdbch/m/it' will be
-(Font)              scaled to size 9.50406pt on input line 63.
+(Font)              scaled to size 9.50406pt on input line 98.
 LaTeX Font Info:    Font shape `OML/mdbch/m/it' will be
-(Font)              scaled to size 6.62404pt on input line 63.
+(Font)              scaled to size 6.62404pt on input line 98.
 LaTeX Font Info:    Font shape `OML/mdbch/m/it' will be
-(Font)              scaled to size 5.66403pt on input line 63.
-LaTeX Font Info:    Try loading font information for OMS+mdbch on input line 63
+(Font)              scaled to size 5.66403pt on input line 98.
+LaTeX Font Info:    Try loading font information for OMS+mdbch on input line 98
 .
 
 (/usr/share/texlive/texmf-dist/tex/latex/mathdesign/mdbch/omsmdbch.fd
 File: omsmdbch.fd 2013/08/29 Fontinst v1.933 font definitions for OMS/mdbch.
 )
 LaTeX Font Info:    Font shape `OMS/mdbch/m/n' will be
-(Font)              scaled to size 9.50406pt on input line 63.
+(Font)              scaled to size 9.50406pt on input line 98.
 LaTeX Font Info:    Font shape `OMS/mdbch/m/n' will be
-(Font)              scaled to size 6.62404pt on input line 63.
+(Font)              scaled to size 6.62404pt on input line 98.
 LaTeX Font Info:    Font shape `OMS/mdbch/m/n' will be
-(Font)              scaled to size 5.66403pt on input line 63.
-LaTeX Font Info:    Try loading font information for OMX+mdbch on input line 63
+(Font)              scaled to size 5.66403pt on input line 98.
+LaTeX Font Info:    Try loading font information for OMX+mdbch on input line 98
 .
 
 (/usr/share/texlive/texmf-dist/tex/latex/mathdesign/mdbch/omxmdbch.fd
 File: omxmdbch.fd 2013/08/29 Fontinst v1.933 font definitions for OMX/mdbch.
 )
 LaTeX Font Info:    Font shape `OMX/mdbch/m/n' will be
-(Font)              scaled to size 9.50406pt on input line 63.
+(Font)              scaled to size 9.50406pt on input line 98.
 LaTeX Font Info:    Font shape `OMX/mdbch/m/n' will be
-(Font)              scaled to size 6.62404pt on input line 63.
+(Font)              scaled to size 6.62404pt on input line 98.
 LaTeX Font Info:    Font shape `OMX/mdbch/m/n' will be
-(Font)              scaled to size 5.66403pt on input line 63.
+(Font)              scaled to size 5.66403pt on input line 98.
 LaTeX Font Info:    Font shape `OML/mdbch/m/n' will be
-(Font)              scaled to size 9.50406pt on input line 63.
+(Font)              scaled to size 9.50406pt on input line 98.
 LaTeX Font Info:    Font shape `OML/mdbch/m/n' will be
-(Font)              scaled to size 6.62404pt on input line 63.
+(Font)              scaled to size 6.62404pt on input line 98.
 LaTeX Font Info:    Font shape `OML/mdbch/m/n' will be
-(Font)              scaled to size 5.66403pt on input line 63.
-LaTeX Font Info:    Try loading font information for MDA+mdbch on input line 63
+(Font)              scaled to size 5.66403pt on input line 98.
+LaTeX Font Info:    Try loading font information for MDA+mdbch on input line 98
 .
 
 (/usr/share/texlive/texmf-dist/tex/latex/mathdesign/mdbch/mdamdbch.fd
 File: mdamdbch.fd 2013/08/29 Fontinst v1.933 font definitions for MDA/mdbch.
 )
 LaTeX Font Info:    Font shape `MDA/mdbch/m/n' will be
-(Font)              scaled to size 9.50406pt on input line 63.
+(Font)              scaled to size 9.50406pt on input line 98.
 LaTeX Font Info:    Font shape `MDA/mdbch/m/n' will be
-(Font)              scaled to size 6.62404pt on input line 63.
+(Font)              scaled to size 6.62404pt on input line 98.
 LaTeX Font Info:    Font shape `MDA/mdbch/m/n' will be
-(Font)              scaled to size 5.66403pt on input line 63.
-LaTeX Font Info:    Try loading font information for MDB+mdbch on input line 63
+(Font)              scaled to size 5.66403pt on input line 98.
+LaTeX Font Info:    Try loading font information for MDB+mdbch on input line 98
 .
 
 (/usr/share/texlive/texmf-dist/tex/latex/mathdesign/mdbch/mdbmdbch.fd
 File: mdbmdbch.fd 2013/08/29 Fontinst v1.933 font definitions for MDB/mdbch.
 )
 LaTeX Font Info:    Font shape `MDB/mdbch/m/n' will be
-(Font)              scaled to size 9.50406pt on input line 63.
+(Font)              scaled to size 9.50406pt on input line 98.
 LaTeX Font Info:    Font shape `MDB/mdbch/m/n' will be
-(Font)              scaled to size 6.62404pt on input line 63.
+(Font)              scaled to size 6.62404pt on input line 98.
 LaTeX Font Info:    Font shape `MDB/mdbch/m/n' will be
-(Font)              scaled to size 5.66403pt on input line 63.
-LaTeX Font Info:    Try loading font information for OML+mdput on input line 63
+(Font)              scaled to size 5.66403pt on input line 98.
+LaTeX Font Info:    Try loading font information for OML+mdput on input line 98
 .
 
 (/usr/share/texlive/texmf-dist/tex/latex/mathdesign/mdput/omlmdput.fd
 File: omlmdput.fd 2013/08/29 Fontinst v1.933 font definitions for OML/mdput.
 )
 LaTeX Font Info:    Font shape `OML/mdput/m/it' will be
-(Font)              scaled to size 9.30602pt on input line 63.
+(Font)              scaled to size 9.30602pt on input line 98.
 LaTeX Font Info:    Font shape `OML/mdput/m/it' will be
-(Font)              scaled to size 6.48601pt on input line 63.
+(Font)              scaled to size 6.48601pt on input line 98.
 LaTeX Font Info:    Font shape `OML/mdput/m/it' will be
-(Font)              scaled to size 5.546pt on input line 63.
+(Font)              scaled to size 5.546pt on input line 98.
 
 
 LaTeX Font Warning: Font shape `T1/5fp/m/n' undefined
-(Font)              using `T1/cmr/m/n' instead on input line 63.
+(Font)              using `T1/cmr/m/n' instead on input line 98.
 
 \TUD@titleboxheight=\skip132
 \TUD@titleboxdepth=\skip133
@@ -1360,69 +1385,69 @@ LaTeX Font Warning: Font shape `T1/5fp/m/n' undefined
 \@TUD@logobox@posy=\skip140
 
 LaTeX Font Warning: Font shape `T1/5ch/b/n' undefined
-(Font)              using `T1/5ch/m/n' instead on input line 71.
+(Font)              using `T1/5ch/m/n' instead on input line 106.
 
 (./model_learning.tex <img/spinbot.png, id=16, 565.11125pt x 378.41376pt>
 File: img/spinbot.png Graphic file (type png)
 
 <use img/spinbot.png>
-Package pdftex.def Info: img/spinbot.png used on input line 8.
+Package pdftex.def Info: img/spinbot.png used on input line 9.
 (pdftex.def)             Requested size: 248.96162pt x 166.71043pt.
-LaTeX Font Info:    Try loading font information for T1+txtt on input line 17.
+LaTeX Font Info:    Try loading font information for T1+txtt on input line 18.
 
 (/usr/share/texlive/texmf-dist/tex/latex/txfonts/t1txtt.fd
 File: t1txtt.fd 2000/12/15 v3.1
 )
 LaTeX Font Info:    Font shape `OT1/mdbch/b/n' will be
-(Font)              scaled to size 9.50406pt on input line 42.
+(Font)              scaled to size 9.50406pt on input line 43.
 LaTeX Font Info:    Font shape `OT1/mdbch/b/n' will be
-(Font)              scaled to size 6.62404pt on input line 42.
+(Font)              scaled to size 6.62404pt on input line 43.
 LaTeX Font Info:    Font shape `OT1/mdbch/b/n' will be
-(Font)              scaled to size 5.66403pt on input line 42.
+(Font)              scaled to size 5.66403pt on input line 43.
 LaTeX Font Info:    Font shape `OML/mdbch/b/it' will be
-(Font)              scaled to size 9.50406pt on input line 42.
+(Font)              scaled to size 9.50406pt on input line 43.
 LaTeX Font Info:    Font shape `OML/mdbch/b/it' will be
-(Font)              scaled to size 6.62404pt on input line 42.
+(Font)              scaled to size 6.62404pt on input line 43.
 LaTeX Font Info:    Font shape `OML/mdbch/b/it' will be
-(Font)              scaled to size 5.66403pt on input line 42.
+(Font)              scaled to size 5.66403pt on input line 43.
 LaTeX Font Info:    Font shape `OMS/mdbch/b/n' will be
-(Font)              scaled to size 9.50406pt on input line 42.
+(Font)              scaled to size 9.50406pt on input line 43.
 LaTeX Font Info:    Font shape `OMS/mdbch/b/n' will be
-(Font)              scaled to size 6.62404pt on input line 42.
+(Font)              scaled to size 6.62404pt on input line 43.
 LaTeX Font Info:    Font shape `OMS/mdbch/b/n' will be
-(Font)              scaled to size 5.66403pt on input line 42.
+(Font)              scaled to size 5.66403pt on input line 43.
 LaTeX Font Info:    Font shape `OMX/mdbch/b/n' will be
-(Font)              scaled to size 9.50406pt on input line 42.
+(Font)              scaled to size 9.50406pt on input line 43.
 LaTeX Font Info:    Font shape `OMX/mdbch/b/n' will be
-(Font)              scaled to size 6.62404pt on input line 42.
+(Font)              scaled to size 6.62404pt on input line 43.
 LaTeX Font Info:    Font shape `OMX/mdbch/b/n' will be
-(Font)              scaled to size 5.66403pt on input line 42.
+(Font)              scaled to size 5.66403pt on input line 43.
 LaTeX Font Info:    Font shape `OML/mdbch/b/n' will be
-(Font)              scaled to size 9.50406pt on input line 42.
+(Font)              scaled to size 9.50406pt on input line 43.
 LaTeX Font Info:    Font shape `OML/mdbch/b/n' will be
-(Font)              scaled to size 6.62404pt on input line 42.
+(Font)              scaled to size 6.62404pt on input line 43.
 LaTeX Font Info:    Font shape `OML/mdbch/b/n' will be
-(Font)              scaled to size 5.66403pt on input line 42.
+(Font)              scaled to size 5.66403pt on input line 43.
 LaTeX Font Info:    Font shape `MDA/mdbch/b/n' will be
-(Font)              scaled to size 9.50406pt on input line 42.
+(Font)              scaled to size 9.50406pt on input line 43.
 LaTeX Font Info:    Font shape `MDA/mdbch/b/n' will be
-(Font)              scaled to size 6.62404pt on input line 42.
+(Font)              scaled to size 6.62404pt on input line 43.
 LaTeX Font Info:    Font shape `MDA/mdbch/b/n' will be
-(Font)              scaled to size 5.66403pt on input line 42.
+(Font)              scaled to size 5.66403pt on input line 43.
 LaTeX Font Info:    Font shape `MDB/mdbch/b/n' will be
-(Font)              scaled to size 9.50406pt on input line 42.
+(Font)              scaled to size 9.50406pt on input line 43.
 LaTeX Font Info:    Font shape `MDB/mdbch/b/n' will be
-(Font)              scaled to size 6.62404pt on input line 42.
+(Font)              scaled to size 6.62404pt on input line 43.
 LaTeX Font Info:    Font shape `MDB/mdbch/b/n' will be
-(Font)              scaled to size 5.66403pt on input line 42.
+(Font)              scaled to size 5.66403pt on input line 43.
 LaTeX Font Info:    Font shape `T1/cmss/m/n' will be
-(Font)              scaled to size 10.39001pt on input line 42.
+(Font)              scaled to size 10.39001pt on input line 43.
 LaTeX Font Info:    Font shape `T1/cmss/m/n' will be
-(Font)              scaled to size 7.27301pt on input line 42.
+(Font)              scaled to size 7.27301pt on input line 43.
 LaTeX Font Info:    Font shape `T1/cmss/m/n' will be
-(Font)              scaled to size 6.23401pt on input line 42.
+(Font)              scaled to size 6.23401pt on input line 43.
 
-Underfull \hbox (badness 10000) in paragraph at lines 68--68
+Underfull \hbox (badness 10000) in paragraph at lines 69--69
 
  []
 
@@ -1433,206 +1458,528 @@ Non-PDF special ignored!
 
 Non-PDF special ignored!{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} </h
 ome/markus/texmf/tex/latex/tuddesign/logo/tud_logo.pdf> <./img/spinbot.png>]
-\height=\dimen185
+\height=\dimen192
 
 
 LaTeX Font Warning: Font shape `T1/5ch/m/it' undefined
-(Font)              using `T1/5ch/m/n' instead on input line 68.
+(Font)              using `T1/5ch/m/n' instead on input line 69.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 83--83
-
- []
-
-\height=\dimen186
-
-Underfull \hbox (badness 10000) in paragraph at lines 123--123
-
- []
-
-\height=\dimen187
-[2]
-Underfull \hbox (badness 10000) in paragraph at lines 151--151
-
- []
-
-\height=\dimen188
-
-Underfull \hbox (badness 10000) in paragraph at lines 162--162
-
- []
-
-\height=\dimen189
-
-Underfull \hbox (badness 10000) in paragraph at lines 195--195
-
- []
-
-[3]
-\height=\dimen190
- <img/1f-g_wrong.png, id=53, 433.62pt x 289.08pt>
-File: img/1f-g_wrong.png Graphic file (type png)
- <use img/1f-g_wrong.png>
-Package pdftex.def Info: img/1f-g_wrong.png used on input line 195.
-(pdftex.def)             Requested size: 248.96162pt x 165.9771pt.
-
-<img/1f-g_correct.png, id=55, 433.62pt x 289.08pt>
-File: img/1f-g_correct.png Graphic file (type png)
- <use img/1f-g_correct.png>
-Package pdftex.def Info: img/1f-g_correct.png used on input line 195.
-(pdftex.def)             Requested size: 248.96162pt x 165.9771pt.
-
-Overfull \hbox (27.06691pt too wide) in paragraph at lines 195--195
-[]$[]$  $[]$
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 195--195
-
- []
-
-File: img/1f-g_wrong.png Graphic file (type png)
-<use img/1f-g_wrong.png>
-Package pdftex.def Info: img/1f-g_wrong.png used on input line 195.
-(pdftex.def)             Requested size: 248.96162pt x 165.9771pt.
-File: img/1f-g_correct.png Graphic file (type png)
- <use img/1f-g_correct.png>
-Package pdftex.def Info: img/1f-g_correct.png used on input line 195.
-(pdftex.def)             Requested size: 248.96162pt x 165.9771pt.
-
-Overfull \hbox (29.54428pt too wide) in paragraph at lines 195--195
-[]$[]$  $[]$
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 195--195
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 202--202
-
- []
-
-\height=\dimen191
-
-Underfull \hbox (badness 10000) in paragraph at lines 218--218
-[]\T1/5ch/m/it/9.5 Multi-Step Pre-dic-tion
- []
-
-
-Overfull \hbox (18.21852pt too wide) in paragraph at lines 218--218
-[][] 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 218--218
-[]\T1/5ch/m/it/9.5 Multi-Step Pre-dic-tion
- []
-
-
-Overfull \hbox (20.69589pt too wide) in paragraph at lines 218--218
-[][] 
- []
-
-) (./trajectory_generation.tex [4 <./img/1f-g_wrong.png> <./img/1f-g_correct.pn
-g>]
-Underfull \hbox (badness 10000) in paragraph at lines 51--51
-
- []
-
-\height=\dimen192
-
-Underfull \hbox (badness 10000) in paragraph at lines 68--68
+Underfull \hbox (badness 10000) in paragraph at lines 84--84
 
  []
 
 \height=\dimen193
 
-Underfull \hbox (badness 10000) in paragraph at lines 79--79
+Underfull \hbox (badness 10000) in paragraph at lines 124--124
 
  []
 
 \height=\dimen194
-[5]
-Underfull \hbox (badness 10000) in paragraph at lines 92--92
+[2]
+Underfull \hbox (badness 10000) in paragraph at lines 152--152
 
  []
 
 \height=\dimen195
 
-Underfull \hbox (badness 10000) in paragraph at lines 102--102
+Underfull \hbox (badness 10000) in paragraph at lines 163--163
 
  []
 
 \height=\dimen196
 
-Underfull \hbox (badness 10000) in paragraph at lines 113--113
+Underfull \hbox (badness 10000) in paragraph at lines 197--197
 
  []
 
+[3]
 \height=\dimen197
+ <img/1f-g_wrong.png, id=53, 433.62pt x 289.08pt>
+File: img/1f-g_wrong.png Graphic file (type png)
+ <use img/1f-g_wrong.png>
+Package pdftex.def Info: img/1f-g_wrong.png used on input line 197.
+(pdftex.def)             Requested size: 497.92325pt x 331.96742pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 122--122
+
+Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 197.
+See the caption package documentation for explanation.
+
+
+Overfull \hbox (24.89769pt too wide) in paragraph at lines 197--197
+[]$[]$
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 197--197
+
+ []
+
+File: img/1f-g_wrong.png Graphic file (type png)
+<use img/1f-g_wrong.png>
+Package pdftex.def Info: img/1f-g_wrong.png used on input line 197.
+(pdftex.def)             Requested size: 497.92325pt x 331.96742pt.
+
+
+Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 197.
+See the caption package documentation for explanation.
+
+
+Overfull \hbox (27.37506pt too wide) in paragraph at lines 197--197
+[]$[]$
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 197--197
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 204--204
 
  []
 
 \height=\dimen198
 
-Underfull \hbox (badness 10000) in paragraph at lines 131--131
+Underfull \hbox (badness 10000) in paragraph at lines 220--220
+[]\T1/5ch/m/it/9.5 Multi-Step Pre-dic-tion
+ []
+
+
+Overfull \hbox (18.21852pt too wide) in paragraph at lines 220--220
+[][] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 220--220
+[]\T1/5ch/m/it/9.5 Multi-Step Pre-dic-tion
+ []
+
+
+Overfull \hbox (20.69589pt too wide) in paragraph at lines 220--220
+[][] 
+ []
+
+[4 <./img/1f-g_wrong.png>]) (./trajectory_generation.tex
+Underfull \hbox (badness 10000) in paragraph at lines 51--51
 
  []
 
 \height=\dimen199
-
-Underfull \hbox (badness 10000) in paragraph at lines 144--144
+[5]
+Underfull \hbox (badness 10000) in paragraph at lines 72--72
 
  []
 
 \height=\dimen256
-[6]) [7]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 77.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 77.
+
+Underfull \hbox (badness 10000) in paragraph at lines 116--116
+
+ []
+
+\height=\dimen257
+(./code/dmpTrain.py
+LaTeX Font Info:    Try loading font information for TS1+5ch on input line 5.
+LaTeX Font Info:    No file TS15ch.fd. on input line 5.
+
+
+LaTeX Font Warning: Font shape `TS1/5ch/m/it' undefined
+(Font)              using `TS1/cmr/m/n' instead
+(Font)              for symbol `textasteriskcentered' on input line 5.
+
+LaTeX Font Info:    Font shape `OT1/mdbch/m/n' will be
+(Font)              scaled to size 7.87204pt on input line 5.
+LaTeX Font Info:    Font shape `OT1/mdbch/m/n' will be
+(Font)              scaled to size 5.56804pt on input line 5.
+LaTeX Font Info:    Font shape `OT1/mdbch/m/n' will be
+(Font)              scaled to size 4.70403pt on input line 5.
+LaTeX Font Info:    Font shape `OML/mdbch/m/it' will be
+(Font)              scaled to size 7.87204pt on input line 5.
+LaTeX Font Info:    Font shape `OML/mdbch/m/it' will be
+(Font)              scaled to size 5.56804pt on input line 5.
+LaTeX Font Info:    Font shape `OML/mdbch/m/it' will be
+(Font)              scaled to size 4.70403pt on input line 5.
+LaTeX Font Info:    Font shape `OMS/mdbch/m/n' will be
+(Font)              scaled to size 7.87204pt on input line 5.
+LaTeX Font Info:    Font shape `OMS/mdbch/m/n' will be
+(Font)              scaled to size 5.56804pt on input line 5.
+LaTeX Font Info:    Font shape `OMS/mdbch/m/n' will be
+(Font)              scaled to size 4.70403pt on input line 5.
+LaTeX Font Info:    Font shape `OMX/mdbch/m/n' will be
+(Font)              scaled to size 7.87204pt on input line 5.
+LaTeX Font Info:    Font shape `OMX/mdbch/m/n' will be
+(Font)              scaled to size 5.56804pt on input line 5.
+LaTeX Font Info:    Font shape `OMX/mdbch/m/n' will be
+(Font)              scaled to size 4.70403pt on input line 5.
+LaTeX Font Info:    Font shape `T1/cmss/m/n' will be
+(Font)              scaled to size 8.31201pt on input line 5.
+LaTeX Font Info:    Font shape `T1/cmss/m/n' will be
+(Font)              scaled to size 6.23401pt on input line 5.
+LaTeX Font Info:    Font shape `T1/cmss/m/n' will be
+(Font)              scaled to size 5.195pt on input line 5.
+LaTeX Font Info:    Font shape `OML/mdbch/m/n' will be
+(Font)              scaled to size 7.87204pt on input line 5.
+LaTeX Font Info:    Font shape `OML/mdbch/m/n' will be
+(Font)              scaled to size 5.56804pt on input line 5.
+LaTeX Font Info:    Font shape `OML/mdbch/m/n' will be
+(Font)              scaled to size 4.70403pt on input line 5.
+LaTeX Font Info:    Font shape `MDA/mdbch/m/n' will be
+(Font)              scaled to size 7.87204pt on input line 5.
+LaTeX Font Info:    Font shape `MDA/mdbch/m/n' will be
+(Font)              scaled to size 5.56804pt on input line 5.
+LaTeX Font Info:    Font shape `MDA/mdbch/m/n' will be
+(Font)              scaled to size 4.70403pt on input line 5.
+LaTeX Font Info:    Font shape `MDB/mdbch/m/n' will be
+(Font)              scaled to size 7.87204pt on input line 5.
+LaTeX Font Info:    Font shape `MDB/mdbch/m/n' will be
+(Font)              scaled to size 5.56804pt on input line 5.
+LaTeX Font Info:    Font shape `MDB/mdbch/m/n' will be
+(Font)              scaled to size 4.70403pt on input line 5.
+LaTeX Font Info:    Font shape `OML/mdput/m/it' will be
+(Font)              scaled to size 7.70801pt on input line 5.
+LaTeX Font Info:    Font shape `OML/mdput/m/it' will be
+(Font)              scaled to size 5.45201pt on input line 5.
+LaTeX Font Info:    Font shape `OML/mdput/m/it' will be
+(Font)              scaled to size 4.606pt on input line 5.
+) (./code/dmpCtl.py) <img/2c-q1.png, id=70, 462.528pt x 344.0052pt>
+File: img/2c-q1.png Graphic file (type png)
+
+<use img/2c-q1.png>
+Package pdftex.def Info: img/2c-q1.png used on input line 116.
+(pdftex.def)             Requested size: 211.74524pt x 157.48843pt.
+
+
+Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 116.
+See the caption package documentation for explanation.
+
+<img/2c-q2.png, id=71, 462.528pt x 344.0052pt>
+File: img/2c-q2.png Graphic file (type png)
+ <use img/2c-q2.png>
+Package pdftex.def Info: img/2c-q2.png used on input line 116.
+(pdftex.def)             Requested size: 211.74524pt x 157.48843pt.
+
+
+Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 116.
+See the caption package documentation for explanation.
+
+[6] (./code/dmpTrain.py) (./code/dmpCtl.py)
+File: img/2c-q1.png Graphic file (type png)
+ <use img/2c-q1.png>
+Package pdftex.def Info: img/2c-q1.png used on input line 116.
+(pdftex.def)             Requested size: 211.74524pt x 157.48843pt.
+
+
+Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 116.
+See the caption package documentation for explanation.
+
+File: img/2c-q2.png Graphic file (type png)
+<use img/2c-q2.png>
+Package pdftex.def Info: img/2c-q2.png used on input line 116.
+(pdftex.def)             Requested size: 211.74524pt x 157.48843pt.
+
+
+Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 116.
+See the caption package documentation for explanation.
+
+[7]
+Underfull \hbox (badness 10000) in paragraph at lines 147--147
+
+ []
+
+\height=\dimen258
+<img/2d-q1.png, id=129, 462.528pt x 344.0052pt>
+File: img/2d-q1.png Graphic file (type png)
+ <use img/2d-q1.png>
+Package pdftex.def Info: img/2d-q1.png used on input line 147.
+(pdftex.def)             Requested size: 211.74524pt x 157.48843pt.
+
+
+Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 147.
+See the caption package documentation for explanation.
+
+<img/2d-q2.png, id=130, 462.528pt x 344.0052pt>
+File: img/2d-q2.png Graphic file (type png)
+ <use img/2d-q2.png>
+Package pdftex.def Info: img/2d-q2.png used on input line 147.
+(pdftex.def)             Requested size: 211.74524pt x 157.48843pt.
+
+
+Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 147.
+See the caption package documentation for explanation.
+
+File: img/2d-q1.png Graphic file (type png)
+<use img/2d-q1.png>
+Package pdftex.def Info: img/2d-q1.png used on input line 147.
+(pdftex.def)             Requested size: 211.74524pt x 157.48843pt.
+
+
+Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 147.
+See the caption package documentation for explanation.
+
+File: img/2d-q2.png Graphic file (type png)
+<use img/2d-q2.png>
+Package pdftex.def Info: img/2d-q2.png used on input line 147.
+(pdftex.def)             Requested size: 211.74524pt x 157.48843pt.
+
+
+Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 147.
+See the caption package documentation for explanation.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 147--147
+[][][]|[]$\OML/mdbch/m/it/9.9 q[]$ \T1/5ch/m/it/9.5 with goal po-si-tion $\OML/
+mdbch/m/it/9.9 q[] \OT1/mdbch/m/n/9.9 =
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 176--176
+
+ []
+
+\height=\dimen259
+<img/2f-q1.png, id=135, 462.528pt x 344.0052pt>
+File: img/2f-q1.png Graphic file (type png)
+ <use img/2f-q1.png>
+Package pdftex.def Info: img/2f-q1.png used on input line 176.
+(pdftex.def)             Requested size: 211.74524pt x 157.48843pt.
+
+
+Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 176.
+See the caption package documentation for explanation.
+
+<img/2f-q2.png, id=136, 462.528pt x 344.0052pt>
+File: img/2f-q2.png Graphic file (type png)
+ <use img/2f-q2.png>
+Package pdftex.def Info: img/2f-q2.png used on input line 176.
+(pdftex.def)             Requested size: 211.74524pt x 157.48843pt.
+
+
+Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 176.
+See the caption package documentation for explanation.
+
+[8 <./img/2c-q1.png> <./img/2c-q2.png> <./img/2d-q1.png> <./img/2d-q2.png>]
+File: img/2f-q1.png Graphic file (type png)
+
+<use img/2f-q1.png>
+Package pdftex.def Info: img/2f-q1.png used on input line 176.
+(pdftex.def)             Requested size: 211.74524pt x 157.48843pt.
+
+
+Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 176.
+See the caption package documentation for explanation.
+
+File: img/2f-q2.png Graphic file (type png)
+<use img/2f-q2.png>
+Package pdftex.def Info: img/2f-q2.png used on input line 176.
+(pdftex.def)             Requested size: 211.74524pt x 157.48843pt.
+
+
+Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 176.
+See the caption package documentation for explanation.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 196--196
+
+ []
+
+\height=\dimen260
+<img/2f.png, id=152, 462.528pt x 344.0052pt>
+File: img/2f.png Graphic file (type png)
+ <use img/2f.png>
+Package pdftex.def Info: img/2f.png used on input line 196.
+(pdftex.def)             Requested size: 282.33177pt x 209.99507pt.
+
+
+Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 196.
+See the caption package documentation for explanation.
+
+(./code/getProMPBasis.py)
+File: img/2f.png Graphic file (type png)
+ <use img/2f.png>
+Package pdftex.def Info: img/2f.png used on input line 196.
+(pdftex.def)             Requested size: 282.33177pt x 209.99507pt.
+
+
+Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 196.
+See the caption package documentation for explanation.
+
+(./code/getProMPBasis.py [9 <./img/2f-q1.png> <./img/2f-q2.png> <./img/2f.png>]
+)
+Underfull \hbox (badness 10000) in paragraph at lines 213--213
+
+ []
+
+\height=\dimen261
+<img/2g.png, id=166, 462.528pt x 344.0052pt>
+File: img/2g.png Graphic file (type png)
+ <use img/2g.png>
+Package pdftex.def Info: img/2g.png used on input line 213.
+(pdftex.def)             Requested size: 329.3823pt x 244.99075pt.
+
+
+Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 213.
+See the caption package documentation for explanation.
+
+(./code/proMP_h.py)
+File: img/2g.png Graphic file (type png)
+ <use img/2g.png>
+Package pdftex.def Info: img/2g.png used on input line 213.
+(pdftex.def)             Requested size: 329.3823pt x 244.99075pt.
+
+
+Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 213.
+See the caption package documentation for explanation.
+
+(./code/proMP_h.py [10 <./img/2g.png>])
+Underfull \hbox (badness 10000) in paragraph at lines 238--238
+
+ []
+
+\height=\dimen262
+<img/2h_10.png, id=197, 462.528pt x 344.0052pt>
+File: img/2h_10.png Graphic file (type png)
+ <use img/2h_10.png>
+Package pdftex.def Info: img/2h_10.png used on input line 238.
+(pdftex.def)             Requested size: 230.57118pt x 171.48776pt.
+
+
+Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 238.
+See the caption package documentation for explanation.
+
+<img/2h_20.png, id=198, 462.528pt x 344.0052pt>
+File: img/2h_20.png Graphic file (type png)
+ <use img/2h_20.png>
+Package pdftex.def Info: img/2h_20.png used on input line 238.
+(pdftex.def)             Requested size: 230.57118pt x 171.48776pt.
+
+
+Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 238.
+See the caption package documentation for explanation.
+
+
+Underfull \hbox (badness 2096) in paragraph at lines 238--238
+[][][]|[]\T1/5ch/m/it/9.5 ProMp with 20 ba-sis func-tions: This
+ []
+
+File: img/2h_10.png Graphic file (type png)
+<use img/2h_10.png>
+Package pdftex.def Info: img/2h_10.png used on input line 238.
+(pdftex.def)             Requested size: 230.57118pt x 171.48776pt.
+
+
+Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 238.
+See the caption package documentation for explanation.
+
+File: img/2h_20.png Graphic file (type png)
+<use img/2h_20.png>
+Package pdftex.def Info: img/2h_20.png used on input line 238.
+(pdftex.def)             Requested size: 230.57118pt x 171.48776pt.
+
+
+Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 238.
+See the caption package documentation for explanation.
+
+
+Underfull \hbox (badness 2096) in paragraph at lines 238--238
+[][][]|[]\T1/5ch/m/it/9.5 ProMp with 20 ba-sis func-tions: This
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 261--261
+
+ []
+
+\height=\dimen263
+<img/2i.png, id=199, 462.528pt x 344.0052pt>
+File: img/2i.png Graphic file (type png)
+ <use img/2i.png>
+Package pdftex.def Info: img/2i.png used on input line 261.
+(pdftex.def)             Requested size: 329.3823pt x 244.99075pt.
+
+
+Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 261.
+See the caption package documentation for explanation.
+
+(./code/proMP_i.py)
+File: img/2i.png Graphic file (type png)
+ <use img/2i.png>
+Package pdftex.def Info: img/2i.png used on input line 261.
+(pdftex.def)             Requested size: 329.3823pt x 244.99075pt.
+
+
+Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 261.
+See the caption package documentation for explanation.
+
+[11 <./img/2h_10.png> <./img/2h_20.png>] (./code/proMP_i.py)) [12 <./img/2i.png
+>]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 112.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 112.
  (./homework.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 77.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 77.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 112.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 112.
 Package rerunfilecheck Info: File `homework.out' has not changed.
 (rerunfilecheck)             Checksum: 71ED9B79C19DC7BD2835514A6982314C;185.
 
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 77.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 112.
  ) 
 Here is how much of TeX's memory you used:
- 20080 strings out of 494428
- 336979 string characters out of 6169213
- 472290 words of memory out of 5000000
- 23018 multiletter control sequences out of 15000+600000
- 49022 words of font info for 98 fonts, out of 8000000 for 9000
+ 21842 strings out of 494428
+ 363865 string characters out of 6169213
+ 784521 words of memory out of 5000000
+ 24623 multiletter control sequences out of 15000+600000
+ 65109 words of font info for 129 fonts, out of 8000000 for 9000
  264 hyphenation exceptions out of 8191
- 59i,14n,75p,533b,501s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-t1.enc}{/usr/share/texliv
-e/texmf-dist/fonts/enc/dvips/ly1/texnansi.enc}</usr/share/texlive/texmf-dist/fo
-nts/type1/bitstrea/charter/bchbi8a.pfb></usr/share/texlive/texmf-dist/fonts/typ
-e1/bitstrea/charter/bchr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/bitst
-rea/charter/bchri8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/mathd
-esign/mdbch/md-chb7m.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/math
-design/mdbch/md-chbi7m.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/ma
-thdesign/mdbch/md-chr7m.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/m
-athdesign/mdbch/md-chr7t.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/
-mathdesign/mdbch/md-chr7v.pfb></usr/share/texlive/texmf-dist/fonts/type1/public
-/mathdesign/mdbch/md-chr7y.pfb></usr/share/texlive/texmf-dist/fonts/type1/publi
-c/mathdesign/mdbch/md-chri7m.pfb></usr/share/texmf/fonts/type1/public/cm-super/
-sfrm0600.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm0900.pfb></usr/s
-hare/texmf/fonts/type1/public/cm-super/sfrm1000.pfb></usr/share/texmf/fonts/typ
-e1/public/cm-super/sfrm1728.pfb></usr/share/texmf/fonts/type1/public/cm-super/s
-fss0600.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/txfonts/t1xtt.pfb
->
-Output written on homework.pdf (7 pages, 285616 bytes).
+ 59i,14n,100p,658b,2009s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-t1.enc}{/usr/share/texmf/
+fonts/enc/dvips/cm-super/cm-super-ts1.enc}{/usr/share/texlive/texmf-dist/fonts/
+enc/dvips/ly1/texnansi.enc}</usr/share/texlive/texmf-dist/fonts/type1/bitstrea/
+charter/bchbi8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/bitstrea/charter
+/bchr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/bitstrea/charter/bchri8a
+.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/mathdesign/mdbch/md-chb7
+m.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/mathdesign/mdbch/md-chb
+i7m.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/mathdesign/mdbch/md-c
+hr7m.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/mathdesign/mdbch/md-
+chr7t.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/mathdesign/mdbch/md
+-chr7v.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/mathdesign/mdbch/m
+d-chr7y.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/mathdesign/mdbch/
+md-chri7m.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm0500.pfb></usr/
+share/texmf/fonts/type1/public/cm-super/sfrm0600.pfb></usr/share/texmf/fonts/ty
+pe1/public/cm-super/sfrm0700.pfb></usr/share/texmf/fonts/type1/public/cm-super/
+sfrm0900.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1000.pfb></usr/s
+hare/texmf/fonts/type1/public/cm-super/sfrm1728.pfb></usr/share/texmf/fonts/typ
+e1/public/cm-super/sfss0600.pfb></usr/share/texlive/texmf-dist/fonts/type1/publ
+ic/txfonts/t1xtt.pfb>
+Output written on homework.pdf (12 pages, 1141797 bytes).
 PDF statistics:
- 158 PDF objects out of 1000 (max. 8388607)
- 122 compressed objects within 2 object streams
- 31 named destinations out of 1000 (max. 500000)
- 55 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 344 PDF objects out of 1000 (max. 8388607)
+ 272 compressed objects within 3 object streams
+ 133 named destinations out of 1000 (max. 500000)
+ 105 words of extra memory for PDF output out of 10000 (max. 10000000)
 

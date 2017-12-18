@@ -75,9 +75,9 @@ What kind of machine learning problem is learning an inverse dynamics model? Wha
 Which standard assumption has been violated by taking the data from trajectories?
 
 \begin{answer}
-	TODO:
-	Es wird nur eine spezielle traj. gelernt nicht generalisierbar?
+	The data of the trajectories should be Independent and identically distributed(IID). 
 
+	A collection of random variables is IID if each random variable has the same probability distribution as the others and all are mutually independent.
 
 	\end{answer}
 
@@ -171,27 +171,26 @@ Plot the forces and torques predicted by your model over time, as well as those 
 \begin{answer}
 
 
-\begin{minipage}{0.5\textwidth}
+\begin{minipage}{1\textwidth}
 	\begin{center}
 		\includegraphics[width=1\textwidth]{img/1f-g_wrong.png} 
 		\captionof{figure}{Predicted values for u}
 	\end{center}
 \end{minipage} \hfill
-\begin{minipage}{0.5\textwidth}
-	\begin{center}
-		\includegraphics[width=1\textwidth]{img/1f-g_correct.png} 
-		\captionof{figure}{DAS WOLLTEN WIR LOESCHEN, ODER?}
-	\end{center}
-\end{minipage} \hfill
 
-	The Model accuracy is especially for the torque $q_2$ not acceptable (see left figure above).
+	The Model accuracy is especially for the torque $u_2$ not acceptable (see middle figure above). The reason therefore is that the mass $m_1$ is obviously wrong. That is why the trajectory of the torque $u_2$ is overestimated. 
 	
-	Improve model by using 9.81 for g: Effect almost not visible.
+	Model Improvement:
+	The model could be improved, by assuming g to be 9.81. Next the masses can be predicted again using: 
 	
-	TODO:
-	Nochmal neu machen mit neu gelerntem Model fuer g\_neu.
+		$\underset{3\times 1}{y_1}= \phi^T \theta=  \underset{3\times 2} {\begin{bmatrix}
+			\ddot{q_1}+g&0\\0&2\dot{q_3}\dot{q_2}q_3+q_3^2\ddot{q_2}\\0&\ddot{q_3}-q_3 \dot{q_2}^2
+			\end{bmatrix}}
+	\underset{2\times 1}{\begin{bmatrix}
+			m_1 +m_2\\m_2
+		\end{bmatrix}}$
 	
-	use different trajectories and cross validation?! 
+	Another method may be to use many different trajectories and predict the parameters for each trajectory. Next the optimal parameters can be derived by calculating the rmse of each trajectory and the one which has the min. rmse should give the best prediction for the parameters (m1,m2,g).
 	
 \end{answer}
 
