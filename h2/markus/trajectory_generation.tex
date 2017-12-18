@@ -198,9 +198,17 @@ Do not forget to normalize the basis such at every time-point they sum-up to one
 %----------------------------------------------
 
 \begin{question}[bonus]{Probabilistic Movement Primitives - Training}{7}
-In this exercise you will train the ProMPs using the imitation learning data from \texttt{getImitationData.py} and the RBFs defined in the previous question. Modify the \texttt{proMP.py} in order to estimate weight vectors $w_i$ reproducing the different demonstrations. Then, fit a Gaussian using all the weight vectors. Generate a plot showing the desired trajectory distribution in time (mean and std) as well as the trajectories used for imitation. Attach a snippet of your code.
+In this exercise you will train the ProMPs using the imitation learning data from \texttt{getImitationData.py} and the RBFs defined in the previous question. Modify the \texttt{proMP.py} in order to estimate weight vectors $w_i$ reproducing the different demonstrations. Then, fit a Gaussian using all the weight vectors. Generate a plot showing the desired trajectory distribution in time (mean and std) as well as the trajectories used for imitation. Attach a snippet of your code.  
 
-\begin{answer}\end{answer}
+\begin{answer}
+\begin{center}
+	\includegraphics[width=.7\linewidth]{img/2g.png}
+	\captionof{figure}{In this figure you can see the trained ProMP in blue. The dark blue line shows the mean, the light blue area is the uncertainty. The grey lines are the training data and the orange lines are the reproduced trajectories.  }
+\end{center}
+
+\lstinputlisting{code/proMP_h.py}
+
+\end{answer}
 
 \end{question}
 
@@ -209,7 +217,23 @@ In this exercise you will train the ProMPs using the imitation learning data fro
 \begin{question}[bonus]{Probabilistic Movement Primitives - Number of Basis Functions}{2}
 Evaluate the effects of using a reduced number of RBFs. Generate two plots showing the desired trajectory distribution and the trajectories used for imitation as in the previous exercise, but this time use $N=20$ and $N=10$ basis functions. Briefly analyze your results.
 
-\begin{answer}\end{answer}
+\begin{answer}
+\begin{center}
+	\begin{minipage}{0.49\linewidth}
+		\centering
+		\includegraphics[width=1\linewidth]{img/2h_10.png}
+		\captionof{figure}{ProMP with 10 basis functions: The reproduced trajectories cannot follow the training trajectories, they only show the mean. This is not a usefull model.}
+		\label{fig:proMP10}
+	\end{minipage}
+	\hfill
+	\begin{minipage}{0.49\linewidth}
+		\centering
+		\includegraphics[width=1\linewidth]{img/2h_20.png}
+		\captionof{figure}{ProMp with 20 basis functions: This ProMP is very simluar to the ProMP with 30 basis function. So this is also a good model. Then you look at the single training trajectories, you can see some dfferences between the training and the reproduced trajectory. Because of this some more basis functions would be usefull.}
+		\label{fig:proMP20}
+	\end{minipage}
+\end{center}
+\end{answer}
 
 \end{question}
 
@@ -222,7 +246,17 @@ Assuming that the probability over the weights is given by $\mathcal{N}(\vec w|\
 \\
 Then, in a single plot, show the previous distribution (learned from imitation) and the new distribution (after conditioning). Additionally, sample $K=10$ random weight vectors from the ProMP, compute the trajectories and plot them in the same plot. Analyze briefly your results and attach a snippet of your code.
 
-\begin{answer}\end{answer}
+\begin{answer}
+\begin{center}
+	\includegraphics[width=0.7\linewidth]{img/2i.png}
+	\captionof{figure}{New distribution after reconditioning: The bule line shows the original ProMp, the orange one ist the conditioned ProMp. The grey functions are example trajectories.}
+	\label{fig:newProMP}
+\end{center}
+
+Figure~\ref{fig:newProMP} shows the conditioned ProMP. You can see original ProMp in blue and the new one in orange. The mean of the new ProMp goes exactly through the given point at $t_\textrm{cond}=1150$. The uncertainty at this point is very low. Then you look at other points of the ProMp the uncertainty is much bigger. The new trajectory follows the original ProMp most of the time and only at the given position it moves away from it. This is a much better behavior as the DMP in the last exercise.
+
+\lstinputlisting{code/proMP_i.py}
+\end{answer}
 
 \end{question}
 

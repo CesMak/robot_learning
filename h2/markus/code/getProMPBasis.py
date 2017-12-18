@@ -16,6 +16,7 @@ def getProMPBasis(dt, nSteps, n_of_basis, bandwidth):
     for i in xrange(nSteps):
         for j in xrange(nBasis):
             Phi[i,j] = np.exp(-1/2*((time[i]-C[j])**2)/H[j])
+        # normalize the basis functions
         Phi[i, :] = Phi[i, :]/np.sum(Phi[i,:])
 
     return Phi
