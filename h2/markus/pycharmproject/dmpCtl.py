@@ -9,9 +9,13 @@
 import numpy as np
 
 def dmpCtl (dmpParams, psi_i, q, qd):
-    fw=np.dot(psi_i.T,dmpParams.w)
-    qdd =dmpParams.tau**2 *(dmpParams.alpha*
-        (dmpParams.beta*(dmpParams.goal-q)-
-         (qd/dmpParams.tau))+fw)
+    w=dmpParams.w
+    alpha=dmpParams.alpha
+    beta=dmpParams.beta
+    tau=dmpParams.tau
+    goal=dmpParams.goal
+
+    fw = np.dot(psi_i.T, w)
+    qdd = tau**2*(alpha*(beta*(goal-q)-(qd/tau))+fw)
 
     return qdd

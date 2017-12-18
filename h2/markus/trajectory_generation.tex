@@ -43,7 +43,7 @@ Transform Equation~\eqref{eq:dmp} to have a similar structure to a PD-controller
 and write down how the following quantities $K_p, K_d, y^{des}_z$ and $\dot{y}_z^{des}$ look like in terms of the DMP parameters. Do not expand the forcing function $f_w(z)$ at your solutions.
 
 \begin{answer}
-	$\ddot{y}=\tau^2 \alpha \beta (g-y) + (-\tau \alpha) (0-\dot{y}) $	
+	$\ddot{y}=\tau^2 \alpha \beta (g-y) + (-\tau \alpha) (0-\dot{y}) +f_w(z)$	
 	
 	$K_P = \tau^2 \alpha \beta, \quad K_D= - \tau \alpha, \quad y_z^{des} = g , \dot{y_z}^{des}=0$
 	\end{answer}
@@ -62,7 +62,7 @@ Show why the DMPs are stable when $t\to\infty$ and what would the equilibrium po
 	
 	$G(s)=\frac{Y(s)}{g(s)}= \frac{\tau^2 \alpha \beta}{s^2 + s \tau \alpha + \tau^2 \alpha \beta },\quad G(0) = 1,\quad Y(s)=g(s)$
 	
-	So your transfer function for $t \rightarrow \infty$ ist $G(s)=1$ and you have bo steady state error. This means your equilibrium point is your goal position: 
+	So your transfer function for $t \rightarrow \infty$ is $G(s)=1$ and you have bo steady state error. This means your equilibrium point is your goal position: 
 	
 	$y_{eqp}=g (goal)$ 
 
@@ -109,7 +109,7 @@ After this you have to implement the DMP controller:
 	\end{minipage}
 \end{center}
 
-You can use this functions to reproduce the demonstration trajectory. In figure \ref{fig:q1_des} and figure \ref{fig:q2_des} you can see, that the desired trajectory and the reproduced trajectory from the DMP are nearly the same. This is a really good result and shows that we use enough basis functions.
+You can use this functions to reproduce the demonstration trajectory. In figure \ref{fig:q1_des} and figure \ref{fig:q2_des} you can see, that the desired trajectory and the reproduced trajectory from the DMP are nearly the same. This is a good result and shows that we use enough basis functions.
 
 \end{answer}
 
@@ -124,7 +124,7 @@ How do you interpret the result?
 \begin{answer}
 In this task we use the trained DMP from question c) with a different goal position. You get the trajectories in figure \ref{fig:q1_new_goal} and figure \ref{fig:q2_new_goal}. The trajectories of q1 are most of the time nearly the same, the new trajectory is only shifted a bit up or down. The only really difference is the start behavior. All trajectories start at the same point, but then the reach the offset to the trained DMP really fast. This is not an optimal behavior, because it would be more useful, if the new trajectory follows the trained one at the beginning and than slowly moves away from it.
 
-The $q_2$-trajectory looks really different compared to the trained DMP. It rises very fast at the beginning and after this it shows the same course like the trained DMP, but has a big offset. It is hard to interpret the graph without some more graphical simulation, but this high gradient at the beginning cannot be really good for the robot.
+The $q_2$-trajectory looks really different compared to the trained DMP. It rises very fast at the beginning and after this it shows the same course like the trained DMP, but has a big offset. It is hard to interpret the graph without some more graphical simulation, but this high gradient at the beginning cannot be good for the robot.
 
 \begin{center}
 	\begin{minipage}{0.45\linewidth} 
@@ -153,7 +153,8 @@ Using the trained DMPs from the previous question, simulate the system with diff
 
 \begin{answer}
 	
-Now the DMP is rescaled in the time. One trajectory is faster as the trained DMP, one is slower. You can see the result in figure~\ref{fig:q1_new_t} and figure~\ref{fig:q2_new_t}. The trajectories follow the same course, but have different time scalings. It looks like an linear rescaling of the trained DMP.
+Now the DMP is rescaled in the time. One trajectory is faster as the trained DMP, one is slower. You can see the result in figure~\ref{fig:q1_new_t} and figure~\ref{fig:q2_new_t}. The trajectories follow the same course, but have different time scalings. It looks like a linear rescaling of the trained DMP.
+Note that in this example the trained and temporal scaled trajectories have the same goal as the desired trajectory. If the temporal scaling factor is smaller than 1 the goal position is not reached. If the temporal scaling factor is higher than one the goal position is reached faster.
 
 \begin{center}
 	\begin{minipage}{0.45\linewidth} 
@@ -249,7 +250,7 @@ Then, in a single plot, show the previous distribution (learned from imitation) 
 \begin{answer}
 \begin{center}
 	\includegraphics[width=0.7\linewidth]{img/2i.png}
-	\captionof{figure}{New distribution after reconditioning: The bule line shows the original ProMp, the orange one ist the conditioned ProMp. The grey functions are example trajectories.}
+	\captionof{figure}{New distribution after reconditioning: The bule line shows the original ProMp, the orange one is the conditioned ProMp. The grey functions are example trajectories.}
 	\label{fig:newProMP}
 \end{center}
 

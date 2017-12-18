@@ -11,7 +11,7 @@ dmpComparison([], [], 'dmp')
 
 #Reproduce the trajectory and condition on the goal position
 #dmpComparision(goals,taus,filenames)
-#dmpComparison([[0,0.2],[0.8,0.5]], [], 'goalCond')
+dmpComparison([[0,0.2],[0.8,0.5]], [], 'goalCond')
 
 #Reproduce the trajectory and condition on the time
 dmpComparison([], [0.5,1.5], 'timeCond')

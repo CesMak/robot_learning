@@ -40,12 +40,10 @@ def dmpTrain (q, qd, qdd, dt, nSteps):
     print("Phi: ",Phi)
 
     #Compute the forcing function
-    ft=qdd/(params.tau **2)
-    -params.alpha*(params.beta*(params.goal.T-q)-qd/(params.tau))
-    print("ft: ",ft)
-
+    ft = qdd/(params.tau**2) - params.alpha*(params.beta*(params.goal.T-q) - qd/params.tau)
     #Learn the weights
-    pseudoinv= np.linalg.inv(np.dot(Phi.T,Phi)+(sigma**2)*np.eye(Phi.shape[1]))
-    params.w =np.dot(np.dot(pseudoinv,Phi.T),ft.T)
+    sigma = 1e-8
+    pseudo_inv = np.linalg.inv((np.dot(Phi.T, Phi) + sigma*np.eye(Phi.shape[1])))
+    params.w = np.dot(np.dot(pseudo_inv, Phi.T),ft.T)
 
     return params
