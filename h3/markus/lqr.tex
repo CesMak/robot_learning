@@ -1,0 +1,171 @@
+\exercise{Optimal Control}
+In this exercise, we consider a finite-horizon discrete time-varying Stochastic Linear Quadratic Regulator with Gaussian noise and time-varying quadratic reward function. Such system is defined as
+%
+\begin{align}
+	\vec s_{t+1} = \mat A_t \vec s_t + \mat B_t a_t + \vec w_t\,, 
+\end{align}
+where $\vec s_t$ is the state, $a_t$ is the control signal, $\vec w_t \sim \gauss{\vec b_t}{\mat \Sigma_t}$ is Gaussian additive noise with mean $\vec b_t$ and covariance $\mat \Sigma_t$ and $t=0,1,\dots,T$ is the time horizon. 
+The control signal $a_t$ is computed as
+%
+\begin{align}
+	a_t = - \mat K_t \vec s_t + k_t
+\end{align}
+%
+and the reward function is
+%
+\begin{align}
+	reward_t = \begin{cases}
+	- (\vec s_t - \vec r_t)\T \mat R_t (\vec s_t - \vec r_t) - a\T_t \mat H_t a_t  & \text{when \quad} t=0,1,\dots,T-1
+	\\
+	- (\vec s_t - \vec r_t)\T \mat R_t (\vec s_t - \vec r_t) & \text{when \quad} t=T
+	\end{cases}
+\end{align}
+	
+\textbf{Note: the notation used in Marc Toussaint's notes ``\textit{(Stochastic) Optimal Control''} is different from the one used in the lecture's slides.}	
+	
+\begin{questions}
+
+%----------------------------------------------
+
+\begin{question}{Implementation}{8}
+	Implement the LQR with the following properties
+	\begin{align*}
+	\vec s_0 & \sim \gauss{\vec 0}{\mat I} &	T &= 50
+	\\
+	\mat A_t &= \begin{bmatrix}
+       1 & 0.1\\
+       0 & 1
+    \end{bmatrix} &
+	\mat B_t &= \begin{bmatrix}
+       0 \\
+       0.1
+    \end{bmatrix}
+    \\
+	\vec b_t &= \begin{bmatrix}
+       5\\
+       0
+    \end{bmatrix} & \mat \Sigma_t &= \begin{bmatrix}
+       0.01 & 0\\
+       0 & 0.01
+    \end{bmatrix}
+	\\
+	\mat K_t &= \begin{bmatrix}
+       5 &
+       0.3
+    \end{bmatrix} & 
+	k_t &= 0.3 & 
+	\\
+	\mat H_t &= 1 & 		
+	\mat R_t &= \begin{cases}
+	\begin{bmatrix}
+	100000 &0\\
+	0&0.1
+	\end{bmatrix}  & \text{if \quad $t=14$ or 40}
+	\\
+	\begin{bmatrix}
+	0.01 &0\\
+	0&0.1
+	\end{bmatrix} & \text{otherwise}
+	\end{cases}	
+	&
+	\vec r_t &= \begin{cases}
+	\begin{bmatrix}
+	10\\
+	0
+	\end{bmatrix}  & \text{if \quad} t=0,1,\ldots,14
+	\\
+	\begin{bmatrix}
+	20\\
+	0
+	\end{bmatrix}  & \text{if \quad} t=15,16,\ldots,T
+	\end{cases}	
+	\end{align*}
+	
+	Execute the system 20 times.
+	Plot the mean and 95\% confidence (see ``68--95--99.7 rule'' and matplotlib.pyplot.fill\_between function) over the different experiments of the state $\vec s_t$ and of the control signal $\vec a_t$ over time. 
+	How does the system behave? 
+	Compute and write down the mean and the standard deviation of the cumulative reward over the experiments. 
+	Attach a snippet of your code.
+	
+\begin{answer}\end{answer}
+
+
+\end{question}
+
+%---------------------------------
+
+\begin{question}{LQR as a P controller}{4}
+
+	The LQR can also be seen as a simple P controller of the form
+	%
+	\begin{align}
+		a_t = \mat K_t (\vec s^\text{des}_t - \vec s_t) + k_t\,,
+	\end{align}
+	%
+	which corresponds to the controller used in the canonical LQR system with the introduction of the target $\vec s^\text{des}_t$.
+	
+	Assume as target 
+	\begin{align}
+        \vec s^\text{des}_t = \vec r_t = \begin{cases}
+        \begin{bmatrix}
+        10\\
+        0
+        \end{bmatrix}  & \text{if \quad} t=0,1,\ldots,14
+        \\
+        \begin{bmatrix}
+        20\\
+        0
+        \end{bmatrix}  & \text{if \quad} t=15,16,\ldots,T
+        \end{cases}	
+	\end{align}
+    
+    Use the same LQR system as in the previous exercise and run 20 experiments. Plot in one figure the mean and 95\% confidence (see ``68--95--99.7 rule'' and matplotlib.pyplot.fill\_between function) of the first dimension of the state, for both $\vec s^\text{des}_t = \vec r_t$ and $\vec s^\text{des}_t = \vec 0$.
+
+\begin{answer}\end{answer}
+\end{question}
+
+%---------------------------------
+	
+	
+\begin{question}{Optimal LQR}{8}
+	To compute the optimal gains $\mat K_t$ and $\vec k_t$, which maximize the cumulative reward, we can use an analytic optimal solution. This controller recursively computes the optimal action by
+	\begin{align}
+		a_t^* &= -(\mat H_t + \mat B^T_t \mat V_{t+1}\mat B_t)^{-1}	\mat B^T_t (\mat V_{t+1} (\mat A_t \vec s_t+\mat b_t )- \vec v_{t+1} ),
+	\end{align}
+	which can be decomposed into
+	\begin{align}
+		\mat K_t &= -(\mat H_t + \mat B^T_t \mat V_{t+1}\mat B_t)^{-1}	\mat B^T_t \mat V_{t+1} \mat A_t,
+		\\
+		\mat k_t &= -(\mat H_t + \mat B^T_t \mat V_{t+1}\mat B_t)^{-1}	\mat B^T_t (\mat V_{t+1} \mat b_t - \vec v_{t+1}).
+	\end{align}
+	%
+	where
+	%
+	\begin{align}
+		\mat M_t &= \mat B_t(\mat H_t + \mat B^T_t \mat V_{t+1}\mat B_t)^{-1}	\mat B^T_t \mat V_{t+1} \mat A_t
+		\\
+		\mat V_t &=
+		\begin{cases}
+	       \mat R_t + (\mat A_t - \mat M_t)^T\mat V_{t+1}\mat A_t & \text{when \quad} t = 1...T-1
+	       \\
+	       \mat R_t & \text{when \quad} t = T
+	    \end{cases}
+	    \\
+		\mat v_t &= 
+		\begin{cases}
+	       \mat R_t\vec r_t + (\mat A_t - \mat M_t)^T(\vec v_{t+1} - \mat V_{t+1}\mat b_t) & \text{when \quad} t = 1...T-1
+	       \\
+	       \mat R_t\vec r_t & \text{when \quad} t = T
+	    \end{cases}
+	\end{align}		 
+
+	Run 20 experiments with $\vec s^\text{des}_t = \vec 0$ computing the optimal gains $\mat K_t$ and $\vec k_t$. Plot the mean and 95\% confidence (see ``68--95--99.7 rule'' and matplotlib.pyplot.fill\_between function) of both states for all three different controllers used so far. Use one figure per state. 
+	Report the mean and std of the cumulative reward for each controller and comment the results. Attach a snippet of your code.
+
+\begin{answer}\end{answer}
+
+\end{question}
+
+%----------------------------------------------
+
+\end{questions}
