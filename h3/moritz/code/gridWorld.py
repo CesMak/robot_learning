@@ -272,3 +272,5 @@ ax = showWorld(grid_world, 'Policy - Finite Horizon with Probabilistic Transitio
 showPolicy(policy[:,:,0], ax)
 if saveFigures:
     plt.savefig('policy_Fin_15_prob.pdf')
+
+plt.show()

@@ -5,9 +5,9 @@ import matplotlib.pyplot as plt
 T = 50
 A = np.array([[1, 0.1], [0, 1]])
 B = np.array([[0], [0.1]])
-b = np.zeros((2,1))#np.array([[5], [0]]) #
+b = np.array([[5], [0]]) #np.zeros((2,1))#
 cov = np.array([[0.01, 0], [0, 0.01]])
-K = np.array([24.5, 9.9]) #np.array([5, 0.3]) #
+K = np.array([5, 0.3]) #np.array([24.5, 9.9]) #
 k = 0.3
 H = 1
 R1 = np.array([[100000, 0], [0, 0.1]])  # t=14 or 40
@@ -72,7 +72,7 @@ def run_system(s_des, K_t=0, k_t=k):
     return s,a, r
 
 
-def plot_system(s, a, r, fig_num):
+def plot_system(s, a, r, s_des, fig_num):
     nr_subplots = 4
     s_mean = np.mean(s, 2)
     a_mean = np.mean(a, 1)
@@ -114,11 +114,13 @@ def plot_system(s, a, r, fig_num):
     plt.plot(t, s_mean[0, :])
     plt.fill_between(t, s_mean[0, :] + 2 * s_std[0, :], s_mean[0, :] - 2 * s_std[0, :],
                      alpha=0.5)
+    plt.plot(t, s_des[0,:], color='k')
 
     plt.subplot(nr_subplots, 1, 3)
     plt.plot(t, s_mean[1, :])
     plt.fill_between(t, s_mean[1, :] + 2 * s_std[1, :], s_mean[1, :] - 2 * s_std[1, :],
                      alpha=0.5)
+    plt.plot(t, s_des[1, :], color='k')
 
     plt.subplot(nr_subplots, 1, 4)
     plt.plot(t, r_mean)
@@ -211,7 +213,7 @@ class calcOptK:
         v_next = self.get_v(t + 1)
         temp1 = inv(H + np.dot(np.dot(B.T, V_next), B))
         temp2 = np.dot(B.T, (np.dot(V_next, b) - v_next))
-        k = np.dot(temp1, temp2) # TODO minus!
+        k = -np.dot(temp1, temp2) # TODO minus!
         return k.squeeze()
 
     def get_R(self, t):
@@ -223,9 +225,9 @@ class calcOptK:
 
     def get_r(self, t):
         if t <= 14:
-            r = -r1 #TODO minus
+            r = r1 #TODO minus
         else:
-            r = -r2 #TODO minus
+            r = r2 #TODO minus
         return r
 
 
@@ -282,7 +284,7 @@ def main():
     for i in xrange(nr_runs):
         s2[:,:,i], a2[:,i], r2[:,i] = run_system(np.zeros((2,T+1)))
 
-    s1_mean, s1_std = plot_system(s2, a2, r2, 2)
+    s1_mean, s1_std = plot_system(s2, a2, r2, np.zeros((2,T+1)), 2)
     plt.subplot(nr_subplots, 1, 1)
     plt.title('3.1 a) 20 times')
 
@@ -298,18 +300,29 @@ def main():
     for i in xrange(nr_runs):
         s3[:, :, i], a3[:, i], r3[:, i] = run_system(s_des)
 
-    s2_mean, s2_std = plot_system(s3, a3, r3, 3)
+    s2_mean, s2_std = plot_system(s3, a3, r3, s_des, 3)
     plt.subplot(nr_subplots, 1, 1)
     plt.title('3.1 b) 20 times with s_des = r')
 
     t = range(T+1)
     plt.figure(4)
+    plt.subplot(2,1,1)
+    plt.plot(t, s1_mean[0, :])
+    plt.fill_between(t, s1_mean[0, :] + 2 * s1_std[0, :], s1_mean[0, :] - 2 * s1_std[0, :],
+                     alpha=0.5)
+    plt.plot(t, s2_mean[0, :])
+    plt.fill_between(t, s2_mean[0, :] + 2 * s2_std[0, :], s2_mean[0, :] - 2 * s2_std[0, :],
+                     alpha=0.5)
+
+    plt.subplot(2,1,2)
     plt.plot(t, s1_mean[1, :])
     plt.fill_between(t, s1_mean[1, :] + 2 * s1_std[1, :], s1_mean[1, :] - 2 * s1_std[1, :],
                      alpha=0.5)
+    plt.plot(t, s2_mean[1, :])
     plt.fill_between(t, s2_mean[1, :] + 2 * s2_std[1, :], s2_mean[1, :] - 2 * s2_std[1, :],
                      alpha=0.5)
 
+    plt.subplot(2,1,1)
     plt.title('3.1 b) 20 times with s_des = r and s_des = 0')
 
     # 3.1 c)
@@ -334,7 +347,7 @@ def main():
     for i in xrange(nr_runs):
         s4[:, :, i], a4[:, i], r4[:, i] = run_system_Kt(np.zeros((2,T+1)), K_t, k_t)#run_system_Kt(s_des, K_t, k_t)
 
-    s4_mean, s4_std = plot_system(s4, a4, r4, 6)
+    s4_mean, s4_std = plot_system(s4, a4, r4, np.zeros((2,T+1)), 6)
     plt.subplot(nr_subplots, 1, 1)
     plt.title('3.1 c) 20 times with s_des = 0')
 
