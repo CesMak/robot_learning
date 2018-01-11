@@ -11,7 +11,7 @@
 You recently acquired a robot for cleaning you apartment but you are not happy with its performance and you decide to reprogram it using the latest AI algorithms. As a consequence the robot became self-aware and, whenever you are away, it prefers to play with toys rather than cleaning the apartment. Only the cat has noticed the strange behavior and attacks the robot. The robot is about to start its day and its current perception of the environment is as following 
 %
 \begin{center}
-	\includegraphics[width=0.75\textwidth]{fig/gridworld.pdf}
+	\includegraphics[width=0.75\textwidth]{gridworld.pdf}
 \end{center}
 %
 The black squares denote extremely dangerous states that the robot must avoid to protect its valuable sensors. The reward of such states is set to $r_\textrm{danger}=-10^5$ (NB: the robot can still go through these states!). Moreover, despite being waterproof, the robot developed a phobia of water (W), imitating the cat. The reward of states with water is $r_\textrm{water}=-100$. The robot is also afraid of the cat (C) and tries to avoid it at any cost. The reward when encountering the cat is $r_\textrm{cat}=-3000$. The state containing the toy (T) has a reward of $r_\textrm{toy}=1000$, as the robot enjoys playing with them. Some of the initial specification still remain, therefore the robot receives $r_\textrm{dirt}=35$ in states with dirt (D).
@@ -39,7 +39,34 @@ J_\pi = \sum_{t=1}^{T}r_t(s_t).
 \end{equation}
 Using the Value Iteration algorithm, determine the optimal action for each state when the robot has 15 steps left. Attach the plot of the policy to your answer and a mesh plot for the value function. Describe and comment the policy: is the robot avoiding the cat and the water? Is it collecting dirt and playing with the toy? With what time horizon would the robot act differently in state $(9,4)$?
 
-\begin{answer}\end{answer}
+\begin{answer}
+	
+
+\noindent\begin{minipage}{.5\textwidth}
+	\centering
+	\includegraphics[width=1\textwidth]{img/value_2a.png} 
+	\captionof{figure}{T=15, finite horizon Value Function}
+	\label{fig:2a1}            
+\end{minipage}%
+\begin{minipage}{.5\textwidth}
+	\centering
+	\includegraphics[width=1\textwidth]{img/policy_2a.png} 
+	\captionof{figure}{T=15, finite horizon Policy}
+	\label{fig:2a2}               
+\end{minipage}
+\begin{minipage}{.5\textwidth}
+	\centering
+	\includegraphics[width=1\textwidth]{img/2a_T10.png} 
+	\captionof{figure}{T=10, finite horizon Policy}
+	\label{fig:2a3}               
+\end{minipage}
+
+Policy of the robot:\\
+The robot is trying to avoid the water and the cat(for T=15) if possible (see for example state(8,1) the robot is not moving to state 7,1 as this state is punished cause of its water). The robot is moving from all start states to the max. reward position (the toy at 5,7) avoiding all dangerous states. Thereby the robots is not so afraid of small punishments by the cat or water and moves also over these fields in order to reach the toy!
+
+For T=10 the robot is moving differently and trying to avoid to move over the Cat's state at 9,4 (see Figure \ref{fig:2a3}).
+	
+\end{answer}
 
 \end{question}
 
@@ -49,7 +76,24 @@ Using the Value Iteration algorithm, determine the optimal action for each state
 \begin{question}{Infinite Horizon Problem - Part 1}{4}
 We now consider the infinite horizon problem, where $T=\infty$. Rewrite Equation~\eqref{Eq:J} for the infinite horizon case adding a discount factor $\gamma$. Explain briefly why the discount factor is needed.
 
-\begin{answer}\end{answer}
+\begin{answer}
+Theory: \\
+In the infinite time horizon case (when you live forever), the time index is not part of the state.  The optimal policy is time-independent: $\pi_t^*(a|s)=\pi^*(a|s)$. The reward and the transition model can no longer be time-dependent. There is a single stationary value function for all times. There are two different approaches to learning:
+\begin{itemize}
+	\item Value Iteration: Same as before just choose a large T for which the value function converges
+	\item Policy Iteration: Learn a value function for the current policy. Update this policy and learn a new value function. Repeat.
+\end{itemize}
+Optimal policy for infinite horizon: $\pi^*=argmax_\pi J_\pi, \quad J_\pi=\sum_{t=0}^\infty \gamma^t r(s_t, a_t)$
+
+In this case here:\\
+\begin{equation}
+J_\pi = \sum_{t=1}^{\infty} \gamma^t r_t(s_t).
+\end{equation}
+
+The discount factor $0<=\gamma<1$ trades-off long term vs. immediate reward. Without a discount factor many or all policies have infinite expected reward. For this reason a discount factor is required. Thereby future rewards $r_t(s,a)$ are discounted by $\gamma$ per time step.
+
+	
+\end{answer}
 
 \end{question}
 
@@ -60,7 +104,22 @@ We now consider the infinite horizon problem, where $T=\infty$. Rewrite Equation
 Calculate the optimal actions with the infinite horizon formulation. Use a discount factor of $\gamma=0.8$ and attach the new policy and value function plots.
 What can we say about the new policy? Is it different from the finite horizon scenario? Why?
 
-\begin{answer}\end{answer}
+\begin{answer}
+\noindent\begin{minipage}{.5\textwidth}
+	\centering
+	\includegraphics[width=1\textwidth]{img/infinitehorizon_2c.png} 
+	\captionof{figure}{T=100, gamma=0.8 infinite horizon Value Function}
+	\label{fig:2c1}            
+\end{minipage}%
+\begin{minipage}{.5\textwidth}
+	\centering
+	\includegraphics[width=1\textwidth]{img/policy_2c.png} 
+	\captionof{figure}{T=100, gamma=0.8, infinite horizon Policy}
+	\label{fig:2c2}               
+\end{minipage}
+\end{answer}
+
+If the robot lives forever it avoids the cat to reach the toy! This is the only huge difference compared to the finite horizon scenario.
 
 \end{question}
 
@@ -73,7 +132,25 @@ For each of the actions \textit{up, left, down, right}, the robot has now a prob
 Additionally, the action can fail causing the robot to remain on the same state with probability $0.1$.
 Using the finite horizon formulation, calculate the optimal policy and the value function. Use a time horizon of $T=15$ steps as before. Attach your plots and comment them: what is the most common action and why does the learned policy select it?
 
-\begin{answer}\end{answer}
+\begin{answer}
+	\begin{answer}
+		\noindent\begin{minipage}{.5\textwidth}
+			\centering
+			\includegraphics[width=1\textwidth]{img/value_2d.png} 
+			\captionof{figure}{T=15, finite horizon Value Function}
+			\label{fig:2d1}            
+		\end{minipage}%
+		\begin{minipage}{.5\textwidth}
+			\centering
+			\includegraphics[width=1\textwidth]{img/policy_2d.png} 
+			\captionof{figure}{T=15, finite horizon Policy}
+			\label{fig:2d2}               
+		\end{minipage}
+	\end{answer}
+	
+\end{answer}
+
+One of the more common action's is to stay at a reward position not risking a wrong movement to a punished position. One example is the state at 9,4. At this position the robot does not risk to move wrong in the right direction (into the cat). The learned policy rather let's the robot wait at a certain position than risking to move wrong into a punished state. One reason for that is the quite high probability of moving wrong (0.1).
 
 \end{question}
 
@@ -83,7 +160,10 @@ Using the finite horizon formulation, calculate the optimal policy and the value
 \begin{question}[bonus]{Reinforcement Learning - Other Approaches}{8}
 What are the two assumptions that let us use the Value Iteration algorithm? What if they would have been not satisfied? Which other algorithm would you have used? Explain it with your own words and write down its fundamental equation.
 
-\begin{answer}\end{answer}
+\begin{answer}
+Assumptions: agent gets to observe the state 	
+	
+\end{answer}
 \end{question}
 
 

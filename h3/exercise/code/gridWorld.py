@@ -80,7 +80,8 @@ data = genGridWorld()
 grid_world = data[0]
 grid_list = data[1]
 
-probModel = ...
+#TODO: 
+#probModel = ...
 
 ax = showWorld(grid_world, 'Environment')
 showTextState(grid_world, grid_list, ax)
