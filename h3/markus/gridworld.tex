@@ -161,8 +161,36 @@ One of the more common action's is to stay at a reward position not risking a wr
 What are the two assumptions that let us use the Value Iteration algorithm? What if they would have been not satisfied? Which other algorithm would you have used? Explain it with your own words and write down its fundamental equation.
 
 \begin{answer}
-Assumptions: agent gets to observe the state 	
-	
+Some Theory:\\
+Reinforcement Learning:\\
+Contains a bunch of methods of machine learning. An agent(robot) learns a policy (Strategie) in order to increase its reward(Belohnung). At some particular states the agent get's a reward. With the knowledge of these rewards the agent optimizes a cost-function in order to learn the its optimal actions to increase its reward.
+
+TD-Learning:\\
+Temporal Difference Learning is a method of reinforcement learning. Compared to reinforcement learning the agent adapts after each action its policy according to an estimated reward. In reinforcement learning the agent adapts its policy after it collected some rewards in order to maximize its rewards. 
+
+
+Value Iteration Assumptions:\\
+Assume that the agent(robot) accurately knows the transition function(How the robot can move at each state? TODO ) and the reward(R matrix) for all states in the environment. This knowledge however can be learned with a method called Q-Learning.
+
+Q-Learning:\\
+Q-Learning is a specific method of TD-Learning in reinforcement learning. 
+Q-learning is a form of model-free learning, meaning that an agent does not need to have any model of the environment; it only needs to know what states exist and what actions are possible in each state.
+The way this works is as follows: we assign each state an estimated value, called a Q-value. When we visit a state and receive a reward, we use this to update our estimate of the value of that state. (Since our rewards might be stochastic, we may need to visit a state many times.)
+
+Our Q-value can be written as:
+\begin{equation}
+Q(s,a)=R(s,a)+\gamma max_{a'} Q(s',a')
+\end{equation}
+We can use this to update the Q-value of a state-action pair as a reward r is observed:
+\begin{equation}
+Q_{t+1}(s,a)=r+\gamma max_{a'} Q_t(s',a')
+\end{equation}
+We still have one problem left to solve, however. How should an agent choose which action to test? We are assuming that the agent is learing in an onlinefashion.
+This means that it is interleaving learning and execution. This brings up a tradeoff: learning is costly; time that our agent spends making mistakes is time that cannot be spent performing correct actions. One the other hand, time is needed to learn, and some time spent making errors early on can lead to improved overall performance. Our intuition is as follows: In the early stages of execution, when little is known about the world, it is important to explore and try unknown actions. There
+is a great deal to be gained from learning, and the agent does not have enough information to act well in any case. Later in its life, the agent may want to almost always choose the action that looks best; there is little information to be gained, and so the value of learning is negligible. We will model this with a function that assigns a probability of being chosen for each possible action in a given state. This function should tend to choose actions with higher Q values, but should sometimes select lower Q-value actions. The probability of selecting the highest Q-value action should increase over time. We will use a distribution known as a Boltzmann distribution to do this.
+
+TODO: oder nimm formeln von wikipedia: https://de.wikipedia.org/wiki/Temporal\_Difference\_Learning
+was ist mit SARSA??: 
 \end{answer}
 \end{question}
 
