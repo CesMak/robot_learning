@@ -62,9 +62,11 @@ Using the Value Iteration algorithm, determine the optimal action for each state
 \end{minipage}
 
 Policy of the robot:\\
-The robot is trying to avoid the water and the cat(for T=15) if possible (see for example state(8,1) the robot is not moving to state 7,1 as this state is punished cause of its water). The robot is moving from all start states to the max. reward position (the toy at 5,7) avoiding all dangerous states. Thereby the robots is not so afraid of small punishments by the cat or water and moves also over these fields in order to reach the toy!
+The robot is trying to avoid the water and the cat(for T=15) if possible (see for example state(8,1) the robot is not moving to state 7,1 as this state is punished cause of its water). The robot is moving from all start states to the max. reward position (the toy at 5,7) avoiding all dangerous states. Thereby the robots is not so afraid of small punishments by the cat or water and moves also over these fields in order to reach the toy! Note: At the toy's position the robot earns a reward as long as it stays at this position. For this reason the robot does not move around the cat but moves over the cat's position directly to the toy in order to play with the toy as long as possible. If it is worth it the robot also collects dirt but this is only a minor aim of the robot.
 
-For T=10 the robot is moving differently and trying to avoid to move over the Cat's state at 9,4 (see Figure \ref{fig:2a3}).
+For T=10 the robot is not moving to the toy's position, as it can not play long enough with the toy and earn such a high reward that compensates moving over the cat's position. (see Figure \ref{fig:2a3}).
+
+The Algorithmic Description of Value Iteration slide can be found in the lecture. The equation on this slide is used to code the current problem.
 	
 \end{answer}
 
@@ -80,7 +82,7 @@ We now consider the infinite horizon problem, where $T=\infty$. Rewrite Equation
 Theory: \\
 In the infinite time horizon case (when you live forever), the time index is not part of the state.  The optimal policy is time-independent: $\pi_t^*(a|s)=\pi^*(a|s)$. The reward and the transition model can no longer be time-dependent. There is a single stationary value function for all times. There are two different approaches to learning:
 \begin{itemize}
-	\item Value Iteration: Same as before just choose a large T for which the value function converges
+	\item Value Iteration: Same as before just choose a large T for which the value function converges (this is what we use)
 	\item Policy Iteration: Learn a value function for the current policy. Update this policy and learn a new value function. Repeat.
 \end{itemize}
 Optimal policy for infinite horizon: $\pi^*=argmax_\pi J_\pi, \quad J_\pi=\sum_{t=0}^\infty \gamma^t r(s_t, a_t)$
@@ -91,6 +93,7 @@ J_\pi = \sum_{t=1}^{\infty} \gamma^t r_t(s_t).
 \end{equation}
 
 The discount factor $0<=\gamma<1$ trades-off long term vs. immediate reward. Without a discount factor many or all policies have infinite expected reward. For this reason a discount factor is required. Thereby future rewards $r_t(s,a)$ are discounted by $\gamma$ per time step.
+
 
 	
 \end{answer}
@@ -117,9 +120,13 @@ What can we say about the new policy? Is it different from the finite horizon sc
 	\captionof{figure}{T=100, gamma=0.8, infinite horizon Policy}
 	\label{fig:2c2}               
 \end{minipage}
+
+
+If the robot lives forever it avoids the cat to reach the toy! This is the only huge difference compared to the finite horizon scenario. The reason for this policy is the discount factor. It weights future rewards smaller than immediate rewards. The smaller the discount factor (e.g 0.1) the higher immediate rewards are weighted. The higher the discount factor the more attractive is the toy to the robot.
+
+Another small difference is that if the robot lives forever it collects a little bit more Dirt on its way to the toy position. That is why the policy of state 8,9 changes to a down arrow to collect the Dirt on 9,9 on its way to the toy position. 
 \end{answer}
 
-If the robot lives forever it avoids the cat to reach the toy! This is the only huge difference compared to the finite horizon scenario.
 
 \end{question}
 
@@ -133,7 +140,6 @@ Additionally, the action can fail causing the robot to remain on the same state 
 Using the finite horizon formulation, calculate the optimal policy and the value function. Use a time horizon of $T=15$ steps as before. Attach your plots and comment them: what is the most common action and why does the learned policy select it?
 
 \begin{answer}
-	\begin{answer}
 		\noindent\begin{minipage}{.5\textwidth}
 			\centering
 			\includegraphics[width=1\textwidth]{img/value_2d.png} 
@@ -146,11 +152,10 @@ Using the finite horizon formulation, calculate the optimal policy and the value
 			\captionof{figure}{T=15, finite horizon Policy}
 			\label{fig:2d2}               
 		\end{minipage}
-	\end{answer}
+	One of the more common action's is to stay at a reward position not risking a wrong movement to a punished position(like Cat or dangerous field). One example is the state at 9,4. At this position the robot does not risk to move wrong in the right direction (into the cat). The learned policy rather let's the robot wait at a certain position than risking to move wrong into a punished state. One reason for that is the quite high probability of moving wrong (0.1+0.1).
 	
 \end{answer}
 
-One of the more common action's is to stay at a reward position not risking a wrong movement to a punished position. One example is the state at 9,4. At this position the robot does not risk to move wrong in the right direction (into the cat). The learned policy rather let's the robot wait at a certain position than risking to move wrong into a punished state. One reason for that is the quite high probability of moving wrong (0.1).
 
 \end{question}
 
@@ -170,27 +175,29 @@ Temporal Difference Learning is a method of reinforcement learning. Compared to 
 
 
 Value Iteration Assumptions:\\
-Assume that the agent(robot) accurately knows the transition function(How the robot can move at each state? TODO ) and the reward(R matrix) for all states in the environment. This knowledge however can be learned with a method called Q-Learning.
+Assume that the agent(robot) accurately knows the transition function(How the robot can move at each state) and the reward(R matrix) for all states in the environment. This knowledge however can be learned with a method called Q-Learning.
 
 Q-Learning:\\
 Q-Learning is a specific method of TD-Learning in reinforcement learning. 
 Q-learning is a form of model-free learning, meaning that an agent does not need to have any model of the environment; it only needs to know what states exist and what actions are possible in each state.
 The way this works is as follows: we assign each state an estimated value, called a Q-value. When we visit a state and receive a reward, we use this to update our estimate of the value of that state. (Since our rewards might be stochastic, we may need to visit a state many times.)
 
-Our Q-value can be written as:
+Update Equations for learning the Q-Functions:
 \begin{equation}
-Q(s,a)=R(s,a)+\gamma max_{a'} Q(s',a')
+Q_{t+1}(s_t,a_t)=Q_t(s_t,a_t)+\alpha ( r_t+\gamma Q_t(s_{t+1}, \highlight{a_?})-Q_t(s_t,a_t) )
 \end{equation}
-We can use this to update the Q-value of a state-action pair as a reward r is observed:
-\begin{equation}
-Q_{t+1}(s,a)=r+\gamma max_{a'} Q_t(s',a')
-\end{equation}
-We still have one problem left to solve, however. How should an agent choose which action to test? We are assuming that the agent is learing in an onlinefashion.
-This means that it is interleaving learning and execution. This brings up a tradeoff: learning is costly; time that our agent spends making mistakes is time that cannot be spent performing correct actions. One the other hand, time is needed to learn, and some time spent making errors early on can lead to improved overall performance. Our intuition is as follows: In the early stages of execution, when little is known about the world, it is important to explore and try unknown actions. There
-is a great deal to be gained from learning, and the agent does not have enough information to act well in any case. Later in its life, the agent may want to almost always choose the action that looks best; there is little information to be gained, and so the value of learning is negligible. We will model this with a function that assigns a probability of being chosen for each possible action in a given state. This function should tend to choose actions with higher Q values, but should sometimes select lower Q-value actions. The probability of selecting the highest Q-value action should increase over time. We will use a distribution known as a Boltzmann distribution to do this.
 
-TODO: oder nimm formeln von wikipedia: https://de.wikipedia.org/wiki/Temporal\_Difference\_Learning
-was ist mit SARSA??: 
+With:
+\begin{equation}
+	Q-Learning: \quad \highlight{a_?}=argmax_a Q_t(s_{t+1}, a)
+\end{equation}
+
+Sidenote at SARSA:
+\begin{equation}
+	SARSA: \quad \highlight{a_?}=a_{t+1}
+\end{equation}
+
+See also: https://de.wikipedia.org/wiki/Temporal\_Difference\_Learning
 \end{answer}
 \end{question}
 

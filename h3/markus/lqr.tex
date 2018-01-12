@@ -87,7 +87,22 @@ and the reward function is
 	Compute and write down the mean and the standard deviation of the cumulative reward over the experiments. 
 	Attach a snippet of your code.
 	
-\begin{answer}\end{answer}
+\begin{answer}
+	
+\begin{center}
+	\includegraphics[width=0.75\textwidth]{img/1a_20.png}
+	\captionof{figure}{States and action of an instable controller. Mean and 95 \% confidence level.}
+\end{center}
+
+The system is instable cause the eigenvalues of the discrete system ( derived from the A-BK matrix) are: $\lambda_i = 0.985 \pm i 0.2231 i$. The eigenvalues are outside the unit circle. For this reason the system is instable and  oscillates (see state s1, s2 ).
+
+The mean of the  cummulative reward over the experiments:  $\sum rw = -2717991.1$
+
+The standard deviation of the cummulative reward is: 681486
+
+
+	
+\end{answer}
 
 
 \end{question}
@@ -120,9 +135,17 @@ and the reward function is
 	\end{align}
     
     Use the same LQR system as in the previous exercise and run 20 experiments. Plot in one figure the mean and 95\% confidence (see ``68--95--99.7 rule'' and matplotlib.pyplot.fill\_between function) of the first dimension of the state, for both $\vec s^\text{des}_t = \vec r_t$ and $\vec s^\text{des}_t = \vec 0$.
-
-\begin{answer}\end{answer}
 \end{question}
+\begin{answer}
+\begin{center}
+	\includegraphics[width=0.75\textwidth]{img/1b_20.png}
+	\captionof{figure}{States of an instable controller. Mean and 95 \% confidence level. Once with s\_des=0 and once with s\_des=r.}
+\end{center}
+
+Since t=40 the state s1\_des=r oscillates around 20. Whereas the state s1\_des = 0 oscillates a little bit lower.
+	
+\end{answer}
+
 
 %---------------------------------
 	
