@@ -236,17 +236,17 @@ if saveFigures:
     plt.savefig('gridworld.pdf')
 
 # Finite Horizon
-# V, Q = ValIter(grid_world, maxSteps=10)
-# V = V[:,:,0];
-# showWorld(np.maximum(V, 0), 'Value Function - Finite Horizon')
-# if saveFigures:
-#     plt.savefig('value_Fin_15.pdf')
-#
-# policy = findPolicy(V, Q)
-# ax = showWorld(grid_world, 'Policy - Finite Horizon')
-# showPolicy(policy[:,:,0], ax)
-# if saveFigures:
-#     plt.savefig('policy_Fin_15.pdf')
+V, Q = ValIter(grid_world, maxSteps=10)
+V = V[:,:,0];
+showWorld(np.maximum(V, 0), 'Value Function - Finite Horizon')
+if saveFigures:
+    plt.savefig('value_Fin_15.pdf')
+
+policy = findPolicy(V, Q)
+ax = showWorld(grid_world, 'Policy - Finite Horizon')
+showPolicy(policy[:,:,0], ax)
+if saveFigures:
+    plt.savefig('policy_Fin_15.pdf')
 
 #Infinite Horizon
 V, Q = ValIter(grid_world, maxSteps=100, discount=0.1, infHor=True)
@@ -262,16 +262,16 @@ if saveFigures:
     plt.savefig('policy_Inf_08.pdf')
 
 # Finite Horizon with Probabilistic Transition
-# V, Q = ValIter(grid_world, maxSteps=15, probModel=True)
-# V = V[:,:,0];
-# showWorld(np.maximum(V, 0), 'Value Function - Finite Horizon with Probabilistic Transition')
-# if saveFigures:
-#     plt.savefig('value_Fin_15_prob.pdf')
-#
-# policy = findPolicy(V, Q)
-# ax = showWorld(grid_world, 'Policy - Finite Horizon with Probabilistic Transition')
-# showPolicy(policy[:,:,0], ax)
-# if saveFigures:
-#     plt.savefig('policy_Fin_15_prob.pdf')
+V, Q = ValIter(grid_world, maxSteps=15, probModel=True)
+V = V[:,:,0];
+showWorld(np.maximum(V, 0), 'Value Function - Finite Horizon with Probabilistic Transition')
+if saveFigures:
+    plt.savefig('value_Fin_15_prob.pdf')
+
+policy = findPolicy(V, Q)
+ax = showWorld(grid_world, 'Policy - Finite Horizon with Probabilistic Transition')
+showPolicy(policy[:,:,0], ax)
+if saveFigures:
+    plt.savefig('policy_Fin_15_prob.pdf')
 
 plt.show()

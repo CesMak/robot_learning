@@ -1,0 +1,684 @@
+PWD d:/RL/robot_learning/h3/markus
+INPUT C:/Users/mknau/AppData/Local/MiKTeX/2.9/miktex/data/le/pdftex/pdflatex.fmt
+INPUT d:/RL/robot_learning/h3/markus/homework.tex
+OUTPUT homework.log
+INPUT E:/Programme/tuddesign/tex/latex/tuddesign/tudexercise.cls
+INPUT E:/Programme/tuddesign/tex/latex/tuddesign/tudexercise.cls
+INPUT E:/Programme/MiKTeX 2.9/tex/latex/xkeyval/xkeyval.sty
+INPUT E:/Programme/MiKTeX 2.9/tex/latex/xkeyval/xkeyval.sty
+INPUT E:/Programme/MiKTeX 2.9/tex/generic/xkeyval/xkeyval.tex
+INPUT E:/Programme/MiKTeX 2.9/tex/generic/xkeyval/xkvutils.tex
+INPUT E:/Programme/MiKTeX 2.9/tex/generic/xkeyval/keyval.tex
+INPUT E:/Programme/MiKTeX 2.9/tex/latex/base/ifthen.sty
+INPUT E:/Programme/MiKTeX 2.9/tex/latex/base/ifthen.sty
+INPUT E:/Programme/MiKTeX 2.9/tex/latex/koma-script/scrartcl.cls
+INPUT E:/Programme/MiKTeX 2.9/tex/latex/koma-script/scrartcl.cls
+INPUT E:/Programme/MiKTeX 2.9/tex/latex/koma-script/scrkbase.sty
+INPUT E:/Programme/MiKTeX 2.9/tex/latex/koma-script/scrkbase.sty
+INPUT E:/Programme/MiKTeX 2.9/tex/latex/koma-script/scrbase.sty
+INPUT E:/Programme/MiKTeX 2.9/tex/latex/koma-script/scrbase.sty
+INPUT E:/Programme/MiKTeX 2.9/tex/latex/koma-script/scrlfile.sty
+INPUT E:/Programme/MiKTeX 2.9/tex/latex/koma-script/scrlfile.sty
+INPUT E:/Programme/MiKTeX 2.9/tex/latex/koma-script/tocbasic.sty
+INPUT E:/Programme/MiKTeX 2.9/tex/latex/koma-script/tocbasic.sty
+INPUT E:/Programme/MiKTeX 2.9/tex/latex/koma-script/scrsize11pt.clo
+INPUT E:/Programme/MiKTeX 2.9/tex/latex/koma-script/scrsize11pt.clo
+INPUT E:/Programme/MiKTeX 2.9/fonts/tfm/public/cm/cmr10.tfm
+INPUT E:/Programme/MiKTeX 2.9/tex/latex/koma-script/typearea.sty
+INPUT E:/Programme/MiKTeX 2.9/tex/latex/koma-script/typearea.sty
+INPUT E:/Programme/MiKTeX 2.9/tex/latex/tools/calc.sty
+INPUT E:/Programme/MiKTeX 2.9/tex/latex/tools/calc.sty
+INPUT E:/Programme/tuddesign/tex/latex/tuddesign/colours/tudcolours.sty
+INPUT E:/Programme/tuddesign/tex/latex/tuddesign/colours/tudcolours.sty
+INPUT E:/Programme/MiKTeX 2.9/tex/latex/xcolor/xcolor.sty
+INPUT E:/Programme/MiKTeX 2.9/tex/latex/xcolor/xcolor.sty
+INPUT E:/Programme/MiKTeX 2.9/tex/latex/graphics-cfg/color.cfg
+INPUT E:/Programme/MiKTeX 2.9/tex/latex/graphics-cfg/color.cfg
+INPUT E:/Programme/MiKTeX 2.9/tex/latex/graphics-def/pdftex.def
+INPUT E:/Programme/MiKTeX 2.9/tex/latex/graphics-def/pdftex.def
+INPUT E:/Programme/tuddesign/tex/latex/tuddesign/colours/tudcolours.cfg
+INPUT E:/Programme/tuddesign/tex/latex/tuddesign/colours/tudcolours.cfg
+INPUT E:/Programme/tuddesign/tex/latex/tuddesign/colours/tudcolours.def
+INPUT E:/Programme/tuddesign/tex/latex/tuddesign/colours/tudcolours.def
+INPUT E:/Programme/tuddesign/tex/latex/tuddesign/poster/tudpostr_fonts.sty
+INPUT E:/Programme/tuddesign/tex/latex/tuddesign/poster/tudpostr_fonts.sty
+INPUT E:/Programme/tuddesign/tex/latex/tuddesign/base/tudfonts.sty
+INPUT E:/Programme/tuddesign/tex/latex/tuddesign/base/tudfonts.sty
+INPUT E:/Programme/MiKTeX 2.9/tex/latex/base/fontenc.sty
+INPUT E:/Programme/MiKTeX 2.9/tex/latex/base/fontenc.sty
+INPUT E:/Programme/MiKTeX 2.9/tex/latex/base/t1enc.def
+INPUT E:/Programme/MiKTeX 2.9/tex/latex/base/t1enc.def
+INPUT E:/Programme/MiKTeX 2.9/fonts/tfm/jknappen/ec/ecrm1095.tfm
+INPUT E:/Programme/MiKTeX 2.9/tex/latex/base/textcomp.sty
+INPUT E:/Programme/MiKTeX 2.9/tex/latex/base/textcomp.sty
+INPUT E:/Programme/MiKTeX 2.9/tex/latex/base/ts1enc.def
+INPUT E:/Programme/MiKTeX 2.9/tex/latex/base/ts1enc.def
+INPUT E:/Programme/MiKTeX 2.9/tex/latex/base/fix-cm.sty
+INPUT E:/Programme/MiKTeX 2.9/tex/latex/base/fix-cm.sty
+INPUT E:/Programme/MiKTeX 2.9/tex/latex/base/ts1enc.def
+INPUT E:/Programme/MiKTeX 2.9/tex/latex/base/ts1enc.def
+INPUT E:/Programme/MiKTeX 2.9/tex/latex/mathdesign/mathdesign.sty
+INPUT E:/Programme/MiKTeX 2.9/tex/latex/mathdesign/mathdesign.sty
+INPUT E:/Programme/MiKTeX 2.9/tex/latex/mathdesign/mdbch/mdbch.cfg
+INPUT E:/Programme/MiKTeX 2.9/tex/latex/mathdesign/mdbch/mdbch.cfg
+INPUT E:/Programme/MiKTeX 2.9/tex/latex/mathdesign/mdbch/mdbch.sty
+INPUT E:/Programme/MiKTeX 2.9/tex/latex/mathdesign/mdbch/mdbch.sty
+INPUT E:/Programme/MiKTeX 2.9/tex/latex/mathdesign/mdfont.def
+INPUT E:/Programme/MiKTeX 2.9/tex/latex/mathdesign/mdfont.def
+INPUT E:/Programme/MiKTeX 2.9/tex/latex/mathdesign/mdsffont.def
+INPUT E:/Programme/MiKTeX 2.9/tex/latex/mathdesign/mdsffont.def
+INPUT E:/Programme/MiKTeX 2.9/tex/latex/mathdesign/mdttfont.def
+INPUT E:/Programme/MiKTeX 2.9/tex/latex/mathdesign/mdttfont.def
+INPUT E:/Programme/MiKTeX 2.9/tex/latex/mathdesign/mdbch/t1mdbch.fd
+INPUT E:/Programme/MiKTeX 2.9/tex/latex/mathdesign/mdbch/t1mdbch.fd
+INPUT E:/Programme/MiKTeX 2.9/fonts/tfm/mathdesign/mdbch/mdbchr8t.tfm
+INPUT E:/Programme/MiKTeX 2.9/tex/latex/base/fontenc.sty
+INPUT E:/Programme/MiKTeX 2.9/tex/latex/base/fontenc.sty
+INPUT E:/Programme/MiKTeX 2.9/tex/latex/base/t1enc.def
+INPUT E:/Programme/MiKTeX 2.9/tex/latex/base/t1enc.def
+INPUT E:/Programme/MiKTeX 2.9/fonts/tfm/mathdesign/mdbch/mdbchr8t.tfm
+INPUT E:/Programme/tuddesign/tex/latex/tuddesign/report/tudreprt_fonts.sty
+INPUT E:/Programme/tuddesign/tex/latex/tuddesign/report/tudreprt_fonts.sty
+INPUT E:/Programme/MiKTeX 2.9/fonts/tfm/mathdesign/mdbch/mdbchr8t.tfm
+INPUT E:/Programme/tuddesign/tex/latex/tuddesign/base/tudpage.sty
+INPUT E:/Programme/tuddesign/tex/latex/tuddesign/base/tudpage.sty
+INPUT E:/Programme/tuddesign/tex/latex/tuddesign/base/tudpaper.sty
+INPUT E:/Programme/tuddesign/tex/latex/tuddesign/base/tudpaper.sty
+INPUT E:/Programme/MiKTeX 2.9/tex/latex/graphics/graphicx.sty
+INPUT E:/Programme/MiKTeX 2.9/tex/latex/graphics/graphicx.sty
+INPUT E:/Programme/MiKTeX 2.9/tex/latex/graphics/graphics.sty
+INPUT E:/Programme/MiKTeX 2.9/tex/latex/graphics/graphics.sty
+INPUT E:/Programme/MiKTeX 2.9/tex/latex/graphics/trig.sty
+INPUT E:/Programme/MiKTeX 2.9/tex/latex/graphics/trig.sty
+INPUT E:/Programme/MiKTeX 2.9/tex/latex/graphics-cfg/graphics.cfg
+INPUT E:/Programme/MiKTeX 2.9/tex/latex/graphics-cfg/graphics.cfg
+INPUT E:/Programme/MiKTeX 2.9/tex/latex/eso-pic/eso-pic.sty
+INPUT E:/Programme/MiKTeX 2.9/tex/latex/eso-pic/eso-pic.sty
+INPUT E:/Programme/MiKTeX 2.9/tex/generic/oberdiek/atbegshi.sty
+INPUT E:/Programme/MiKTeX 2.9/tex/generic/oberdiek/atbegshi.sty
+INPUT E:/Programme/MiKTeX 2.9/tex/generic/oberdiek/infwarerr.sty
+INPUT E:/Programme/MiKTeX 2.9/tex/generic/oberdiek/infwarerr.sty
+INPUT E:/Programme/MiKTeX 2.9/tex/generic/oberdiek/ltxcmds.sty
+INPUT E:/Programme/MiKTeX 2.9/tex/generic/oberdiek/ltxcmds.sty
+INPUT E:/Programme/MiKTeX 2.9/tex/generic/oberdiek/ifpdf.sty
+INPUT E:/Programme/MiKTeX 2.9/tex/generic/oberdiek/ifpdf.sty
+INPUT E:/Programme/tuddesign/tex/latex/tuddesign/base/tudrules.sty
+INPUT E:/Programme/tuddesign/tex/latex/tuddesign/base/tudrules.sty
+INPUT E:/Programme/MiKTeX 2.9/tex/latex/geometry/geometry.sty
+INPUT E:/Programme/MiKTeX 2.9/tex/latex/geometry/geometry.sty
+INPUT E:/Programme/MiKTeX 2.9/tex/generic/oberdiek/ifvtex.sty
+INPUT E:/Programme/MiKTeX 2.9/tex/generic/oberdiek/ifvtex.sty
+INPUT E:/Programme/MiKTeX 2.9/tex/generic/ifxetex/ifxetex.sty
+INPUT E:/Programme/MiKTeX 2.9/tex/generic/ifxetex/ifxetex.sty
+INPUT E:/Programme/MiKTeX 2.9/tex/latex/geometry/geometry.cfg
+INPUT E:/Programme/MiKTeX 2.9/tex/latex/geometry/geometry.cfg
+INPUT E:/Programme/MiKTeX 2.9/tex/latex/fancyhdr/fancyhdr.sty
+INPUT E:/Programme/MiKTeX 2.9/tex/latex/fancyhdr/fancyhdr.sty
+INPUT E:/Programme/tuddesign/tex/latex/tuddesign/base/tudheading.sty
+INPUT E:/Programme/tuddesign/tex/latex/tuddesign/base/tudheading.sty
+INPUT E:/Programme/MiKTeX 2.9/tex/latex/titlesec/titlesec.sty
+INPUT E:/Programme/MiKTeX 2.9/tex/latex/titlesec/titlesec.sty
+INPUT E:/Programme/MiKTeX 2.9/fonts/tfm/mathdesign/mdbch/mdbchr8t.tfm
+INPUT E:/Programme/tuddesign/tex/latex/tuddesign/base/tudheading.def
+INPUT E:/Programme/tuddesign/tex/latex/tuddesign/base/tudheading.def
+INPUT E:/Programme/MiKTeX 2.9/tex/latex/titlesec/block.tss
+INPUT E:/Programme/MiKTeX 2.9/tex/latex/titlesec/block.tss
+INPUT E:/Programme/tuddesign/tex/latex/tuddesign/base/tudredef.sty
+INPUT E:/Programme/tuddesign/tex/latex/tuddesign/base/tudredef.sty
+INPUT E:/Programme/tuddesign/tex/latex/tuddesign/poster/tudpostr_title.sty
+INPUT E:/Programme/tuddesign/tex/latex/tuddesign/poster/tudpostr_title.sty
+INPUT E:/Programme/tuddesign/tex/latex/tuddesign/poster/tudpostr_title.def
+INPUT E:/Programme/tuddesign/tex/latex/tuddesign/poster/tudpostr_title.def
+INPUT E:/Programme/tuddesign/tex/latex/tuddesign/exercise/tudexrcse_exame.sty
+INPUT E:/Programme/tuddesign/tex/latex/tuddesign/exercise/tudexrcse_exame.sty
+INPUT E:/Programme/MiKTeX 2.9/tex/latex/tools/afterpage.sty
+INPUT E:/Programme/MiKTeX 2.9/tex/latex/tools/afterpage.sty
+INPUT E:/Programme/MiKTeX 2.9/tex/latex/base/fontenc.sty
+INPUT E:/Programme/MiKTeX 2.9/tex/latex/base/fontenc.sty
+INPUT E:/Programme/MiKTeX 2.9/tex/latex/base/t1enc.def
+INPUT E:/Programme/MiKTeX 2.9/tex/latex/base/t1enc.def
+INPUT E:/Programme/MiKTeX 2.9/tex/latex/base/inputenc.sty
+INPUT E:/Programme/MiKTeX 2.9/tex/latex/base/inputenc.sty
+INPUT E:/Programme/MiKTeX 2.9/tex/latex/base/latin9.def
+INPUT E:/Programme/MiKTeX 2.9/tex/latex/base/latin9.def
+INPUT E:/Programme/MiKTeX 2.9/tex/latex/amsmath/amstext.sty
+INPUT E:/Programme/MiKTeX 2.9/tex/latex/amsmath/amstext.sty
+INPUT E:/Programme/MiKTeX 2.9/tex/latex/amsmath/amsgen.sty
+INPUT E:/Programme/MiKTeX 2.9/tex/latex/amsmath/amsgen.sty
+INPUT E:/Programme/MiKTeX 2.9/tex/latex/amsmath/amsmath.sty
+INPUT E:/Programme/MiKTeX 2.9/tex/latex/amsmath/amsmath.sty
+INPUT E:/Programme/MiKTeX 2.9/tex/latex/amsmath/amsbsy.sty
+INPUT E:/Programme/MiKTeX 2.9/tex/latex/amsmath/amsbsy.sty
+INPUT E:/Programme/MiKTeX 2.9/tex/latex/amsmath/amsopn.sty
+INPUT E:/Programme/MiKTeX 2.9/tex/latex/amsmath/amsopn.sty
+INPUT E:/Programme/MiKTeX 2.9/tex/latex/setspace/setspace.sty
+INPUT E:/Programme/MiKTeX 2.9/tex/latex/setspace/setspace.sty
+INPUT E:/Programme/MiKTeX 2.9/tex/latex/tools/multicol.sty
+INPUT E:/Programme/MiKTeX 2.9/tex/latex/tools/multicol.sty
+INPUT E:/Programme/MiKTeX 2.9/tex/latex/mathtools/mathtools.sty
+INPUT E:/Programme/MiKTeX 2.9/tex/latex/mathtools/mathtools.sty
+INPUT E:/Programme/MiKTeX 2.9/tex/latex/mathtools/mhsetup.sty
+INPUT E:/Programme/MiKTeX 2.9/tex/latex/mathtools/mhsetup.sty
+INPUT E:/Programme/MiKTeX 2.9/tex/latex/doublestroke/dsfont.sty
+INPUT E:/Programme/MiKTeX 2.9/tex/latex/doublestroke/dsfont.sty
+INPUT E:/Programme/MiKTeX 2.9/tex/latex/units/units.sty
+INPUT E:/Programme/MiKTeX 2.9/tex/latex/units/units.sty
+INPUT E:/Programme/MiKTeX 2.9/tex/latex/units/nicefrac.sty
+INPUT E:/Programme/MiKTeX 2.9/tex/latex/units/nicefrac.sty
+INPUT E:/Programme/MiKTeX 2.9/tex/latex/subfigure/subfigure.sty
+INPUT E:/Programme/MiKTeX 2.9/tex/latex/subfigure/subfigure.sty
+INPUT E:/Programme/MiKTeX 2.9/tex/latex/subfigure/subfigure.cfg
+INPUT E:/Programme/MiKTeX 2.9/tex/latex/subfigure/subfigure.cfg
+INPUT E:/Programme/MiKTeX 2.9/tex/latex/booktabs/booktabs.sty
+INPUT E:/Programme/MiKTeX 2.9/tex/latex/booktabs/booktabs.sty
+INPUT E:/Programme/MiKTeX 2.9/tex/latex/fancyref/fancyref.sty
+INPUT E:/Programme/MiKTeX 2.9/tex/latex/fancyref/fancyref.sty
+INPUT E:/Programme/MiKTeX 2.9/tex/latex/tools/varioref.sty
+INPUT E:/Programme/MiKTeX 2.9/tex/latex/tools/varioref.sty
+INPUT E:/Programme/MiKTeX 2.9/tex/latex/listings/listings.sty
+INPUT E:/Programme/MiKTeX 2.9/tex/latex/listings/listings.sty
+INPUT E:/Programme/MiKTeX 2.9/tex/latex/listings/lstmisc.sty
+INPUT E:/Programme/MiKTeX 2.9/tex/latex/listings/lstmisc.sty
+INPUT E:/Programme/MiKTeX 2.9/tex/latex/listings/listings.cfg
+INPUT E:/Programme/MiKTeX 2.9/tex/latex/listings/listings.cfg
+INPUT E:/Programme/MiKTeX 2.9/tex/latex/caption/caption.sty
+INPUT E:/Programme/MiKTeX 2.9/tex/latex/caption/caption.sty
+INPUT E:/Programme/MiKTeX 2.9/tex/latex/caption/caption3.sty
+INPUT E:/Programme/MiKTeX 2.9/tex/latex/caption/caption3.sty
+INPUT E:/Programme/MiKTeX 2.9/tex/generic/babel/babel.sty
+INPUT E:/Programme/MiKTeX 2.9/tex/generic/babel/babel.sty
+INPUT E:/Programme/MiKTeX 2.9/tex/generic/babel/switch.def
+INPUT E:/Programme/MiKTeX 2.9/tex/latex/arabi/bblopts.cfg
+INPUT E:/Programme/MiKTeX 2.9/tex/latex/arabi/bblopts.cfg
+INPUT E:/Programme/MiKTeX 2.9/tex/latex/babel-german/ngerman.ldf
+INPUT E:/Programme/MiKTeX 2.9/tex/latex/babel-german/ngerman.ldf
+INPUT E:/Programme/MiKTeX 2.9/tex/latex/babel-german/ngermanb.ldf
+INPUT E:/Programme/MiKTeX 2.9/tex/generic/babel/babel.def
+INPUT E:/Programme/MiKTeX 2.9/tex/generic/babel/switch.def
+INPUT E:/Programme/MiKTeX 2.9/tex/latex/babel-english/english.ldf
+INPUT E:/Programme/MiKTeX 2.9/tex/latex/babel-english/english.ldf
+INPUT iasHomework.sty
+INPUT iasHomework.sty
+INPUT E:/Programme/MiKTeX 2.9/tex/latex/comment/comment.sty
+INPUT E:/Programme/MiKTeX 2.9/tex/latex/comment/comment.sty
+INPUT E:/Programme/MiKTeX 2.9/tex/latex/environ/environ.sty
+INPUT E:/Programme/MiKTeX 2.9/tex/latex/environ/environ.sty
+INPUT E:/Programme/MiKTeX 2.9/tex/latex/trimspaces/trimspaces.sty
+INPUT E:/Programme/MiKTeX 2.9/tex/latex/trimspaces/trimspaces.sty
+INPUT E:/Programme/MiKTeX 2.9/tex/latex/totcount/totcount.sty
+INPUT E:/Programme/MiKTeX 2.9/tex/latex/totcount/totcount.sty
+INPUT E:/Programme/MiKTeX 2.9/tex/latex/base/fixltx2e.sty
+INPUT E:/Programme/MiKTeX 2.9/tex/latex/base/fixltx2e.sty
+INPUT E:/Programme/MiKTeX 2.9/tex/latex/hyperref/hyperref.sty
+INPUT E:/Programme/MiKTeX 2.9/tex/latex/hyperref/hyperref.sty
+INPUT E:/Programme/MiKTeX 2.9/tex/generic/oberdiek/hobsub-hyperref.sty
+INPUT E:/Programme/MiKTeX 2.9/tex/generic/oberdiek/hobsub-hyperref.sty
+INPUT E:/Programme/MiKTeX 2.9/tex/generic/oberdiek/hobsub-hyperref.sty
+INPUT E:/Programme/MiKTeX 2.9/tex/generic/oberdiek/hobsub-generic.sty
+INPUT E:/Programme/MiKTeX 2.9/tex/generic/oberdiek/hobsub-generic.sty
+INPUT E:/Programme/MiKTeX 2.9/tex/latex/oberdiek/auxhook.sty
+INPUT E:/Programme/MiKTeX 2.9/tex/latex/oberdiek/auxhook.sty
+INPUT E:/Programme/MiKTeX 2.9/tex/latex/oberdiek/kvoptions.sty
+INPUT E:/Programme/MiKTeX 2.9/tex/latex/oberdiek/kvoptions.sty
+INPUT E:/Programme/MiKTeX 2.9/tex/latex/hyperref/pd1enc.def
+INPUT E:/Programme/MiKTeX 2.9/tex/latex/hyperref/pd1enc.def
+INPUT E:/Programme/MiKTeX 2.9/tex/latex/00miktex/hyperref.cfg
+INPUT E:/Programme/MiKTeX 2.9/tex/latex/00miktex/hyperref.cfg
+INPUT E:/Programme/MiKTeX 2.9/tex/latex/url/url.sty
+INPUT E:/Programme/MiKTeX 2.9/tex/latex/url/url.sty
+INPUT E:/Programme/MiKTeX 2.9/tex/latex/hyperref/hpdftex.def
+INPUT E:/Programme/MiKTeX 2.9/tex/latex/hyperref/hpdftex.def
+INPUT E:/Programme/MiKTeX 2.9/tex/latex/oberdiek/rerunfilecheck.sty
+INPUT E:/Programme/MiKTeX 2.9/tex/latex/oberdiek/rerunfilecheck.sty
+INPUT E:/Programme/MiKTeX 2.9/tex/latex/pgf/utilities/pgffor.sty
+INPUT E:/Programme/MiKTeX 2.9/tex/latex/pgf/utilities/pgffor.sty
+INPUT E:/Programme/MiKTeX 2.9/tex/latex/pgf/utilities/pgfrcs.sty
+INPUT E:/Programme/MiKTeX 2.9/tex/latex/pgf/utilities/pgfrcs.sty
+INPUT E:/Programme/MiKTeX 2.9/tex/generic/pgf/utilities/pgfutil-common.tex
+INPUT E:/Programme/MiKTeX 2.9/tex/generic/pgf/utilities/pgfutil-common-lists.tex
+INPUT E:/Programme/MiKTeX 2.9/tex/generic/pgf/utilities/pgfutil-latex.def
+INPUT E:/Programme/MiKTeX 2.9/tex/latex/ms/everyshi.sty
+INPUT E:/Programme/MiKTeX 2.9/tex/latex/ms/everyshi.sty
+INPUT E:/Programme/MiKTeX 2.9/tex/generic/pgf/utilities/pgfrcs.code.tex
+INPUT E:/Programme/MiKTeX 2.9/tex/generic/pgf/utilities/pgfrcs.code.tex
+INPUT E:/Programme/MiKTeX 2.9/tex/latex/pgf/utilities/pgfkeys.sty
+INPUT E:/Programme/MiKTeX 2.9/tex/latex/pgf/utilities/pgfkeys.sty
+INPUT E:/Programme/MiKTeX 2.9/tex/generic/pgf/utilities/pgfkeys.code.tex
+INPUT E:/Programme/MiKTeX 2.9/tex/generic/pgf/utilities/pgfkeys.code.tex
+INPUT E:/Programme/MiKTeX 2.9/tex/generic/pgf/utilities/pgfkeysfiltered.code.tex
+INPUT E:/Programme/MiKTeX 2.9/tex/latex/pgf/math/pgfmath.sty
+INPUT E:/Programme/MiKTeX 2.9/tex/latex/pgf/math/pgfmath.sty
+INPUT E:/Programme/MiKTeX 2.9/tex/generic/pgf/math/pgfmath.code.tex
+INPUT E:/Programme/MiKTeX 2.9/tex/generic/pgf/math/pgfmath.code.tex
+INPUT E:/Programme/MiKTeX 2.9/tex/generic/pgf/math/pgfmathcalc.code.tex
+INPUT E:/Programme/MiKTeX 2.9/tex/generic/pgf/math/pgfmathutil.code.tex
+INPUT E:/Programme/MiKTeX 2.9/tex/generic/pgf/math/pgfmathparser.code.tex
+INPUT E:/Programme/MiKTeX 2.9/tex/generic/pgf/math/pgfmathfunctions.code.tex
+INPUT E:/Programme/MiKTeX 2.9/tex/generic/pgf/math/pgfmathfunctions.basic.code.tex
+INPUT E:/Programme/MiKTeX 2.9/tex/generic/pgf/math/pgfmathfunctions.trigonometric.code.tex
+INPUT E:/Programme/MiKTeX 2.9/tex/generic/pgf/math/pgfmathfunctions.random.code.tex
+INPUT E:/Programme/MiKTeX 2.9/tex/generic/pgf/math/pgfmathfunctions.comparison.code.tex
+INPUT E:/Programme/MiKTeX 2.9/tex/generic/pgf/math/pgfmathfunctions.base.code.tex
+INPUT E:/Programme/MiKTeX 2.9/tex/generic/pgf/math/pgfmathfunctions.round.code.tex
+INPUT E:/Programme/MiKTeX 2.9/tex/generic/pgf/math/pgfmathfunctions.misc.code.tex
+INPUT E:/Programme/MiKTeX 2.9/tex/generic/pgf/math/pgfmathfunctions.integerarithmetics.code.tex
+INPUT E:/Programme/MiKTeX 2.9/tex/generic/pgf/math/pgfmathfloat.code.tex
+INPUT E:/Programme/MiKTeX 2.9/tex/generic/pgf/utilities/pgffor.code.tex
+INPUT E:/Programme/MiKTeX 2.9/tex/generic/pgf/utilities/pgffor.code.tex
+INPUT E:/Programme/MiKTeX 2.9/tex/generic/pgf/math/pgfmath.code.tex
+INPUT E:/Programme/MiKTeX 2.9/tex/latex/ltxmisc/parskip.sty
+INPUT E:/Programme/MiKTeX 2.9/tex/latex/ltxmisc/parskip.sty
+INPUT E:/Programme/MiKTeX 2.9/tex/latex/listings/lstlang1.sty
+INPUT E:/Programme/MiKTeX 2.9/tex/latex/listings/lstlang1.sty
+INPUT homework.aux
+INPUT homework.aux
+OUTPUT homework.aux
+INPUT E:/Programme/MiKTeX 2.9/tex/latex/mathdesign/mdacmr.fd
+INPUT E:/Programme/MiKTeX 2.9/tex/latex/mathdesign/mdacmr.fd
+INPUT E:/Programme/MiKTeX 2.9/tex/latex/mathdesign/mdbcmr.fd
+INPUT E:/Programme/MiKTeX 2.9/tex/latex/mathdesign/mdbcmr.fd
+INPUT E:/Programme/tuddesign/tex/latex/tex-tudfonts/softmake/charter/t15ch.fd
+INPUT E:/Programme/tuddesign/tex/latex/tex-tudfonts/softmake/charter/t15ch.fd
+INPUT E:/Programme/tuddesign/fonts/tfm/softmake/charter/5chr8t.tfm
+INPUT E:/Programme/MiKTeX 2.9/tex/context/base/supp-pdf.mkii
+INPUT E:/Programme/MiKTeX 2.9/tex/context/base/supp-pdf.mkii
+INPUT E:/Programme/MiKTeX 2.9/tex/latex/oberdiek/epstopdf-base.sty
+INPUT E:/Programme/MiKTeX 2.9/tex/latex/oberdiek/epstopdf-base.sty
+INPUT E:/Programme/MiKTeX 2.9/tex/latex/oberdiek/grfext.sty
+INPUT E:/Programme/MiKTeX 2.9/tex/latex/oberdiek/grfext.sty
+INPUT E:/Programme/MiKTeX 2.9/tex/latex/hyperref/nameref.sty
+INPUT E:/Programme/MiKTeX 2.9/tex/latex/hyperref/nameref.sty
+INPUT E:/Programme/MiKTeX 2.9/tex/generic/oberdiek/gettitlestring.sty
+INPUT E:/Programme/MiKTeX 2.9/tex/generic/oberdiek/gettitlestring.sty
+INPUT homework.out
+INPUT homework.out
+INPUT homework.out
+INPUT homework.out
+OUTPUT homework.pdf
+INPUT ./homework.out
+INPUT ./homework.out
+OUTPUT homework.out
+INPUT E:/Programme/tuddesign/tex/latex/tuddesign/logo/tud_logo.pdf
+INPUT E:/Programme/tuddesign/tex/latex/tuddesign/logo/tud_logo.pdf
+INPUT E:/Programme/tuddesign/tex/latex/tuddesign/logo/tud_logo.pdf
+INPUT E:/Programme/tuddesign/tex/latex/tuddesign/logo/tud_logo.pdf
+INPUT E:/Programme/tuddesign/tex/latex/tuddesign/logo/tud_logo.pdf
+INPUT E:/Programme/tuddesign/tex/latex/tuddesign/logo/tud_logo.pdf
+INPUT E:/Programme/tuddesign/tex/latex/tuddesign/logo/tud_logo.pdf
+INPUT E:/Programme/tuddesign/tex/latex/tuddesign/logo/tud_logo.pdf
+INPUT E:/Programme/tuddesign/tex/latex/tex-tudfonts/softmake/frontpage/t15fp.fd
+INPUT E:/Programme/tuddesign/tex/latex/tex-tudfonts/softmake/frontpage/t15fp.fd
+INPUT E:/Programme/tuddesign/fonts/tfm/softmake/frontpage/5fpm8t.tfm
+INPUT E:/Programme/tuddesign/fonts/tfm/softmake/frontpage/5fpm8t.tfm
+INPUT E:/Programme/MiKTeX 2.9/tex/latex/mathdesign/mdbch/ot1mdbch.fd
+INPUT E:/Programme/MiKTeX 2.9/tex/latex/mathdesign/mdbch/ot1mdbch.fd
+INPUT E:/Programme/MiKTeX 2.9/fonts/tfm/mathdesign/mdbch/mdbchr7t.tfm
+INPUT E:/Programme/MiKTeX 2.9/fonts/tfm/mathdesign/mdbch/mdbchr7t.tfm
+INPUT E:/Programme/MiKTeX 2.9/fonts/tfm/mathdesign/mdbch/mdbchr7t.tfm
+INPUT E:/Programme/MiKTeX 2.9/tex/latex/mathdesign/mdbch/omlmdbch.fd
+INPUT E:/Programme/MiKTeX 2.9/tex/latex/mathdesign/mdbch/omlmdbch.fd
+INPUT E:/Programme/MiKTeX 2.9/fonts/tfm/mathdesign/mdbch/mdbchri7m.tfm
+INPUT E:/Programme/MiKTeX 2.9/fonts/tfm/mathdesign/mdbch/mdbchri7m.tfm
+INPUT E:/Programme/MiKTeX 2.9/fonts/tfm/mathdesign/mdbch/mdbchri7m.tfm
+INPUT E:/Programme/MiKTeX 2.9/tex/latex/mathdesign/mdbch/omsmdbch.fd
+INPUT E:/Programme/MiKTeX 2.9/tex/latex/mathdesign/mdbch/omsmdbch.fd
+INPUT E:/Programme/MiKTeX 2.9/fonts/tfm/mathdesign/mdbch/mdbchr7y.tfm
+INPUT E:/Programme/MiKTeX 2.9/fonts/tfm/mathdesign/mdbch/mdbchr7y.tfm
+INPUT E:/Programme/MiKTeX 2.9/fonts/tfm/mathdesign/mdbch/mdbchr7y.tfm
+INPUT E:/Programme/MiKTeX 2.9/tex/latex/mathdesign/mdbch/omxmdbch.fd
+INPUT E:/Programme/MiKTeX 2.9/tex/latex/mathdesign/mdbch/omxmdbch.fd
+INPUT E:/Programme/MiKTeX 2.9/fonts/tfm/mathdesign/mdbch/mdbchr7v.tfm
+INPUT E:/Programme/MiKTeX 2.9/fonts/tfm/mathdesign/mdbch/mdbchr7v.tfm
+INPUT E:/Programme/MiKTeX 2.9/fonts/tfm/mathdesign/mdbch/mdbchr7v.tfm
+INPUT E:/Programme/MiKTeX 2.9/fonts/tfm/mathdesign/mdbch/mdbchr7m.tfm
+INPUT E:/Programme/MiKTeX 2.9/fonts/tfm/mathdesign/mdbch/mdbchr7m.tfm
+INPUT E:/Programme/MiKTeX 2.9/fonts/tfm/mathdesign/mdbch/mdbchr7m.tfm
+INPUT E:/Programme/MiKTeX 2.9/tex/latex/mathdesign/mdbch/mdamdbch.fd
+INPUT E:/Programme/MiKTeX 2.9/tex/latex/mathdesign/mdbch/mdamdbch.fd
+INPUT E:/Programme/MiKTeX 2.9/fonts/tfm/mathdesign/mdbch/mdbchrma.tfm
+INPUT E:/Programme/MiKTeX 2.9/fonts/tfm/mathdesign/mdbch/mdbchrma.tfm
+INPUT E:/Programme/MiKTeX 2.9/fonts/tfm/mathdesign/mdbch/mdbchrma.tfm
+INPUT E:/Programme/MiKTeX 2.9/tex/latex/mathdesign/mdbch/mdbmdbch.fd
+INPUT E:/Programme/MiKTeX 2.9/tex/latex/mathdesign/mdbch/mdbmdbch.fd
+INPUT E:/Programme/MiKTeX 2.9/fonts/tfm/mathdesign/mdbch/mdbchrmb.tfm
+INPUT E:/Programme/MiKTeX 2.9/fonts/tfm/mathdesign/mdbch/mdbchrmb.tfm
+INPUT E:/Programme/MiKTeX 2.9/fonts/tfm/mathdesign/mdbch/mdbchrmb.tfm
+INPUT E:/Programme/MiKTeX 2.9/tex/latex/mathdesign/mdput/omlmdput.fd
+INPUT E:/Programme/MiKTeX 2.9/tex/latex/mathdesign/mdput/omlmdput.fd
+INPUT E:/Programme/MiKTeX 2.9/fonts/tfm/mathdesign/mdput/mdputri7m.tfm
+INPUT E:/Programme/MiKTeX 2.9/fonts/tfm/mathdesign/mdput/mdputri7m.tfm
+INPUT E:/Programme/MiKTeX 2.9/fonts/tfm/mathdesign/mdput/mdputri7m.tfm
+INPUT E:/Programme/tuddesign/fonts/tfm/softmake/frontpage/5fpr8t.tfm
+INPUT E:/Programme/tuddesign/fonts/tfm/softmake/frontpage/5fpm8t.tfm
+INPUT E:/Programme/tuddesign/fonts/tfm/softmake/frontpage/5fpr8t.tfm
+INPUT E:/Programme/tuddesign/fonts/tfm/softmake/charter/5chb8t.tfm
+INPUT lqr.tex
+INPUT lqr.tex
+INPUT E:/Programme/tuddesign/fonts/tfm/softmake/frontpage/5fpm8t.tfm
+INPUT E:/Programme/tuddesign/fonts/tfm/softmake/frontpage/5fpr8t.tfm
+INPUT E:/Programme/MiKTeX 2.9/fonts/tfm/mathdesign/mdbch/mdbchb7t.tfm
+INPUT E:/Programme/MiKTeX 2.9/fonts/tfm/mathdesign/mdbch/mdbchb7t.tfm
+INPUT E:/Programme/MiKTeX 2.9/fonts/tfm/mathdesign/mdbch/mdbchb7t.tfm
+INPUT E:/Programme/MiKTeX 2.9/fonts/tfm/mathdesign/mdbch/mdbchbi7m.tfm
+INPUT E:/Programme/MiKTeX 2.9/fonts/tfm/mathdesign/mdbch/mdbchbi7m.tfm
+INPUT E:/Programme/MiKTeX 2.9/fonts/tfm/mathdesign/mdbch/mdbchbi7m.tfm
+INPUT E:/Programme/MiKTeX 2.9/fonts/tfm/mathdesign/mdbch/mdbchb7y.tfm
+INPUT E:/Programme/MiKTeX 2.9/fonts/tfm/mathdesign/mdbch/mdbchb7y.tfm
+INPUT E:/Programme/MiKTeX 2.9/fonts/tfm/mathdesign/mdbch/mdbchb7y.tfm
+INPUT E:/Programme/MiKTeX 2.9/fonts/tfm/mathdesign/mdbch/mdbchb7v.tfm
+INPUT E:/Programme/MiKTeX 2.9/fonts/tfm/mathdesign/mdbch/mdbchb7v.tfm
+INPUT E:/Programme/MiKTeX 2.9/fonts/tfm/mathdesign/mdbch/mdbchb7v.tfm
+INPUT E:/Programme/MiKTeX 2.9/fonts/tfm/mathdesign/mdbch/mdbchb7m.tfm
+INPUT E:/Programme/MiKTeX 2.9/fonts/tfm/mathdesign/mdbch/mdbchb7m.tfm
+INPUT E:/Programme/MiKTeX 2.9/fonts/tfm/mathdesign/mdbch/mdbchb7m.tfm
+INPUT E:/Programme/MiKTeX 2.9/fonts/tfm/mathdesign/mdbch/mdbchbma.tfm
+INPUT E:/Programme/MiKTeX 2.9/fonts/tfm/mathdesign/mdbch/mdbchbma.tfm
+INPUT E:/Programme/MiKTeX 2.9/fonts/tfm/mathdesign/mdbch/mdbchbma.tfm
+INPUT E:/Programme/MiKTeX 2.9/fonts/tfm/mathdesign/mdbch/mdbchbmb.tfm
+INPUT E:/Programme/MiKTeX 2.9/fonts/tfm/mathdesign/mdbch/mdbchbmb.tfm
+INPUT E:/Programme/MiKTeX 2.9/fonts/tfm/mathdesign/mdbch/mdbchbmb.tfm
+INPUT E:/Programme/MiKTeX 2.9/fonts/tfm/jknappen/ec/ecss1000.tfm
+INPUT E:/Programme/MiKTeX 2.9/fonts/tfm/jknappen/ec/ecss0700.tfm
+INPUT E:/Programme/MiKTeX 2.9/fonts/tfm/jknappen/ec/ecss0600.tfm
+INPUT E:/Programme/tuddesign/fonts/tfm/softmake/charter/5chr8t.tfm
+INPUT E:/Programme/tuddesign/fonts/tfm/softmake/charter/5chr8t.tfm
+INPUT E:/Programme/tuddesign/fonts/tfm/softmake/charter/5chbo8t.tfm
+INPUT E:/Programme/MiKTeX 2.9/fonts/tfm/mathdesign/mdbch/mdbchr7t.tfm
+INPUT E:/Programme/MiKTeX 2.9/fonts/tfm/mathdesign/mdbch/mdbchr7t.tfm
+INPUT E:/Programme/MiKTeX 2.9/fonts/tfm/mathdesign/mdbch/mdbchri7m.tfm
+INPUT E:/Programme/MiKTeX 2.9/fonts/tfm/mathdesign/mdbch/mdbchri7m.tfm
+INPUT E:/Programme/MiKTeX 2.9/fonts/tfm/mathdesign/mdbch/mdbchr7y.tfm
+INPUT E:/Programme/MiKTeX 2.9/fonts/tfm/mathdesign/mdbch/mdbchr7y.tfm
+INPUT E:/Programme/MiKTeX 2.9/fonts/tfm/mathdesign/mdbch/mdbchr7v.tfm
+INPUT E:/Programme/MiKTeX 2.9/fonts/tfm/mathdesign/mdbch/mdbchr7v.tfm
+INPUT E:/Programme/MiKTeX 2.9/fonts/tfm/jknappen/ec/ecss0500.tfm
+INPUT E:/Programme/MiKTeX 2.9/fonts/tfm/mathdesign/mdbch/mdbchr7m.tfm
+INPUT E:/Programme/MiKTeX 2.9/fonts/tfm/mathdesign/mdbch/mdbchr7m.tfm
+INPUT E:/Programme/MiKTeX 2.9/fonts/tfm/mathdesign/mdbch/mdbchrma.tfm
+INPUT E:/Programme/MiKTeX 2.9/fonts/tfm/mathdesign/mdbch/mdbchrma.tfm
+INPUT E:/Programme/MiKTeX 2.9/fonts/tfm/mathdesign/mdbch/mdbchrmb.tfm
+INPUT E:/Programme/MiKTeX 2.9/fonts/tfm/mathdesign/mdbch/mdbchrmb.tfm
+INPUT E:/Programme/MiKTeX 2.9/fonts/tfm/mathdesign/mdput/mdputri7m.tfm
+INPUT E:/Programme/MiKTeX 2.9/fonts/tfm/mathdesign/mdput/mdputri7m.tfm
+INPUT E:/Programme/MiKTeX 2.9/fonts/tfm/mathdesign/mdbch/mdbchr7t.tfm
+INPUT E:/Programme/MiKTeX 2.9/fonts/tfm/mathdesign/mdbch/mdbchr7t.tfm
+INPUT E:/Programme/MiKTeX 2.9/fonts/tfm/mathdesign/mdbch/mdbchri7m.tfm
+INPUT E:/Programme/MiKTeX 2.9/fonts/tfm/mathdesign/mdbch/mdbchri7m.tfm
+INPUT E:/Programme/MiKTeX 2.9/fonts/tfm/mathdesign/mdbch/mdbchr7y.tfm
+INPUT E:/Programme/MiKTeX 2.9/fonts/tfm/mathdesign/mdbch/mdbchr7y.tfm
+INPUT E:/Programme/MiKTeX 2.9/fonts/tfm/mathdesign/mdbch/mdbchr7v.tfm
+INPUT E:/Programme/MiKTeX 2.9/fonts/tfm/mathdesign/mdbch/mdbchr7v.tfm
+INPUT E:/Programme/MiKTeX 2.9/fonts/tfm/mathdesign/mdbch/mdbchr7m.tfm
+INPUT E:/Programme/MiKTeX 2.9/fonts/tfm/mathdesign/mdbch/mdbchr7m.tfm
+INPUT E:/Programme/MiKTeX 2.9/fonts/tfm/mathdesign/mdbch/mdbchrma.tfm
+INPUT E:/Programme/MiKTeX 2.9/fonts/tfm/mathdesign/mdbch/mdbchrma.tfm
+INPUT E:/Programme/MiKTeX 2.9/fonts/tfm/mathdesign/mdbch/mdbchrmb.tfm
+INPUT E:/Programme/MiKTeX 2.9/fonts/tfm/mathdesign/mdbch/mdbchrmb.tfm
+INPUT E:/Programme/MiKTeX 2.9/fonts/tfm/mathdesign/mdput/mdputri7m.tfm
+INPUT E:/Programme/MiKTeX 2.9/fonts/tfm/mathdesign/mdput/mdputri7m.tfm
+INPUT E:/Programme/tuddesign/fonts/tfm/softmake/charter/5chri8t.tfm
+INPUT img/1a_20.png
+INPUT ./img/1a_20.png
+INPUT ./img/1a_20.png
+INPUT ./img/1a_20.png
+INPUT ./img/1a_20.png
+INPUT E:/Programme/tuddesign/fonts/tfm/softmake/charter/5chr8t.tfm
+INPUT code/a1_a.py
+INPUT E:/Programme/tuddesign/fonts/tfm/softmake/charter/5chri8t.tfm
+INPUT code/a1_a.py
+INPUT code/a1_a.py
+INPUT E:/Programme/tuddesign/fonts/tfm/softmake/charter/5chr8t.tfm
+INPUT E:/Programme/tuddesign/fonts/tfm/softmake/charter/5chr8t.tfm
+INPUT E:/Programme/MiKTeX 2.9/fonts/tfm/mathdesign/mdbch/mdbchr7t.tfm
+INPUT E:/Programme/MiKTeX 2.9/fonts/tfm/mathdesign/mdbch/mdbchr7t.tfm
+INPUT E:/Programme/MiKTeX 2.9/fonts/tfm/mathdesign/mdbch/mdbchr7t.tfm
+INPUT E:/Programme/MiKTeX 2.9/fonts/tfm/mathdesign/mdbch/mdbchri7m.tfm
+INPUT E:/Programme/MiKTeX 2.9/fonts/tfm/mathdesign/mdbch/mdbchri7m.tfm
+INPUT E:/Programme/MiKTeX 2.9/fonts/tfm/mathdesign/mdbch/mdbchri7m.tfm
+INPUT E:/Programme/MiKTeX 2.9/fonts/tfm/mathdesign/mdbch/mdbchr7y.tfm
+INPUT E:/Programme/MiKTeX 2.9/fonts/tfm/mathdesign/mdbch/mdbchr7y.tfm
+INPUT E:/Programme/MiKTeX 2.9/fonts/tfm/mathdesign/mdbch/mdbchr7y.tfm
+INPUT E:/Programme/MiKTeX 2.9/fonts/tfm/mathdesign/mdbch/mdbchr7v.tfm
+INPUT E:/Programme/MiKTeX 2.9/fonts/tfm/mathdesign/mdbch/mdbchr7v.tfm
+INPUT E:/Programme/MiKTeX 2.9/fonts/tfm/mathdesign/mdbch/mdbchr7v.tfm
+INPUT E:/Programme/MiKTeX 2.9/fonts/tfm/jknappen/ec/ecss0800.tfm
+INPUT E:/Programme/MiKTeX 2.9/fonts/tfm/mathdesign/mdbch/mdbchr7m.tfm
+INPUT E:/Programme/MiKTeX 2.9/fonts/tfm/mathdesign/mdbch/mdbchr7m.tfm
+INPUT E:/Programme/MiKTeX 2.9/fonts/tfm/mathdesign/mdbch/mdbchr7m.tfm
+INPUT E:/Programme/MiKTeX 2.9/fonts/tfm/mathdesign/mdbch/mdbchrma.tfm
+INPUT E:/Programme/MiKTeX 2.9/fonts/tfm/mathdesign/mdbch/mdbchrma.tfm
+INPUT E:/Programme/MiKTeX 2.9/fonts/tfm/mathdesign/mdbch/mdbchrma.tfm
+INPUT E:/Programme/MiKTeX 2.9/fonts/tfm/mathdesign/mdbch/mdbchrmb.tfm
+INPUT E:/Programme/MiKTeX 2.9/fonts/tfm/mathdesign/mdbch/mdbchrmb.tfm
+INPUT E:/Programme/MiKTeX 2.9/fonts/tfm/mathdesign/mdbch/mdbchrmb.tfm
+INPUT E:/Programme/MiKTeX 2.9/fonts/tfm/mathdesign/mdput/mdputri7m.tfm
+INPUT E:/Programme/MiKTeX 2.9/fonts/tfm/mathdesign/mdput/mdputri7m.tfm
+INPUT E:/Programme/MiKTeX 2.9/fonts/tfm/mathdesign/mdput/mdputri7m.tfm
+INPUT img/1a_20.png
+INPUT ./img/1a_20.png
+INPUT E:/Programme/tuddesign/fonts/vf/softmake/frontpage/5fpm8t.vf
+INPUT E:/Programme/tuddesign/fonts/tfm/softmake/frontpage/5fpm8r.tfm
+INPUT C:/Users/mknau/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map
+INPUT E:/Programme/tuddesign/fonts/vf/softmake/frontpage/5fpm8t.vf
+INPUT E:/Programme/tuddesign/fonts/tfm/softmake/frontpage/5fpm8r.tfm
+INPUT E:/Programme/tuddesign/fonts/vf/softmake/frontpage/5fpm8t.vf
+INPUT E:/Programme/tuddesign/fonts/tfm/softmake/frontpage/5fpm8r.tfm
+INPUT E:/Programme/tuddesign/fonts/vf/softmake/frontpage/5fpr8t.vf
+INPUT E:/Programme/tuddesign/fonts/tfm/softmake/frontpage/5fpr8r.tfm
+INPUT E:/Programme/tuddesign/fonts/vf/softmake/charter/5chb8t.vf
+INPUT E:/Programme/tuddesign/fonts/tfm/softmake/charter/5chb8r.tfm
+INPUT E:/Programme/tuddesign/fonts/vf/softmake/frontpage/5fpr8t.vf
+INPUT E:/Programme/tuddesign/fonts/tfm/softmake/frontpage/5fpr8r.tfm
+INPUT E:/Programme/tuddesign/fonts/vf/softmake/charter/5chr8t.vf
+INPUT E:/Programme/tuddesign/fonts/tfm/softmake/charter/5chr8r.tfm
+INPUT E:/Programme/MiKTeX 2.9/fonts/vf/mathdesign/mdbch/mdbchbi7m.vf
+INPUT E:/Programme/MiKTeX 2.9/fonts/tfm/mathdesign/mdbch/md-chbi7m.tfm
+INPUT E:/Programme/MiKTeX 2.9/fonts/tfm/mathdesign/mdbch/md-chbi8y.tfm
+INPUT E:/Programme/MiKTeX 2.9/fonts/tfm/mathdesign/mdbch/md-chb8y.tfm
+INPUT E:/Programme/MiKTeX 2.9/fonts/vf/mathdesign/mdbch/mdbchri7m.vf
+INPUT E:/Programme/MiKTeX 2.9/fonts/tfm/mathdesign/mdbch/md-chri7m.tfm
+INPUT E:/Programme/MiKTeX 2.9/fonts/tfm/mathdesign/mdbch/md-chri8y.tfm
+INPUT E:/Programme/MiKTeX 2.9/fonts/tfm/mathdesign/mdbch/md-chr8y.tfm
+INPUT E:/Programme/MiKTeX 2.9/fonts/vf/mathdesign/mdbch/mdbchr7t.vf
+INPUT E:/Programme/MiKTeX 2.9/fonts/tfm/mathdesign/mdbch/md-chr7t.tfm
+INPUT E:/Programme/MiKTeX 2.9/fonts/vf/mathdesign/mdbch/mdbchr7t.vf
+INPUT E:/Programme/MiKTeX 2.9/fonts/tfm/mathdesign/mdbch/md-chr7t.tfm
+INPUT E:/Programme/MiKTeX 2.9/fonts/tfm/mathdesign/mdbch/md-chr8y.tfm
+INPUT E:/Programme/MiKTeX 2.9/fonts/vf/mathdesign/mdbch/mdbchri7m.vf
+INPUT E:/Programme/MiKTeX 2.9/fonts/tfm/mathdesign/mdbch/md-chri7m.tfm
+INPUT E:/Programme/MiKTeX 2.9/fonts/tfm/mathdesign/mdbch/md-chri8y.tfm
+INPUT E:/Programme/MiKTeX 2.9/fonts/vf/mathdesign/mdbch/mdbchr7y.vf
+INPUT E:/Programme/MiKTeX 2.9/fonts/tfm/mathdesign/mdbch/md-chr7y.tfm
+INPUT E:/Programme/MiKTeX 2.9/fonts/vf/mathdesign/mdbch/mdbchr7v.vf
+INPUT E:/Programme/MiKTeX 2.9/fonts/tfm/mathdesign/mdbch/md-chr7v.tfm
+INPUT E:/Programme/MiKTeX 2.9/fonts/vf/mathdesign/mdbch/mdbchb7m.vf
+INPUT E:/Programme/MiKTeX 2.9/fonts/tfm/mathdesign/mdbch/md-chb7m.tfm
+INPUT E:/Programme/tuddesign/fonts/vf/softmake/charter/5chbo8t.vf
+INPUT E:/Programme/tuddesign/fonts/tfm/softmake/charter/5chbo8r.tfm
+INPUT E:/Programme/MiKTeX 2.9/fonts/vf/mathdesign/mdbch/mdbchb7t.vf
+INPUT E:/Programme/MiKTeX 2.9/fonts/tfm/mathdesign/mdbch/md-chb7t.tfm
+INPUT code/a1_a.py
+INPUT code/a1_a.py
+INPUT code/a1_a.py
+INPUT E:/Programme/tuddesign/fonts/vf/softmake/frontpage/5fpr8t.vf
+INPUT E:/Programme/tuddesign/fonts/tfm/softmake/frontpage/5fpr8r.tfm
+INPUT E:/Programme/tuddesign/fonts/vf/softmake/charter/5chri8t.vf
+INPUT E:/Programme/tuddesign/fonts/tfm/softmake/charter/5chri8r.tfm
+INPUT E:/Programme/tuddesign/fonts/vf/softmake/charter/5chr8t.vf
+INPUT E:/Programme/tuddesign/fonts/tfm/softmake/charter/5chr8r.tfm
+INPUT E:/Programme/tuddesign/fonts/vf/softmake/charter/5chri8t.vf
+INPUT E:/Programme/tuddesign/fonts/tfm/softmake/charter/5chri8r.tfm
+INPUT E:/Programme/MiKTeX 2.9/fonts/vf/mathdesign/mdbch/mdbchr7y.vf
+INPUT E:/Programme/MiKTeX 2.9/fonts/tfm/mathdesign/mdbch/md-chr7y.tfm
+INPUT E:/Programme/MiKTeX 2.9/fonts/tfm/mathdesign/mdbch/md-chr8y.tfm
+INPUT img/1b_20.png
+INPUT ./img/1b_20.png
+INPUT ./img/1b_20.png
+INPUT ./img/1b_20.png
+INPUT ./img/1b_20.png
+INPUT img/1b_20.png
+INPUT ./img/1b_20.png
+INPUT E:/Programme/tuddesign/fonts/vf/softmake/charter/5chr8t.vf
+INPUT E:/Programme/tuddesign/fonts/tfm/softmake/charter/5chr8r.tfm
+INPUT img/1c_1.png
+INPUT ./img/1c_1.png
+INPUT ./img/1c_1.png
+INPUT ./img/1c_1.png
+INPUT ./img/1c_1.png
+INPUT img/1c_2.png
+INPUT ./img/1c_2.png
+INPUT ./img/1c_2.png
+INPUT ./img/1c_2.png
+INPUT ./img/1c_2.png
+INPUT img/1c_3.png
+INPUT ./img/1c_3.png
+INPUT ./img/1c_3.png
+INPUT ./img/1c_3.png
+INPUT ./img/1c_3.png
+INPUT code/a1_c.py
+INPUT code/a1_c.py
+INPUT code/a1_c.py
+INPUT img/1c_1.png
+INPUT ./img/1c_1.png
+INPUT E:/Programme/MiKTeX 2.9/fonts/vf/mathdesign/mdbch/mdbchr7y.vf
+INPUT E:/Programme/MiKTeX 2.9/fonts/tfm/mathdesign/mdbch/md-chr7y.tfm
+INPUT E:/Programme/MiKTeX 2.9/fonts/vf/mathdesign/mdput/mdputri7m.vf
+INPUT E:/Programme/MiKTeX 2.9/fonts/tfm/mathdesign/mdput/md-utri7m.tfm
+INPUT E:/Programme/MiKTeX 2.9/fonts/tfm/mathdesign/mdput/md-utri8y.tfm
+INPUT E:/Programme/MiKTeX 2.9/fonts/tfm/mathdesign/mdput/md-utr8y.tfm
+INPUT img/1c_2.png
+INPUT ./img/1c_2.png
+INPUT img/1c_3.png
+INPUT ./img/1c_3.png
+INPUT code/a1_c.py
+INPUT code/a1_c.py
+INPUT code/a1_c.py
+INPUT gridworld.tex
+INPUT gridworld.tex
+INPUT gridworld.pdf
+INPUT ./gridworld.pdf
+INPUT ./gridworld.pdf
+INPUT ./gridworld.pdf
+INPUT E:/Programme/MiKTeX 2.9/tex/latex/txfonts/t1txtt.fd
+INPUT E:/Programme/MiKTeX 2.9/tex/latex/txfonts/t1txtt.fd
+INPUT E:/Programme/MiKTeX 2.9/fonts/tfm/public/txfonts/t1xtt.tfm
+INPUT E:/Programme/MiKTeX 2.9/fonts/tfm/public/txfonts/t1xtt.tfm
+INPUT E:/Programme/MiKTeX 2.9/fonts/tfm/public/txfonts/t1xtt.tfm
+INPUT img/value_2a.png
+INPUT ./img/value_2a.png
+INPUT ./img/value_2a.png
+INPUT ./img/value_2a.png
+INPUT ./img/value_2a.png
+INPUT img/policy_2a.png
+INPUT ./img/policy_2a.png
+INPUT ./img/policy_2a.png
+INPUT ./img/policy_2a.png
+INPUT ./img/policy_2a.png
+INPUT img/2a_T10.png
+INPUT ./img/2a_T10.png
+INPUT ./img/2a_T10.png
+INPUT ./img/2a_T10.png
+INPUT ./img/2a_T10.png
+INPUT code/a2_a.py
+INPUT code/a2_a.py
+INPUT code/a2_a.py
+INPUT img/value_2a.png
+INPUT ./img/value_2a.png
+INPUT img/policy_2a.png
+INPUT ./img/policy_2a.png
+INPUT img/2a_T10.png
+INPUT ./img/2a_T10.png
+INPUT E:/Programme/MiKTeX 2.9/fonts/vf/mathdesign/mdbch/mdbchrma.vf
+INPUT E:/Programme/MiKTeX 2.9/fonts/tfm/mathdesign/mdbch/md-chrma.tfm
+INPUT code/a2_a.py
+INPUT code/a2_a.py
+INPUT code/a2_a.py
+INPUT E:/Programme/tuddesign/tex/latex/tex-tudfonts/softmake/charter/ts15ch.fd
+INPUT E:/Programme/tuddesign/tex/latex/tex-tudfonts/softmake/charter/ts15ch.fd
+INPUT E:/Programme/tuddesign/fonts/tfm/softmake/charter/5chri8c.tfm
+INPUT img/infinitehorizon_2c.png
+INPUT ./img/infinitehorizon_2c.png
+INPUT ./img/infinitehorizon_2c.png
+INPUT ./img/infinitehorizon_2c.png
+INPUT ./img/infinitehorizon_2c.png
+INPUT img/policy_2c.png
+INPUT ./img/policy_2c.png
+INPUT ./img/policy_2c.png
+INPUT ./img/policy_2c.png
+INPUT ./img/policy_2c.png
+INPUT code/a2_c.py
+INPUT code/a2_c.py
+INPUT code/a2_c.py
+INPUT E:/Programme/tuddesign/fonts/tfm/softmake/charter/5chri8c.tfm
+INPUT img/infinitehorizon_2c.png
+INPUT ./img/infinitehorizon_2c.png
+INPUT img/policy_2c.png
+INPUT ./img/policy_2c.png
+INPUT E:/Programme/tuddesign/fonts/vf/softmake/charter/5chri8c.vf
+INPUT code/a2_c.py
+INPUT code/a2_c.py
+INPUT code/a2_c.py
+INPUT E:/Programme/tuddesign/fonts/vf/softmake/charter/5chri8c.vf
+INPUT img/value_2d.png
+INPUT ./img/value_2d.png
+INPUT ./img/value_2d.png
+INPUT ./img/value_2d.png
+INPUT ./img/value_2d.png
+INPUT img/policy_2d.png
+INPUT ./img/policy_2d.png
+INPUT ./img/policy_2d.png
+INPUT ./img/policy_2d.png
+INPUT ./img/policy_2d.png
+INPUT code/a2_d.py
+INPUT code/a2_d.py
+INPUT code/a2_d.py
+INPUT img/value_2d.png
+INPUT ./img/value_2d.png
+INPUT img/policy_2d.png
+INPUT ./img/policy_2d.png
+INPUT code/a2_d.py
+INPUT code/a2_d.py
+INPUT code/a2_d.py
+INPUT homework.aux
+INPUT ./homework.out
+INPUT ./homework.out
+INPUT E:/Programme/MiKTeX 2.9/fonts/enc/dvips/ly1/texnansi.enc
+INPUT E:/Programme/MiKTeX 2.9/fonts/enc/dvips/base/8r.enc
+INPUT C:/Users/mknau/AppData/Local/MiKTeX/2.9/fonts/pk/ljfour/jknappen/ec/dpi623/ecss0700.pk
+INPUT C:/Users/mknau/AppData/Local/MiKTeX/2.9/fonts/pk/ljfour/jknappen/ec/dpi623/ecss0700.pk
+INPUT E:/Programme/tuddesign/fonts/type1/softmake/charter/5chb8a.pfb
+INPUT E:/Programme/tuddesign/fonts/type1/softmake/charter/5chb8a.pfb
+INPUT E:/Programme/tuddesign/fonts/type1/softmake/charter/5chb8a.pfb
+INPUT E:/Programme/tuddesign/fonts/type1/softmake/charter/5chb8a.pfb
+INPUT E:/Programme/tuddesign/fonts/type1/softmake/charter/5chr8a.pfb
+INPUT E:/Programme/tuddesign/fonts/type1/softmake/charter/5chr8a.pfb
+INPUT E:/Programme/tuddesign/fonts/type1/softmake/charter/5chri8a.pfb
+INPUT E:/Programme/tuddesign/fonts/type1/softmake/charter/5chri8a.pfb
+INPUT E:/Programme/tuddesign/fonts/type1/softmake/frontpage/5fpm8a.pfb
+INPUT E:/Programme/tuddesign/fonts/type1/softmake/frontpage/5fpm8a.pfb
+INPUT E:/Programme/tuddesign/fonts/type1/softmake/frontpage/5fpr8a.pfb
+INPUT E:/Programme/tuddesign/fonts/type1/softmake/frontpage/5fpr8a.pfb
+INPUT E:/Programme/MiKTeX 2.9/fonts/type1/bitstrea/charter/bchb8a.pfb
+INPUT E:/Programme/MiKTeX 2.9/fonts/type1/bitstrea/charter/bchb8a.pfb
+INPUT E:/Programme/MiKTeX 2.9/fonts/type1/bitstrea/charter/bchbi8a.pfb
+INPUT E:/Programme/MiKTeX 2.9/fonts/type1/bitstrea/charter/bchbi8a.pfb
+INPUT E:/Programme/MiKTeX 2.9/fonts/type1/bitstrea/charter/bchr8a.pfb
+INPUT E:/Programme/MiKTeX 2.9/fonts/type1/bitstrea/charter/bchr8a.pfb
+INPUT E:/Programme/MiKTeX 2.9/fonts/type1/bitstrea/charter/bchri8a.pfb
+INPUT E:/Programme/MiKTeX 2.9/fonts/type1/bitstrea/charter/bchri8a.pfb
+INPUT E:/Programme/MiKTeX 2.9/fonts/type1/mathdesign/mdbch/md-chb7m.pfb
+INPUT E:/Programme/MiKTeX 2.9/fonts/type1/mathdesign/mdbch/md-chb7m.pfb
+INPUT E:/Programme/MiKTeX 2.9/fonts/type1/mathdesign/mdbch/md-chr7t.pfb
+INPUT E:/Programme/MiKTeX 2.9/fonts/type1/mathdesign/mdbch/md-chr7t.pfb
+INPUT E:/Programme/MiKTeX 2.9/fonts/type1/mathdesign/mdbch/md-chr7v.pfb
+INPUT E:/Programme/MiKTeX 2.9/fonts/type1/mathdesign/mdbch/md-chr7v.pfb
+INPUT E:/Programme/MiKTeX 2.9/fonts/type1/mathdesign/mdbch/md-chr7y.pfb
+INPUT E:/Programme/MiKTeX 2.9/fonts/type1/mathdesign/mdbch/md-chr7y.pfb
+INPUT E:/Programme/MiKTeX 2.9/fonts/type1/mathdesign/mdbch/md-chri7m.pfb
+INPUT E:/Programme/MiKTeX 2.9/fonts/type1/mathdesign/mdbch/md-chri7m.pfb
+INPUT E:/Programme/MiKTeX 2.9/fonts/type1/mathdesign/mdbch/md-chrma.pfb
+INPUT E:/Programme/MiKTeX 2.9/fonts/type1/mathdesign/mdbch/md-chrma.pfb
+INPUT E:/Programme/MiKTeX 2.9/fonts/type1/adobe/utopia/putri8a.pfb
+INPUT E:/Programme/MiKTeX 2.9/fonts/type1/adobe/utopia/putri8a.pfb
+INPUT E:/Programme/MiKTeX 2.9/fonts/type1/public/txfonts/t1xtt.pfb
+INPUT E:/Programme/MiKTeX 2.9/fonts/type1/public/txfonts/t1xtt.pfb

@@ -100,10 +100,8 @@ The mean of the  cummulative reward over the experiments:  $\sum rw = -2717991.1
 
 The standard deviation of the cummulative reward is: 681486
 
-
-	
+\lstinputlisting[caption=Code too calc the states and actions]{code/a1_a.py}
 \end{answer}
-
 
 \end{question}
 
@@ -136,6 +134,7 @@ The standard deviation of the cummulative reward is: 681486
     
     Use the same LQR system as in the previous exercise and run 20 experiments. Plot in one figure the mean and 95\% confidence (see ``68--95--99.7 rule'' and matplotlib.pyplot.fill\_between function) of the first dimension of the state, for both $\vec s^\text{des}_t = \vec r_t$ and $\vec s^\text{des}_t = \vec 0$.
 \end{question}
+
 \begin{answer}
 \begin{center}
 	\includegraphics[width=0.75\textwidth]{img/1b_20.png}
@@ -185,8 +184,44 @@ Since t=40 the state s1\_des=r oscillates around 20. Whereas the state s1\_des =
 	Run 20 experiments with $\vec s^\text{des}_t = \vec 0$ computing the optimal gains $\mat K_t$ and $\vec k_t$. Plot the mean and 95\% confidence (see ``68--95--99.7 rule'' and matplotlib.pyplot.fill\_between function) of both states for all three different controllers used so far. Use one figure per state. 
 	Report the mean and std of the cumulative reward for each controller and comment the results. Attach a snippet of your code.
 
-\begin{answer}\end{answer}
+\begin{answer}
+	\begin{center}
+		\includegraphics[width=0.75\textwidth]{img/1c_1.png}
+		\captionof{figure}{Action, states and reward of the optimal controller.}
+	\end{center}
 
+	\begin{center}
+		\includegraphics[width=0.75\textwidth]{img/1c_2.png}
+		\captionof{figure}{State 1 of all three controllers compared.}
+	\end{center}
+
+	\begin{center}
+		\includegraphics[width=0.75\textwidth]{img/1c_3.png}
+		\captionof{figure}{State 2 of all three controllers compared.}
+	\end{center}
+
+	\begin{center}
+		\begin{tabular}{|l|r|r|}
+			\hline 
+			cumulative reward & mean & std \\ 
+			\hline 
+			s\_des = 0 & -2739815.9 & 424072.8 \\ 
+			\hline 
+			s\_des = r & -105631266.4 & 11544950.4 \\ 
+			\hline 
+			opt & -61296.8 & 3966.4 \\ 
+			\hline 
+		\end{tabular}
+		\captionof{table}{Rewards of the diffeerent controller}
+	\end{center}	
+
+	The only important part of the reward is the first state at t=14 and t=40. There R equals 100000 and because of this these timesteps have a much higher weight in the cumulative reward. All other timesteps have a R smaller 1 and a really small weight. State 2 has a small R at every timestep, so it is not important for the cumulative reward. 
+	
+	The desired state value is described by r. It equals 10 at t=14 and 20 at t=40. So the trajectory should go through this points (marked with red dots) to minimize the reward.
+
+	The optimal controller meats this requirement, like you can see in the plot. The first controller is unstable and oscillates, but its trajectory also is near to the desired points. The second trajectory is also unstable and it is far away from the desired points. Because of this, the second trajectory has a really high negative reward. The first controller has a much smaller negative reward, but it also is very high. The optimal controller has a really small negative reward, compared too the two other controllers.
+	\lstinputlisting[caption=code too calc the optimal controller]{code/a1_c.py}
+\end{answer}
 \end{question}
 
 %----------------------------------------------

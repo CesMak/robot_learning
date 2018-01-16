@@ -247,6 +247,17 @@ showPolicy(policy[:,:,0], ax)
 if saveFigures:
     plt.savefig('policy_Fin_15.pdf')
 
+
+#for i in [9,10,11]:
+#    V, Q = ValIter(grid_world, maxSteps=i)
+#    V = V[:, :, 0];
+#    showWorld(np.maximum(V, 0), 'Value Function - Finite Horizon steps {}'.format(i))
+#    if saveFigures:
+#        plt.savefig('value_Fin_15_{}.pdf'.format(i))
+#    policy = findPolicy(V, Q)
+#    ax = showWorld(grid_world, 'Policy - Finite Horizon steps {}'.format(i))
+#    showPolicy(policy[:, :, 0], ax)
+
 # Infinite Horizon
 V, Q = ValIter(grid_world, maxSteps=100, discount=0.8, infHor=True)
 V = V[:,:,0];

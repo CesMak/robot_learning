@@ -67,7 +67,8 @@ The robot is trying to avoid the water and the cat(for T=15) if possible (see fo
 For T=10 the robot is not moving to the toy's position, as it can not play long enough with the toy and earn such a high reward that compensates moving over the cat's position. (see Figure \ref{fig:2a3}).
 
 The Algorithmic Description of Value Iteration slide can be found in the lecture. The equation on this slide is used to code the current problem.
-	
+
+\lstinputlisting[caption=code of the value iteration algorithm]{code/a2_a.py}
 \end{answer}
 
 \end{question}
@@ -125,6 +126,8 @@ What can we say about the new policy? Is it different from the finite horizon sc
 If the robot lives forever it avoids the cat to reach the toy! This is the only huge difference compared to the finite horizon scenario. The reason for this policy is the discount factor. It weights future rewards smaller than immediate rewards. The smaller the discount factor (e.g 0.1) the higher immediate rewards are weighted. The higher the discount factor the more attractive is the toy to the robot.
 
 Another small difference is that if the robot lives forever it collects a little bit more Dirt on its way to the toy position. That is why the policy of state 8,9 changes to a down arrow to collect the Dirt on 9,9 on its way to the toy position. 
+
+\lstinputlisting[caption=code of the value iteration algorithm with converge]{code/a2_c.py}
 \end{answer}
 
 
@@ -153,6 +156,8 @@ Using the finite horizon formulation, calculate the optimal policy and the value
 			\label{fig:2d2}               
 		\end{minipage}
 	One of the more common action's is to stay at a reward position not risking a wrong movement to a punished position(like Cat or dangerous field). One example is the state at 9,4. At this position the robot does not risk to move wrong in the right direction (into the cat). The learned policy rather let's the robot wait at a certain position than risking to move wrong into a punished state. One reason for that is the quite high probability of moving wrong (0.1+0.1).
+
+	\lstinputlisting[caption= code of the value iteration algorithm with probabilistic model]{code/a2_d.py}
 	
 \end{answer}
 

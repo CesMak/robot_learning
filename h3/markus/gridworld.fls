@@ -1,0 +1,7 @@
+PWD d:/RL/robot_learning/h3/markus
+INPUT C:/Users/mknau/AppData/Local/MiKTeX/2.9/miktex/data/le/pdftex/pdflatex.fmt
+INPUT d:/RL/robot_learning/h3/markus/gridworld.tex
+OUTPUT gridworld.log
+INPUT E:/Programme/MiKTeX 2.9/fonts/tfm/public/cm/cmti10.tfm
+INPUT E:/Programme/MiKTeX 2.9/fonts/tfm/public/cm/cmtt10.tfm
+INPUT E:/Programme/MiKTeX 2.9/fonts/tfm/public/cm/cmbx10.tfm

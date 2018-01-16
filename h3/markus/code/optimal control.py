@@ -74,6 +74,24 @@ def run_system(s_des, K_t=0, k_t=k):
     return s, a, r
 
 
+def plot_single_state(fig, s_mean, s_std, s_des, label):
+    t = range(T+1)
+
+    plt.figure(fig)
+    plt.plot(t, s_mean[0, :], label=label)
+    plt.fill_between(t, s_mean[0, :] + 2 * s_std[0, :], s_mean[0, :] - 2 * s_std[0, :],
+                     alpha=0.5)
+    plt.legend()
+    plt.title('s1')
+
+    plt.figure(fig+1)
+    plt.plot(t, s_mean[1, :], label=label)
+    plt.fill_between(t, s_mean[1, :] + 2 * s_std[1, :], s_mean[1, :] - 2 * s_std[1, :],
+                     alpha=0.5)
+    plt.legend()
+    plt.title('s2')
+
+
 def plot_system(s, a, r, s_des, fig_num):
     nr_subplots = 4
     s_mean = np.mean(s, 2)
@@ -87,10 +105,8 @@ def plot_system(s, a, r, s_des, fig_num):
     r_sum = np.sum(r, axis=0)
     r_sum_mean = np.mean(r_sum)
     r_sum_std = np.sqrt(np.var(r_sum))
-    print
-    'r_sum_mean: {}'.format(r_sum_mean)
-    print
-    'r_sum_std: {}'.format(r_sum_std)
+    print 'r_sum_mean: {}'.format(r_sum_mean)
+    print 'r_sum_std: {}'.format(r_sum_std)
 
     t = range(T + 1)
 
@@ -349,7 +365,18 @@ def main():
     s4_mean, s4_std = plot_system(s4, a4, r4, np.zeros((2, T + 1)), 6)
     plt.subplot(nr_subplots, 1, 1)
     plt.title('3.1 c) 20 times with s_des = 0')
+    plt.subplot(nr_subplots, 1, 2)
+    plt.plot([14, 40], [10, 20], marker='o', color='r', linestyle='')
 
+    # compare a), b), c)
+    plot_single_state(7, s1_mean, s1_std, np.zeros((2, T+1)), 's_des=0')
+    plot_single_state(7, s2_mean, s2_std, np.zeros((2, T + 1)), 's_des=r')
+    plot_single_state(7, s4_mean, s4_std, np.zeros((2, T + 1)), 'opt')
+    plt.figure(7)
+    plt.plot([14, 40], [10, 20], marker='o', color='r', linestyle='')
+    plt.xlabel('t')
+    plt.figure(8)
+    plt.xlabel('t')
     plt.show()
     return 0
 
