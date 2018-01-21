@@ -40,21 +40,22 @@
 
 
 %=========================================================
+
 \ifcsname withSol\endcsname\else
-\expandafter\let\csname withSol\expandafter\endcsname
-\csname iffalse\endcsname
+  \expandafter\let\csname withSol\expandafter\endcsname
+                  \csname iffalse\endcsname
 \fi
 
 \withSol
-\usepackage[solutions]{iasHomework}
+	\usepackage[solutions]{iasHomework}
 \else
-\usepackage{iasHomework}
+	\usepackage{iasHomework}
 \fi
+
 %=========================================================
 
-% USE YOUR NAMES!
-\newcommand{\studentdata}{}
-%\newcommand{\studentdata}{John Doe, 1234567 \qquad Jane Doe, 7654321}
+
+\newcommand{\studentdata}{Markus Lamprecht, 2424163 \qquad Moritz Knaust, ???}
 
 \begin{document}
 	
