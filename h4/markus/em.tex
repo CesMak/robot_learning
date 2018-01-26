@@ -47,7 +47,7 @@ log(\pi (\theta^{[i]}; w)) = -log(\sqrt{(2\pi)^k|\boldsymbol{\Sigma}| })-\frac{1
 
 
 \begin{equation}
-\frac{\partial \vec{w}_{k+1}}{\partial \vec{\mu}} = 0 \rightarrow \sum_i w^{[i]} \boldsymbol{\Sigma}^{-1} {\mu}_i = \sum_i w^{[i]} \boldsymbol{\Sigma}^{-1} \theta_i \rightarrow \mu_i = \frac {\sum_i w^[i] \theta_i}{\sum_i w^{[i]}}
+\frac{\partial \vec{w}_{k+1}}{\partial \vec{\mu}} = 0 \rightarrow \sum_i w^{[i]} \boldsymbol{\Sigma}^{-1} {\mu}_i = \sum_i w^{[i]} \boldsymbol{\Sigma}^{-1} \theta_i \rightarrow \mu_i = \frac {\sum_i w^{[i]} \theta_i}{\sum_i w^{[i]}}
 \end{equation}
 
 \end{answer}
@@ -88,7 +88,11 @@ What is the average return of the final policy?
 Use \texttt{animate\_fig} from \texttt{Pend2dBallThrowDMP.py} to show how the final policy of the robot looks like (attach all five screenshots).
 
 \begin{answer}
-
+Average Return of the final policy: -38.89
+\begin{center}
+	\includegraphics[width=1\textwidth]{img/EM-b.pdf}
+	\captionof{figure}{Policy of the Robot's arm (blue) and the Ball's position (yellow cross)}
+\end{center}
 \end{answer}
 
 \end{question}
@@ -101,9 +105,24 @@ Repeat the learning 10 times and plot the mean of the average return of all runs
 Use the logarithmic scale for your plot.
 
 \begin{answer}
+In the results we observe, that for $\lambda=25$ the average return converges faster than for smaller lambdas. Moreover it should be noted that for $\lambda=7$ we have the smallest average return at episode=100.\\
 
+In Theory: With the temperature $\lambda$ one can select how the maximum of the weights is selected:
+\begin{equation}
+	\lim_{\lambda \rightarrow \infty} w^{[i]}: \text{weights are selected deteministically}
+\end{equation}
+
+\begin{equation}
+\lim_{\lambda \rightarrow 0} w^{[i]}: \text{weights are selected stochastically}
+\end{equation}
+
+In the plots we can prove that for small lambdas the convergence is slower because the weights are selected stochastically. However the mean of the average reward for the last episode should be the smallest if the lambda is very small. This theoretical fact differs from the plot above.
 \end{answer}
 
+\begin{center}
+	\includegraphics[width=0.5\textwidth]{img/EM-c.pdf}
+	\captionof{figure}{The average return of different $\lambda$ over the episodes of the EM-Algorithm. }
+\end{center}
 
 \end{question}
 
@@ -115,7 +134,15 @@ Which algorithm would allow you to automatically select the optimal $\lambda$? E
 Does it still have hyperparameters to be set?
 
 \begin{answer}
+RL problem: Policy Search Methods using Policy Gradients finding the right weights scaling factor. 
+\\
+ Algorithm that selects automatically the right lambda: Reward Weighted Regression.
 
+The Reward Weighted Regression\\ is an algorithm that generalizes the EM algorithm. This algorithm reduces the problem of learning with immediate rewards to a reward-weighted regression problem with an adaptive, integrated reward transformation for faster convergence.  The resulting algorithm is efficient, learns smoothly without
+dangerous jumps in solution space, and works well in applications of complex high degreeof-freedom robots.
+
+Hyperparameters:\\
+A transformed Hyperparameter still has to be set in RWR. However this parameter is automatically updated. With this parameter the convergence speed can be selected.
 \end{answer}
 
 
