@@ -50,9 +50,9 @@ def EM(lam = 7):
         # Mu_w = np.sum(w*theta, axis=0) / np.sum(w)
         # Sigma_w = (np.sum(w * np.dot((theta-Mu_w),(theta-Mu_w).T), axis=0))/(np.sum(w)) + np.eye(numDim)
 
-        if i>1:
-            if np.abs(R_avg[i] - R_avg[i-1]) < 1e-3:
-                break
+        #if i>1:
+        #    if np.abs(R_avg[i] - R_avg[i-1]) < 1e-3:
+         #       break
     print 'end'
     return Mu_w, Sigma_w, R_avg
 
@@ -86,6 +86,7 @@ for i in xrange(lam_c.shape[0]):
     for j in xrange(numTrials):
         Mu_w_c[i, j, :], Sigma_w_c[i, j, :, :], R_avg_c[i, j, :] = EM(lam_c[i])
 
+pickle.dump([Mu_w_c, Sigma_w_c, R_avg_c], open('save_em.p', 'wb'))
 #R_avg_mean = np.zeros((lam_c.shape[0], maxIter))
 #for i in xrange(lam_c.shape[0]):
 #    R_avg_mean[i, :] = np.mean(R_avg_c[i, :, :], axis=1)
