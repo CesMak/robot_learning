@@ -13,7 +13,13 @@ Exploration can be performed in action Space and Parameter space.
 Parameter Space:\\
 In Episode Based Policy Search a distribution is learned over the parameters of the low level control policy. Exploration in parameter space allows more sophisticated strategies and is often very efficient for a small amount of parameters. 
 
+A problem is the high variance of the returns, because one add different random variables. If one has a too high variance, the learned policy can become instable. Too avoid this, you can use the baseline trick for example.
+
+An advantage is, that you do not have too know the structure of the optimization problem. So it is an "Black-Box Optimizer".
+
 Action Space:\\
+In the Episode based Policy Search you learn an full movement as episode and then get the reward for it. In Step-based Policy Search one decomposite the episode in single timesteps. So we get the reward for single state-actions pairs. This reward has a lower variance.
+
 In Step Based Policy Search there is less variance in quality assessment. Moreover as the exploration happens in action space it is less likely to create unstable policies.
 \end{answer}
 \end{question}
