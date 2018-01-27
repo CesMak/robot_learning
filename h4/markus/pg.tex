@@ -69,9 +69,15 @@ Update rule for $\theta$:
 		\mu_{k+1}=\mu_k + \alpha \frac{\partial}{\partial \mu}  J({\mu_k})
 		\end{equation}
 
+\begin{center}
+	\includegraphics[width=0.5\textwidth]{img/PG-b.pdf}
+	\captionof{figure}{The average return over the episodes for $\lambda=0.1$ }
+\end{center}
+
+You can see, that the reward explodes and one do not get an stable behavior. This depends on the high variance of the gradient.
+\lstinputlisting[caption=policy gradient algorithm]{code_text/2b.py}
 
 
-TODO PLOT HERE
 	\end{answer}
 \end{question}
 
@@ -87,12 +93,14 @@ TODO PLOT HERE
 	\nabla_\omega J_\omega \sum_{i=1}^{N} \nabla_\omega log \pi (\theta; \omega)(R_i - b)
 	\end{equation}
 		
-	The baseline has to be subtracted. Thereby the possibly high gradient of the variance can be reduced. It is still unbiased.
+	The baseline has to be subtracted. Thereby the possibly high gradient of the variance can be reduced. It is still unbiased. As baseline we use the average reward.
 	
 	\begin{center}
 		\includegraphics[width=0.5\textwidth]{img/PG-c.pdf}
 		\captionof{figure}{The average return over the episodes of for $\lambda=0.1$ with baseline subtracted of the PG algorithm}
 	\end{center}
+
+	\lstinputlisting[caption=policy gradient algorithm with subtracted baseline]{code_text/2c.py}
 	
 	\end{answer}
 
